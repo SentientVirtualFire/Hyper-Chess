@@ -14,7 +14,6 @@ public class TurnManager : MonoBehaviour
     public King king;
     public GameObject whites;
     public GameObject blacks;
-
     public Camera mainCamera;
     public GameObject moveTarget;
     public bool turnWhite = true;
@@ -33,10 +32,6 @@ public class TurnManager : MonoBehaviour
     void Start()
     {
         allMoves = allMovesFinder(whites);
-        foreach (var i in allMoves)
-        {
-            Debug.Log(i);
-        }
     }
 
 
@@ -105,7 +100,7 @@ public class TurnManager : MonoBehaviour
             }
         }
     }
-    public List<Moves> allMovesFinder(GameObject team)
+    public List<Moves> allMovesFinder(GameObject team, bool doKing = true)
     {
         List<Moves> moves = new List<Moves>();
         foreach (Transform child in team.transform)
@@ -114,24 +109,32 @@ public class TurnManager : MonoBehaviour
             {
                 foreach (Transform grandChild in child.transform)
                 {
-                    moves.Concat(moveChecker(grandChild.gameObject, moves));
+                    moves.Concat(moveChecker(grandChild.gameObject, moves, doKing));
                 }
             }
             else
             {
-                moves.Concat(moveChecker(child.gameObject, moves));
+                moves.Concat(moveChecker(child.gameObject, moves, doKing));
             }
         }
 
+
         return moves;
     }
-    public List<Moves> moveChecker(GameObject unit, List<Moves> moves)
+    public List<Moves> moveChecker(GameObject unit, List<Moves> moves, bool doKing = true)
     {
         if (unit.transform.tag == "Pawn" || unit.transform.tag == "UnmovedPawn")
         {
             Moves pieceMoves = new Moves();
             pieceMoves.piece = unit;
-            pieceMoves.positions = pawn.pathFinder(unit);
+            if (doKing)
+            {
+                pieceMoves.positions = pawn.pathFinder(unit);
+            }
+            else
+            {
+                pieceMoves.positions = pawn.justAttackPaths(unit);
+            }
             moves.Add(pieceMoves);
         }
         else if (unit.transform.tag == "Rook")
@@ -162,7 +165,7 @@ public class TurnManager : MonoBehaviour
             pieceMoves.positions = queen.pathFinder(unit);
             moves.Add(pieceMoves);
         }
-        else if (unit.transform.tag == "King")
+        else if (unit.transform.tag == "King" && doKing)
         {
             Moves pieceMoves = new Moves();
             pieceMoves.piece = unit.gameObject;
