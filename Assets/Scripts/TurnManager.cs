@@ -33,14 +33,6 @@ public class TurnManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            foreach (var item in moveCubes)
-            {
-                Destroy(item);
-            }
-            foreach (var item in attackCubes)
-            {
-                Destroy(item);
-            }
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             int layerMask;
@@ -62,6 +54,14 @@ public class TurnManager : MonoBehaviour
                 }
                 else if (allTags.Contains(hit.transform.tag))
                 {
+                    if (turnWhite)
+                    {
+                        allMoves = allMovesFinder(whites);
+                    }
+                    else
+                    {
+                        allMoves = allMovesFinder(blacks);
+                    }
                     selected = hit.transform.gameObject;
                     foreach(var unit in allMoves)
                     { 
@@ -84,6 +84,14 @@ public class TurnManager : MonoBehaviour
             }
             else
             {
+                foreach (var item in moveCubes)
+                {
+                    Destroy(item);
+                }
+                foreach (var item in attackCubes)
+                {
+                    Destroy(item);
+                }
                 selected = null;
             }
         }
@@ -167,12 +175,10 @@ public class TurnManager : MonoBehaviour
         }
         if (turnWhite)
         {
-            allMoves = allMovesFinder(blacks);
             turnWhite = false;
         }
         else
         {
-            allMoves = allMovesFinder(whites);
             turnWhite = true;
         }
         
