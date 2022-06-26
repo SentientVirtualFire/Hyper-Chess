@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Pawn : MonoBehaviour
 {
-    public List<Vector3> pathFinder(GameObject pawn)
+    public Moves pathFinder(GameObject pawn)
     { 
         Vector3 pos = pawn.transform.position;
         List<Vector3> moves = new List<Vector3>();
+        List<GameObject> attackMoves = new List<GameObject>();
         if (pawn.layer == 6)
         {
             Collider[] intersectingA = Physics.OverlapSphere(new Vector3(pos.x, 0.5f, pos.z + 1), 0.01f);
@@ -16,7 +17,7 @@ public class Pawn : MonoBehaviour
             {
                 moves.Add(new Vector3(pos.x, 0, pos.z + 1));
                 moves.Add(new Vector3(pos.x, 0, pos.z + 2));
-                if((pawn.layer == 6 && pos.z != 1) || (pawn.layer == 7 && pos.z != -6))
+                if(pos.z != 1)
                 { 
                     pawn.tag = "Pawn";
                 }
@@ -31,13 +32,17 @@ public class Pawn : MonoBehaviour
                 if (intersecting1.Length > 0)
                 {
                     if (intersecting1[0].gameObject.layer != pawn.layer)
-                        moves.Add(new Vector3(pos.x + 1, 0.5f, pos.z + 1));
+                    {
+                        attackMoves.Add(intersecting1[0].gameObject);
+                    }
                 }
                 Collider[] intersecting2 = Physics.OverlapSphere(new Vector3(pos.x - 1, 0.5f, pos.z + 1), 0.01f);
                 if (intersecting2.Length > 0)
                 {
                     if (intersecting2[0].gameObject.layer != pawn.layer)
-                        moves.Add(new Vector3(pos.x - 1, 0.5f, pos.z + 1));
+                    {
+                        attackMoves.Add(intersecting2[0].gameObject);
+                    }
                 }
             }
         }
@@ -49,7 +54,7 @@ public class Pawn : MonoBehaviour
             {
                 moves.Add(new Vector3(pos.x, 0, pos.z - 1));
                 moves.Add(new Vector3(pos.x, 0, pos.z - 2));
-                if ((pawn.layer == 6 && pos.z != 1) || (pawn.layer == 7 && pos.z != -6))
+                if (pos.z != 6)
                 {
                     pawn.tag = "Pawn";
                 }
@@ -64,22 +69,26 @@ public class Pawn : MonoBehaviour
                 if (intersecting1.Length > 0)
                 {
                     if (intersecting1[0].gameObject.layer != pawn.layer)
-                        moves.Add(new Vector3(pos.x + 1, 0.5f, pos.z - 1));
+                        attackMoves.Add(intersecting1[0].gameObject);
                 }
                 Collider[] intersecting2 = Physics.OverlapSphere(new Vector3(pos.x - 1, 0.5f, pos.z - 1), 0.01f);
                 if (intersecting2.Length > 0)
                 {
                     if (intersecting2[0].gameObject.layer != pawn.layer)
-                        moves.Add(new Vector3(pos.x - 1, 0.5f, pos.z - 1));
+                        attackMoves.Add(intersecting2[0].gameObject);
                 }
             }
-        }     
-        return moves;
+        }
+        Moves allMoves = new Moves();
+        allMoves.piece = pawn;
+        allMoves.positions = moves;
+        allMoves.attacks = attackMoves;
+        return allMoves;
     }
-    public List<Vector3> justAttackPaths(GameObject pawn)
+    public Moves justAttackPaths(GameObject pawn)
     {
         Vector3 pos = pawn.transform.position;
-        List<Vector3> moves = new List<Vector3>();
+        List<GameObject> attackMoves = new List<GameObject>();
         if (pawn.layer == 6)
         {
             if (pos.z != 7)
@@ -88,13 +97,13 @@ public class Pawn : MonoBehaviour
                 if (intersecting1.Length > 0)
                 {
                     if (intersecting1[0].gameObject.layer != pawn.layer)
-                        moves.Add(new Vector3(pos.x + 1, 0.5f, pos.z + 1));
+                        attackMoves.Add(intersecting1[0].gameObject);
                 }
                 Collider[] intersecting2 = Physics.OverlapSphere(new Vector3(pos.x - 1, 0.5f, pos.z + 1), 0.01f);
                 if (intersecting2.Length > 0)
                 {
                     if (intersecting2[0].gameObject.layer != pawn.layer)
-                        moves.Add(new Vector3(pos.x - 1, 0.5f, pos.z + 1));
+                        attackMoves.Add(intersecting2[0].gameObject);
                 }
             }
         }
@@ -106,16 +115,19 @@ public class Pawn : MonoBehaviour
                 if (intersecting1.Length > 0)
                 {
                     if (intersecting1[0].gameObject.layer != pawn.layer)
-                        moves.Add(new Vector3(pos.x + 1, 0.5f, pos.z - 1));
+                        attackMoves.Add(intersecting1[0].gameObject);
                 }
                 Collider[] intersecting2 = Physics.OverlapSphere(new Vector3(pos.x - 1, 0.5f, pos.z - 1), 0.01f);
                 if (intersecting2.Length > 0)
                 {
                     if (intersecting2[0].gameObject.layer != pawn.layer)
-                        moves.Add(new Vector3(pos.x - 1, 0.5f, pos.z - 1));
+                        attackMoves.Add(intersecting2[0].gameObject);
                 }
             }
         }
-        return moves;
+        Moves allMoves = new Moves();
+        allMoves.piece = pawn;
+        allMoves.attacks = attackMoves;
+        return allMoves;
     }
 }

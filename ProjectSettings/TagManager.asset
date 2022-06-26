@@ -12,6 +12,7 @@ TagManager:
   - Queen
   - MoveTarget
   - UnmovedPawn
+  - AttackTarget
   layers:
   - Default
   - TransparentFX

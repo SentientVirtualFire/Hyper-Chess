@@ -7,11 +7,12 @@ public class King : MonoBehaviour
     (int, float, int)[] offsets = { (1, 0, 0), (1, 0, -1), (0, 0, -1), (-1, 0, -1), (-1, 0, 0), (-1, 0, 1), (0, 0, 1), (1, 0, 1) };  
     public TurnManager turnManager;
     List<Vector3> opposingMoves;
-    public List<Vector3> pathFinder(GameObject king)
+    public Moves pathFinder(GameObject king)
     {
         Vector3 pos = king.transform.position;
         List<Vector3> moves = new List<Vector3>();
-        foreach(var i in offsets)
+        List<GameObject> attackMoves = new List<GameObject>();
+        foreach (var i in offsets)
         {
             Vector3 newPos= king.transform.position + new Vector3(i.Item1, i.Item2, i.Item3);
             if (newPos.x >= 0 && newPos.x <=7 && newPos.z >= 0 && newPos.z <= 7)
@@ -21,7 +22,7 @@ public class King : MonoBehaviour
                 {
                     if (intersecting[0].gameObject.layer != king.layer)
                     {
-                        moves.Add(newPos);
+                        attackMoves.Add(intersecting[0].gameObject);
                     }
                     else
                     {
@@ -50,16 +51,14 @@ public class King : MonoBehaviour
             {
                 foreach (var j in i.positions)
                 {
-                    foreach (var k in moves)
-                    {
-                        if (j == k)
-                        {
-                            moves.Remove(k);
-                        }
-                    }
+                    moves.RemoveAll(move => move == j);
                 }
             }
         }
-        return moves;
+        Moves allMoves = new Moves();
+        allMoves.piece = king;
+        allMoves.positions = moves;
+        allMoves.attacks = attackMoves;
+        return allMoves;
     }
 }

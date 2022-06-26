@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Bishop : MonoBehaviour
 {
-    public List<Vector3> pathFinder(GameObject bishop)
+    public Moves pathFinder(GameObject bishop)
     {
         Vector3 pos = bishop.transform.position;
         List<Vector3> moves = new List<Vector3>();
+        List<GameObject> attackMoves = new List<GameObject>();
         for (var (x, z) = (pos.x + 1, pos.z + 1); x <= 7 && z <= 7; x++, z++)
         {
             Collider[] intersecting = Physics.OverlapSphere(new Vector3(x, 0.5f, z), 0.01f);
@@ -19,7 +20,7 @@ public class Bishop : MonoBehaviour
             {
                 if (intersecting[0].gameObject.layer != bishop.layer)
                 {
-                    moves.Add(new Vector3(x, 0, z));
+                    attackMoves.Add(intersecting[0].gameObject);
                     break;
                 }
                 else
@@ -39,7 +40,7 @@ public class Bishop : MonoBehaviour
             {
                 if (intersecting[0].gameObject.layer != bishop.layer)
                 {
-                    moves.Add(new Vector3(x, 0, z));
+                    attackMoves.Add(intersecting[0].gameObject);
                     break;
                 }
                 else
@@ -59,7 +60,7 @@ public class Bishop : MonoBehaviour
             {
                 if (intersecting[0].gameObject.layer != bishop.layer)
                 {
-                    moves.Add(new Vector3(x, 0, z));
+                    attackMoves.Add(intersecting[0].gameObject);
                     break;
                 }
                 else
@@ -79,7 +80,7 @@ public class Bishop : MonoBehaviour
             {
                 if (intersecting[0].gameObject.layer != bishop.layer)
                 {
-                    moves.Add(new Vector3(x, 0, z));
+                    attackMoves.Add(intersecting[0].gameObject);
                     break;
                 }
                 else
@@ -88,6 +89,10 @@ public class Bishop : MonoBehaviour
                 }
             }
         }
-        return moves;
+        Moves allMoves = new Moves();
+        allMoves.piece = bishop;
+        allMoves.positions = moves;
+        allMoves.attacks = attackMoves;
+        return allMoves;
     }
 }

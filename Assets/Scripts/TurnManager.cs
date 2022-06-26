@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-
 public class TurnManager : MonoBehaviour
 {
     public Pawn pawn;
@@ -16,25 +15,20 @@ public class TurnManager : MonoBehaviour
     public GameObject blacks;
     public Camera mainCamera;
     public GameObject moveTarget;
+    public GameObject attackTarget;
     public bool turnWhite = true;
+    public int turnNum = 0;
 
     GameObject selected;
     List<GameObject> moveCubes = new List<GameObject>();
+    List<GameObject> attackCubes = new List<GameObject>();
     List<Moves> allMoves = new List<Moves>();
     string[] allTags = new string[7] { "Pawn", "UnmovedPawn", "Rook", "Knight", "Bishop", "Queen", "King" };
-
-    public class Moves
-    {
-        public GameObject piece;
-        public List<Vector3> positions = new List<Vector3>();
-    }
 
     void Start()
     {
         allMoves = allMovesFinder(whites);
     }
-
-
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -43,10 +37,12 @@ public class TurnManager : MonoBehaviour
             {
                 Destroy(item);
             }
-
+            foreach (var item in attackCubes)
+            {
+                Destroy(item);
+            }
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
-
             int layerMask;
             if (turnWhite)
             {
@@ -57,39 +53,31 @@ public class TurnManager : MonoBehaviour
                 layerMask = 1 << 6;
             }
             layerMask = ~layerMask;
-
-
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
             {
-                if (hit.transform.tag == "MoveTarget" && selected != null)
+                if ((hit.transform.tag == "MoveTarget" || hit.transform.tag == "AttackTarget") && selected != null)
                 {
-                    selected.transform.position = hit.transform.position;
+                    nextTurn(selected, hit.transform.gameObject);
                     selected = null;
-                    foreach (var item in moveCubes)
-                    {
-                        Destroy(item);
-                    }
-                    if (turnWhite)
-                    {
-                        allMoves = allMovesFinder(blacks);
-                        turnWhite = false;
-                    }
-                    else
-                    {
-                        allMoves = allMovesFinder(whites);
-                        turnWhite = true;
-                    }
                 }
                 else if (allTags.Contains(hit.transform.tag))
-                    selected = hit.transform.gameObject;
-                foreach (var unit in allMoves)
                 {
-                    if (unit.piece == selected)
-                    {
-                        foreach (var pos in unit.positions)
-                        {
-                            GameObject cube = Instantiate(moveTarget, pos, Quaternion.identity);
-                            moveCubes.Add(cube);
+                    selected = hit.transform.gameObject;
+                    foreach(var unit in allMoves)
+                    { 
+                        if(unit.piece == hit.transform.gameObject)
+                        { 
+                            foreach (var pos in unit.positions)
+                            {
+                                GameObject cube = Instantiate(moveTarget, pos, Quaternion.identity);
+                                moveCubes.Add(cube);
+                            }
+                            foreach (var piece in unit.attacks)
+                            {
+                                GameObject cube = Instantiate(attackTarget, piece.transform.position, Quaternion.identity);
+                                cube.GetComponent<Target>().target = piece;
+                                attackCubes.Add(cube);
+                            }
                         }
                     }
                 }
@@ -117,61 +105,84 @@ public class TurnManager : MonoBehaviour
                 moves.Concat(moveChecker(child.gameObject, moves, doKing));
             }
         }
-
-
         return moves;
     }
-    public List<Moves> moveChecker(GameObject unit, List<Moves> moves, bool doKing = true)
+    List<Moves> moveChecker(GameObject unit, List<Moves> moves, bool doKing = true)
     {
         if (unit.transform.tag == "Pawn" || unit.transform.tag == "UnmovedPawn")
         {
             Moves pieceMoves = new Moves();
-            pieceMoves.piece = unit;
             if (doKing)
             {
-                pieceMoves.positions = pawn.pathFinder(unit);
+                pieceMoves = pawn.pathFinder(unit);
             }
             else
             {
-                pieceMoves.positions = pawn.justAttackPaths(unit);
+                pieceMoves = pawn.justAttackPaths(unit);
             }
             moves.Add(pieceMoves);
         }
         else if (unit.transform.tag == "Rook")
         {
-            Moves pieceMoves = new Moves();
-            pieceMoves.piece = unit;
-            pieceMoves.positions = rook.pathFinder(unit);
+            Moves pieceMoves = rook.pathFinder(unit);
             moves.Add(pieceMoves);
         }
         else if (unit.transform.tag == "Knight")
         {
-            Moves pieceMoves = new Moves();
-            pieceMoves.piece = unit.gameObject;
-            pieceMoves.positions = knight.pathFinder(unit);
+            Moves pieceMoves = knight.pathFinder(unit);
             moves.Add(pieceMoves);
         }
         else if (unit.transform.tag == "Bishop")
         {
-            Moves pieceMoves = new Moves();
-            pieceMoves.piece = unit.gameObject;
-            pieceMoves.positions = bishop.pathFinder(unit);
+            Moves pieceMoves = bishop.pathFinder(unit);
             moves.Add(pieceMoves);
         }
         else if (unit.transform.tag == "Queen")
         {
-            Moves pieceMoves = new Moves();
-            pieceMoves.piece = unit.gameObject;
-            pieceMoves.positions = queen.pathFinder(unit);
+            Moves pieceMoves = queen.pathFinder(unit);
             moves.Add(pieceMoves);
         }
         else if (unit.transform.tag == "King" && doKing)
         {
-            Moves pieceMoves = new Moves();
-            pieceMoves.piece = unit.gameObject;
-            pieceMoves.positions = king.pathFinder(unit);
+            Moves pieceMoves = king.pathFinder(unit);
             moves.Add(pieceMoves);
         }
         return moves;
     }
+    void nextTurn(GameObject movedPiece, GameObject target)
+    {
+        movedPiece.transform.position = target.transform.position;
+        if (target.transform.tag == "AttackTarget")
+        {
+            Destroy(target.transform.gameObject.GetComponent<Target>().target);
+        }
+        allMoves.Clear();
+        foreach (var item in moveCubes)
+        {
+            Destroy(item);
+        }
+        foreach (var item in attackCubes)
+        {
+            Destroy(item);
+        }
+        if (turnWhite)
+        {
+            allMoves = allMovesFinder(blacks);
+            turnWhite = false;
+        }
+        else
+        {
+            allMoves = allMovesFinder(whites);
+            turnWhite = true;
+        }
+        
+        turnNum++;
+    }
+}
+public class Moves
+{
+    public GameObject piece;
+    public List<GameObject> attacks;
+    public List<Vector3> positions = new List<Vector3>();
+    public int turn;
 }
