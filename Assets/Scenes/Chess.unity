@@ -2403,14 +2403,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnManager: {fileID: 1483222913}
-  speed: 30.7
   axes: 0
+  speedX: 40
+  speedY: 40
   sensitivityX: 2
   sensitivityY: 2
   minimumX: -360
   maximumX: 360
   minimumY: -90
   maximumY: 90
+  maxDist: 30
 --- !u!1001 &1990187347
 PrefabInstance:
   m_ObjectHideFlags: 0

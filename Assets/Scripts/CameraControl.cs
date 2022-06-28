@@ -4,22 +4,21 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour
 {
-   
-    
-    
+
+
+
     public TurnManager turnManager;
-    [Range(0f,100)]
-    public float speedX;
-    [Range(0f, 100)]
-    public float speedY;
     public enum RotationAxes { MouseXAndY = 0, MouseX = 1, MouseY = 2 }
     public RotationAxes axes = RotationAxes.MouseXAndY;
+    public float speedX;
+    public float speedY;
     public float sensitivityX = 2F;
     public float sensitivityY = 2F;
     public float minimumX = -360F;
     public float maximumX = 360F;
     public float minimumY = -90F;
     public float maximumY = 90F;
+    public int maxDist;
     float rotationY = -60F;
     bool prevTurn = false;
     void Update()
@@ -44,7 +43,21 @@ public class CameraControl : MonoBehaviour
         }
         else if (Input.GetMouseButton(2))
         {
-            MouseMiddleButtonClicked();
+            if(Vector3.Distance(new Vector3(3.5f, 0, 3.5f), transform.position) < maxDist)
+            { 
+                MouseMiddleButtonClicked();
+            }
+            else
+            {
+                if (turnManager.turnWhite)
+                {
+                    transform.position = new Vector3(3.5f, 7, 0);
+                }
+                else
+                {
+                    transform.position = new Vector3(3.5f, 7, 7);
+                }
+            }
         }
         else if (Input.GetMouseButtonUp(0))
         {
@@ -70,7 +83,7 @@ public class CameraControl : MonoBehaviour
         {
             pos += transform.right*speedX*Time.deltaTime;
         }
-        else if (NewPosition.x < 0.0f)
+        if (NewPosition.x < 0.0f)
         {
             pos -= transform.right*speedX*Time.deltaTime;
         }
@@ -80,7 +93,7 @@ public class CameraControl : MonoBehaviour
         }
         if (NewPosition.z < 0.0f)
         {
-            pos -= transform.forward*speedY*Time.deltaTime;
+            pos -= transform.forward * speedY * Time.deltaTime;
         }
         pos.y = transform.position.y;
         transform.position = pos;
