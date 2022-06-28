@@ -18,6 +18,11 @@ public class TurnManager : MonoBehaviour
     public GameObject attackTarget;
     public AudioSource moveSound;
     public bool turnWhite = true;
+    public bool do3d = false;
+    public bool do4d = false;
+    public bool do5d = false;
+    [Range(0.001f,1f)]
+    public float unitSpeed;
     public int turnNum = 0;
 
     GameObject selected;
@@ -160,8 +165,10 @@ public class TurnManager : MonoBehaviour
     }
     void nextTurn(GameObject movedPiece, GameObject target)
     {
-        movedPiece.transform.position = target.transform.position;
-        //moveSound.Play();
+        while(movedPiece.transform.position != target.transform.position)
+        {
+            movedPiece.transform.position = Vector3.MoveTowards(movedPiece.transform.position, target.transform.position, unitSpeed*Time.deltaTime);
+        }
         if (target.transform.tag == "AttackTarget")
         {
             Destroy(target.transform.gameObject.GetComponent<Target>().target);

@@ -4,17 +4,26 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour
 {
+   
+    
+    
     public TurnManager turnManager;
-    public float speed = 100.0f;
-    public float sensitivity;
-    public int moveLimit;
-    public int returnPoint;
-    public bool prevTurn = false;
-    public bool movingIn = false;
-    public bool changingSide = false;
+    [Range(0f,100)]
+    public float speedX;
+    [Range(0f, 100)]
+    public float speedY;
+    public enum RotationAxes { MouseXAndY = 0, MouseX = 1, MouseY = 2 }
+    public RotationAxes axes = RotationAxes.MouseXAndY;
+    public float sensitivityX = 2F;
+    public float sensitivityY = 2F;
+    public float minimumX = -360F;
+    public float maximumX = 360F;
+    public float minimumY = -90F;
+    public float maximumY = 90F;
+    float rotationY = -60F;
+    bool prevTurn = false;
     void Update()
     {
-        float dist = Vector3.Distance(new Vector3(3.5f, 0, 3.5f), transform.position);
         if (turnManager.turnWhite != prevTurn)
         {
             if (turnManager.turnWhite)
@@ -24,61 +33,93 @@ public class CameraControl : MonoBehaviour
             }
             else
             {
-                transform.position = new Vector3(3.5f, 7, 7);
+                transform.position = new Vector3(3.5f, 7, 7); 
                 transform.rotation = Quaternion.Euler(120, 360, 180);
             }
-            changingSide = true;
             prevTurn = turnManager.turnWhite;
         }
-        transform.LookAt(new Vector3(3.5f, 0, 3.5f));
-        Vector3 p = new Vector3();
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetMouseButton(0))
         {
-            p += new Vector3(0, 0, 1);
+            MouseLeftClick();
         }
-        if (Input.GetKey(KeyCode.DownArrow))
+        else if (Input.GetMouseButton(2))
         {
-            p += new Vector3(0, 0, -1);
+            MouseMiddleButtonClicked();
         }
-        if (Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetMouseButtonUp(0))
         {
-            p += new Vector3(-1, 0, 0);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
-        if (Input.GetKey(KeyCode.RightArrow))
+        else if (Input.GetMouseButtonUp(2))
         {
-            p += new Vector3(1, 0, 0);
-        }
-        if (dist < moveLimit && !movingIn)
-        {
-            Vector3 newPosition = transform.position;
-            if (p.sqrMagnitude > 0)
-            {
-                transform.Translate(p * speed * Time.deltaTime);
-                newPosition.x = transform.position.x;
-                newPosition.z = transform.position.z;
-                transform.position = newPosition;
-            }
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
         else
         {
-            movingIn = true;
-            if (turnManager.turnWhite)
-            {
-                p = new Vector3(3.5f, 7, 0) - transform.position;
-            }
-            else
-            {
-                p = new Vector3(3.5f, 7, 7f) - transform.position;
-            }
-            Vector3 newPosition = transform.position;
-            transform.Translate(p * speed/3 * Time.deltaTime);
-            newPosition.x = transform.position.x;
-            newPosition.z = transform.position.z;
-            transform.position = newPosition;
+            MouseWheeling();
         }
-        if (dist < returnPoint)
+    }
+    void MouseMiddleButtonClicked()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Vector3 NewPosition = new Vector3(Input.GetAxis("Mouse X"), 0, Input.GetAxis("Mouse Y"));
+        Vector3 pos = transform.position;
+        if (NewPosition.x > 0.0f)
         {
-            movingIn = false;
+            pos += transform.right*speedX*Time.deltaTime;
+        }
+        else if (NewPosition.x < 0.0f)
+        {
+            pos -= transform.right*speedX*Time.deltaTime;
+        }
+        if (NewPosition.z > 0.0f)
+        {
+            pos += transform.forward*speedY*Time.deltaTime;
+        }
+        if (NewPosition.z < 0.0f)
+        {
+            pos -= transform.forward*speedY*Time.deltaTime;
+        }
+        pos.y = transform.position.y;
+        transform.position = pos;
+    }
+    void MouseLeftClick()
+    {
+        if (axes == RotationAxes.MouseXAndY)
+        {
+            float rotationX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * sensitivityX;
+
+            rotationY += Input.GetAxis("Mouse Y") * sensitivityY;
+            rotationY = Mathf.Clamp(rotationY, minimumY, maximumY);
+
+            transform.localEulerAngles = new Vector3(-rotationY, rotationX, 0);
+        }
+        else if (axes == RotationAxes.MouseX)
+        {
+            transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivityX, 0);
+        }
+        else
+        {
+            rotationY += Input.GetAxis("Mouse Y") * sensitivityY;
+            rotationY = Mathf.Clamp(rotationY, minimumY, maximumY);
+
+            transform.localEulerAngles = new Vector3(-rotationY, transform.localEulerAngles.y, 0);
+        }
+    }
+    void MouseWheeling()
+    {
+        Vector3 pos = transform.position;
+        if (Input.GetAxis("Mouse ScrollWheel") < 0)
+        {
+            pos = pos - transform.forward;
+            transform.position = pos;
+        }
+        if (Input.GetAxis("Mouse ScrollWheel") > 0)
+        {
+            pos = pos + transform.forward;
+            transform.position = pos;
         }
     }
 }

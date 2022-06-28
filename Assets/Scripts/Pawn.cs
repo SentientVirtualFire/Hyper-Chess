@@ -45,7 +45,6 @@ public class Pawn : MonoBehaviour
         {
             Collider[] intersectingA = Physics.OverlapSphere(new Vector3(pos.x, 0.5f, pos.z - 1), 0.01f);
             Collider[] intersectingB = Physics.OverlapSphere(new Vector3(pos.x, 0.5f, pos.z - 2), 0.01f);
-            Debug.Log(pawn.transform.position);
             if (pos.z == 6 && intersectingB.Length == 0)
             {
                 moves.Add(new Vector3(pos.x, 0, pos.z - 1));
