@@ -13,20 +13,15 @@ public class Pawn : MonoBehaviour
         {
             Collider[] intersectingA = Physics.OverlapSphere(new Vector3(pos.x, 0.5f, pos.z + 1), 0.01f);
             Collider[] intersectingB = Physics.OverlapSphere(new Vector3(pos.x, 0.5f, pos.z + 2), 0.01f);
-            if (pawn.tag == "UnmovedPawn" && intersectingB.Length == 0)
+            if (pos.z == 1 && intersectingB.Length == 0)
             {
                 moves.Add(new Vector3(pos.x, 0, pos.z + 1));
                 moves.Add(new Vector3(pos.x, 0, pos.z + 2));
-                if(pos.z != 1)
-                { 
-                    pawn.tag = "Pawn";
-                }
             }
-            else if(intersectingA.Length == 0)
+            else if (intersectingA.Length == 0)
             {
                 moves.Add(new Vector3(pos.x, 0, pos.z + 1));
             }
-            if (pos.z != 7)
             {
                 Collider[] intersecting1 = Physics.OverlapSphere(new Vector3(pos.x + 1, 0.5f, pos.z + 1), 0.01f);
                 if (intersecting1.Length > 0)
@@ -50,14 +45,11 @@ public class Pawn : MonoBehaviour
         {
             Collider[] intersectingA = Physics.OverlapSphere(new Vector3(pos.x, 0.5f, pos.z - 1), 0.01f);
             Collider[] intersectingB = Physics.OverlapSphere(new Vector3(pos.x, 0.5f, pos.z - 2), 0.01f);
-            if (pawn.tag == "UnmovedPawn" && intersectingB.Length == 0)
+            Debug.Log(pawn.transform.position);
+            if (pos.z == 6 && intersectingB.Length == 0)
             {
                 moves.Add(new Vector3(pos.x, 0, pos.z - 1));
                 moves.Add(new Vector3(pos.x, 0, pos.z - 2));
-                if (pos.z != 6)
-                {
-                    pawn.tag = "Pawn";
-                }
             }
             else if (intersectingA.Length == 0)
             {

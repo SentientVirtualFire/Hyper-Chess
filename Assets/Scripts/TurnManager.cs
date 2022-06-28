@@ -16,6 +16,7 @@ public class TurnManager : MonoBehaviour
     public Camera mainCamera;
     public GameObject moveTarget;
     public GameObject attackTarget;
+    public AudioSource moveSound;
     public bool turnWhite = true;
     public int turnNum = 0;
 
@@ -43,6 +44,14 @@ public class TurnManager : MonoBehaviour
             else
             {
                 layerMask = 1 << 6;
+            }
+            foreach (var item in moveCubes)
+            {
+                Destroy(item);
+            }
+            foreach (var item in attackCubes)
+            {
+                Destroy(item);
             }
             layerMask = ~layerMask;
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
@@ -84,14 +93,6 @@ public class TurnManager : MonoBehaviour
             }
             else
             {
-                foreach (var item in moveCubes)
-                {
-                    Destroy(item);
-                }
-                foreach (var item in attackCubes)
-                {
-                    Destroy(item);
-                }
                 selected = null;
             }
         }
@@ -160,6 +161,7 @@ public class TurnManager : MonoBehaviour
     void nextTurn(GameObject movedPiece, GameObject target)
     {
         movedPiece.transform.position = target.transform.position;
+        //moveSound.Play();
         if (target.transform.tag == "AttackTarget")
         {
             Destroy(target.transform.gameObject.GetComponent<Target>().target);

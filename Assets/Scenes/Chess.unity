@@ -1694,6 +1694,7 @@ MonoBehaviour:
   mainCamera: {fileID: 1974944749}
   moveTarget: {fileID: 3708691902215264869, guid: 18d5852119558614ab622d99232068f9, type: 3}
   attackTarget: {fileID: 4805548384104164259, guid: 3575a45d3cd0e7141b5791e0dcda218f, type: 3}
+  moveSound: {fileID: 0}
   turnWhite: 1
   turnNum: 0
 --- !u!4 &1483222914
