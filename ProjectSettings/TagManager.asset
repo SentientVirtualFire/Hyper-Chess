@@ -15,6 +15,7 @@ TagManager:
   - AttackTarget
   - UnmovedKing
   - UnmovedRook
+  - Board
   layers:
   - Default
   - TransparentFX
