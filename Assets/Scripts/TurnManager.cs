@@ -16,12 +16,12 @@ public class TurnManager : MonoBehaviour
     public Camera mainCamera;
     public GameObject moveTarget;
     public GameObject attackTarget;
-    public AudioSource moveSound;
+    public GameObject emptyTarget;
     public bool turnWhite = true;
-    public bool do3d = false;
-    public bool do4d = false;
-    public bool do5d = false;
-    [Range(0.001f,1f)]
+    public bool do3D = false;
+    public bool do4D = false;
+    public bool do5D = false;
+    [Range(0.001f, 1f)]
     public float unitSpeed;
     public int turnNum = 0;
 
@@ -29,10 +29,25 @@ public class TurnManager : MonoBehaviour
     List<GameObject> moveCubes = new List<GameObject>();
     List<GameObject> attackCubes = new List<GameObject>();
     List<Moves> allMoves = new List<Moves>();
-    string[] allTags = new string[7] { "Pawn", "UnmovedPawn", "Rook", "Knight", "Bishop", "Queen", "King" };
+    string[] allTags = new string[6] { "Pawn", "Rook", "Knight", "Bishop", "Queen", "King" };
 
     void Start()
     {
+        /*
+        for (int x = 0; x <= 7; x++)
+        {
+            for (float y = 0; y <= 7; y+= 1.21336f)
+            {
+                for (int z = 0; z <= 7; z++)
+                {
+                    //if(Physics.OverlapSphere(new Vector3(x, y, z + 1), 0.01f).Length == 0)
+                    { 
+                        Instantiate(emptyTarget, new Vector3(x, y, z), Quaternion.identity);
+                    }
+                }
+            }
+        }*/
+        
         allMoves = allMovesFinder(whites);
     }
     void Update()
@@ -123,16 +138,16 @@ public class TurnManager : MonoBehaviour
     }
     List<Moves> moveChecker(GameObject unit, List<Moves> moves, bool doKing = true)
     {
-        if (unit.transform.tag == "Pawn" || unit.transform.tag == "UnmovedPawn")
+        if (unit.transform.tag == "Pawn")
         {
             Moves pieceMoves = new Moves();
             if (doKing)
             {
-                pieceMoves = pawn.pathFinder(unit);
+                pieceMoves = pawn.pathFinder(unit, do3D);
             }
             else
             {
-                pieceMoves = pawn.justAttackPaths(unit);
+                pieceMoves = pawn.justAttackPaths(unit, do3D);
             }
             moves.Add(pieceMoves);
         }
