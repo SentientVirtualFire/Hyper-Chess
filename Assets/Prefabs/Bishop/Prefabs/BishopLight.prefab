@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4626390214331530}
   - component: {fileID: 33283243407640938}
   - component: {fileID: 23450358156907978}
-  - component: {fileID: 1261102959079849692}
+  - component: {fileID: -4113165412597855041}
   m_Layer: 6
   m_Name: BishopLight
   m_TagString: Bishop
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1261102959079849692
+--- !u!65 &-4113165412597855041
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,5 +95,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.8763499, y: 1.5062299, z: 0.7589414}
   m_Center: {x: 0, y: 0.75311494, z: 0}

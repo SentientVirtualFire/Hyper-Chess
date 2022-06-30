@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4607164402640316}
   - component: {fileID: 33386584874682660}
   - component: {fileID: 23714218359197728}
-  - component: {fileID: 6933046268615416206}
+  - component: {fileID: 4730631735112150061}
   m_Layer: 6
   m_Name: QueenLight
   m_TagString: Queen
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6933046268615416206
+--- !u!65 &4730631735112150061
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,5 +95,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.8763499, y: 1.7013237, z: 0.7589414}
   m_Center: {x: 0, y: 0.8506619, z: 0}

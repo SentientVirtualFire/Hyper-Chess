@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4967576429096158}
   - component: {fileID: 33961714295525734}
   - component: {fileID: 23756955892116760}
-  - component: {fileID: 4967249348908904447}
+  - component: {fileID: 18627739586177023}
   m_Layer: 6
   m_Name: KnightLight
   m_TagString: Knight
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4967249348908904447
+--- !u!65 &18627739586177023
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,5 +95,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.895717, y: 1.25607, z: 0.83156425}
   m_Center: {x: 0, y: 0.628035, z: 0.027925223}

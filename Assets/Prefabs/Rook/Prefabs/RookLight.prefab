@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4656301317612888}
   - component: {fileID: 33667145997053058}
   - component: {fileID: 23923637149797032}
-  - component: {fileID: 3528568940634576626}
+  - component: {fileID: -1939099517932399693}
   m_Layer: 6
   m_Name: RookLight
   m_TagString: Rook
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3528568940634576626
+--- !u!65 &-1939099517932399693
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,5 +95,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.895717, y: 1.3155541, z: 0.7757138}
   m_Center: {x: 0, y: 0.6577771, z: 0}
