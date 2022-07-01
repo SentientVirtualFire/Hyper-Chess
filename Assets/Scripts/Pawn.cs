@@ -132,7 +132,7 @@ public class Pawn : MonoBehaviour
         allMoves.attacks = attackMoves;
         return allMoves;
     }
-    public Moves justAttackPaths(GameObject pawn, bool do3d)
+    public Moves justAttackPaths(GameObject pawn, bool do3D)
     {
         Vector3 pos = pawn.transform.position;
         List<GameObject> attackMoves = new List<GameObject>();
@@ -170,6 +170,33 @@ public class Pawn : MonoBehaviour
                     if (intersecting2[0].gameObject.layer != pawn.layer)
                         attackMoves.Add(intersecting2[0].gameObject);
                 }
+            }
+        }
+        if (do3D && pos.y <= 10.5)
+        {
+            Collider[] intersecting1 = Physics.OverlapSphere(new Vector3(pos.x + 1, pos.y + 1.75f, pos.z), 0.01f);
+            Collider[] intersecting2 = Physics.OverlapSphere(new Vector3(pos.x - 1, pos.y + 1.75f, pos.z), 0.01f);
+            Collider[] intersecting3 = Physics.OverlapSphere(new Vector3(pos.x, pos.y + 1.75f, pos.z + 1), 0.01f);
+            Collider[] intersecting4 = Physics.OverlapSphere(new Vector3(pos.x, pos.y + 1.75f, pos.z - 1), 0.01f);
+            if (intersecting1.Length > 0 && pos.x <= 6)
+            {
+                if (intersecting1[0].gameObject.layer != pawn.layer)
+                    attackMoves.Add(intersecting1[0].gameObject);
+            }
+            if (intersecting2.Length > 0 && pos.x >= 0)
+            {
+                if (intersecting2[0].gameObject.layer != pawn.layer)
+                    attackMoves.Add(intersecting2[0].gameObject);
+            }
+            if (intersecting3.Length > 0 && pos.z <= 6)
+            {
+                if (intersecting3[0].gameObject.layer != pawn.layer)
+                    attackMoves.Add(intersecting3[0].gameObject);
+            }
+            if (intersecting4.Length > 0 && pos.z >= 0)
+            {
+                if (intersecting4[0].gameObject.layer != pawn.layer)
+                    attackMoves.Add(intersecting4[0].gameObject);
             }
         }
         Moves allMoves = new Moves();

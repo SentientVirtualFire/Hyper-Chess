@@ -21,8 +21,7 @@ public class TurnManager : MonoBehaviour
     public bool do3D;
     public bool do4D;
     public bool do5D;
-    [Range(1, 100)]
-    public float unitSpeed;
+    public float duration;
     public int turnNum = 0;
 
 
@@ -81,7 +80,7 @@ public class TurnManager : MonoBehaviour
                     nextTurn(selected, hit.transform.gameObject);
                     selected = null;
                 }
-                else if (allTags.Contains(hit.transform.tag))
+                else if (allTags.Contains(hit.transform.tag) && selected == null)
                 {
                     allMoves = moveChecker(hit.transform.gameObject);
                     selected = hit.transform.gameObject;
@@ -100,6 +99,10 @@ public class TurnManager : MonoBehaviour
                             attackCubes.Add(cube);
                         }
                     }
+                }
+                else
+                {
+                    selected = null;
                 }
             }
             else
@@ -172,14 +175,14 @@ public class TurnManager : MonoBehaviour
     }
     void nextTurn(GameObject movedPiece, GameObject target)
     {
-        /*for(int i = 0; i <= 100; i++)
-        {
-            movedPiece.transform.position = Vector3.Lerp(movedPiece.transform.position,target.transform.position - new Vector3(0, 0.5f, 0), unitSpeed*Time.deltaTime);
-        }*/
-        movedPiece.transform.position =  target.transform.position;
+        StartCoroutine(MovePiece(movedPiece,target));
         if (target.transform.tag == "AttackTarget")
         {
-            Destroy(target.transform.gameObject.GetComponent<Target>().target);
+            GameObject attacked = target.transform.gameObject.GetComponent<Target>().target;
+            ParticleSystemRenderer renderer = attacked.GetComponent<ParticleSystemRenderer>(); 
+            renderer.mesh = movedPiece.GetComponent<MeshFilter>().mesh;
+            renderer.material = movedPiece.GetComponent<MeshRenderer>().material;
+            attacked.GetComponent<ParticleSystem>().Play();
         }
         allMoves.Clear();
         foreach (var item in moveCubes)
@@ -200,6 +203,20 @@ public class TurnManager : MonoBehaviour
         }
         
         turnNum++;
+    }
+    IEnumerator MovePiece(GameObject mover, GameObject movee)
+    {
+        float time = 0;
+        Vector3 targetPos = movee.transform.position - new Vector3(0,0.5f,0);
+        while (time < duration)
+        {
+            float t = time / duration;
+            t = t * t * (3f - 2f * t);
+            mover.transform.position = Vector3.Lerp(mover.transform.position, targetPos, t);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        mover.transform.position = targetPos;
     }
 }
 public class Moves

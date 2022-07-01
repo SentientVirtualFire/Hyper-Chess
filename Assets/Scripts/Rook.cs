@@ -12,10 +12,10 @@ public class Rook : MonoBehaviour
         List<GameObject> attackMoves = new List<GameObject>();
         for (var x = pos.x - 1; x >= 0; x--)
         {
-            Collider[] intersecting = Physics.OverlapSphere(new Vector3(x, 0.5f, pos.z), 0.01f);
+            Collider[] intersecting = Physics.OverlapSphere(new Vector3(x, pos.y, pos.z), 0.01f);
             if (intersecting.Length == 0)
             {
-                moves.Add(new Vector3(x, 0, pos.z));
+                moves.Add(new Vector3(x, pos.y, pos.z));
             }
             else
             {
@@ -32,10 +32,10 @@ public class Rook : MonoBehaviour
         }
         for (var x = pos.x + 1; x <= 7; x++)
         {
-            Collider[] intersecting = Physics.OverlapSphere(new Vector3(x, 0.5f, pos.z), 0.01f);
+            Collider[] intersecting = Physics.OverlapSphere(new Vector3(x, pos.y, pos.z), 0.01f);
             if (intersecting.Length == 0)
             {
-                moves.Add(new Vector3(x, 0, pos.z));
+                moves.Add(new Vector3(x, pos.y, pos.z));
             }
             else
             {
@@ -52,10 +52,10 @@ public class Rook : MonoBehaviour
         }
         for (var z = pos.z - 1; z >= 0; z--)
         {
-            Collider[] intersecting = Physics.OverlapSphere(new Vector3(pos.x, 0.5f, z), 0.01f);
+            Collider[] intersecting = Physics.OverlapSphere(new Vector3(pos.x, pos.y, z), 0.01f);
             if (intersecting.Length == 0)
             {
-                moves.Add(new Vector3(pos.x, 0, z));
+                moves.Add(new Vector3(pos.x, pos.y, z));
             }
             else
             {
@@ -72,10 +72,50 @@ public class Rook : MonoBehaviour
         }
         for (var z = pos.z + 1; z <= 7; z++)
         {
-            Collider[] intersecting = Physics.OverlapSphere(new Vector3(pos.x, 0.5f, z), 0.01f);
+            Collider[] intersecting = Physics.OverlapSphere(new Vector3(pos.x, pos.y, z), 0.01f);
             if (intersecting.Length == 0)
             {
-                moves.Add(new Vector3(pos.x, 0, z));
+                moves.Add(new Vector3(pos.x, pos.y, z));
+            }
+            else
+            {
+                if (intersecting[0].gameObject.layer != rook.layer)
+                {
+                    attackMoves.Add(intersecting[0].gameObject);
+                    break;
+                }
+                else
+                {
+                    break;
+                }
+            }
+        }
+        for (var y = pos.y + 1.75f; y <= 12.25f; y+=1.75f)
+        {
+            Collider[] intersecting = Physics.OverlapSphere(new Vector3(pos.x, y, pos.z), 0.01f);
+            if (intersecting.Length == 0)
+            {
+                moves.Add(new Vector3(pos.x, y, pos.z));
+            }
+            else
+            {
+                if (intersecting[0].gameObject.layer != rook.layer)
+                {
+                    attackMoves.Add(intersecting[0].gameObject);
+                    break;
+                }
+                else
+                {
+                    break;
+                }
+            }
+        }
+        for (var y = pos.y - 1.75f; y >= 0; y -= 1.75f)
+        {
+            Collider[] intersecting = Physics.OverlapSphere(new Vector3(pos.x, y, pos.z), 0.01f);
+            if (intersecting.Length == 0)
+            {
+                moves.Add(new Vector3(pos.x, y, pos.z));
             }
             else
             {
