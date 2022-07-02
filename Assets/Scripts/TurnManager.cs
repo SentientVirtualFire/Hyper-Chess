@@ -193,6 +193,23 @@ public class TurnManager : MonoBehaviour
         {
             Destroy(item);
         }
+        foreach (var item in emptyCubes)
+        {
+            Destroy(item);
+        }
+        for (int x = 0; x <= 7; x++)
+        {
+            for (float y = 0; y <= 12.25f; y += 1.75f)
+            {
+                for (int z = 0; z <= 7; z++)
+                {
+                    if (Physics.OverlapSphere(new Vector3(x, y + 0.5f, z), 0.01f).Length == 0)
+                    {
+                        emptyCubes.Add(Instantiate(emptyTarget, new Vector3(x, y + 0.5f, z), Quaternion.identity));
+                    }
+                }
+            }
+        }
         if (turnWhite)
         {
             turnWhite = false;

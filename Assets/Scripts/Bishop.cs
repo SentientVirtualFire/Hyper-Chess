@@ -11,10 +11,10 @@ public class Bishop : MonoBehaviour
         List<GameObject> attackMoves = new List<GameObject>();
         for (var (x, z) = (pos.x + 1, pos.z + 1); x <= 7 && z <= 7; x++, z++)
         {
-            Collider[] intersecting = Physics.OverlapSphere(new Vector3(x, 0.5f, z), 0.01f);
+            Collider[] intersecting = Physics.OverlapSphere(new Vector3(x, pos.y, z), 0.01f);
             if (intersecting.Length == 0)
             {
-                moves.Add(new Vector3(x, 0, z));
+                moves.Add(new Vector3(x, pos.y, z));
             }
             else
             {
@@ -31,10 +31,10 @@ public class Bishop : MonoBehaviour
         }
         for (var (x, z) = (pos.x + 1, pos.z - 1); x <= 7 && z >= 0; x++, z--)
         {
-            Collider[] intersecting = Physics.OverlapSphere(new Vector3(x, 0.5f, z), 0.01f);
+            Collider[] intersecting = Physics.OverlapSphere(new Vector3(x, pos.y, z), 0.01f);
             if (intersecting.Length == 0)
             {
-                moves.Add(new Vector3(x, 0, z));
+                moves.Add(new Vector3(x, pos.y, z));
             }
             else
             {
@@ -51,10 +51,10 @@ public class Bishop : MonoBehaviour
         }
         for (var (x, z) = (pos.x - 1, pos.z - 1); x >= 0 && z >= 0; x--, z--)
         {
-            Collider[] intersecting = Physics.OverlapSphere(new Vector3(x, 0.5f, z), 0.01f);
+            Collider[] intersecting = Physics.OverlapSphere(new Vector3(x, pos.y, z), 0.01f);
             if (intersecting.Length == 0)
             {
-                moves.Add(new Vector3(x, 0, z));
+                moves.Add(new Vector3(x, pos.y, z));
             }
             else
             {
@@ -71,10 +71,170 @@ public class Bishop : MonoBehaviour
         }
         for (var (x, z) = (pos.x - 1, pos.z + 1); x >= 0 && z <= 7; x--, z++)
         {
-            Collider[] intersecting = Physics.OverlapSphere(new Vector3(x, 0.5f, z), 0.01f);
+            Collider[] intersecting = Physics.OverlapSphere(new Vector3(x, pos.y, z), 0.01f);
             if (intersecting.Length == 0)
             {
-                moves.Add(new Vector3(x, 0, z));
+                moves.Add(new Vector3(x, pos.y, z));
+            }
+            else
+            {
+                if (intersecting[0].gameObject.layer != bishop.layer)
+                {
+                    attackMoves.Add(intersecting[0].gameObject);
+                    break;
+                }
+                else
+                {
+                    break;
+                }
+            }
+        }
+        for (var (y, z) = (pos.y - 1.75f, pos.z + 1); y >= 0 && z <= 7; y-=1.75f, z++)
+        {
+            Collider[] intersecting = Physics.OverlapSphere(new Vector3(pos.x, y, z), 0.01f);
+            if (intersecting.Length == 0)
+            {
+                moves.Add(new Vector3(pos.x, y, z));
+            }
+            else
+            {
+                if (intersecting[0].gameObject.layer != bishop.layer)
+                {
+                    attackMoves.Add(intersecting[0].gameObject);
+                    break;
+                }
+                else
+                {
+                    break;
+                }
+            }
+        }
+        for (var (y, z) = (pos.y - 1.75f, pos.z - 1); y >= 0 && z >= 0; y-=1.75f, z--)
+        {
+            Collider[] intersecting = Physics.OverlapSphere(new Vector3(pos.x, y, z), 0.01f);
+            if (intersecting.Length == 0)
+            {
+                moves.Add(new Vector3(pos.x, y, z));
+            }
+            else
+            {
+                if (intersecting[0].gameObject.layer != bishop.layer)
+                {
+                    attackMoves.Add(intersecting[0].gameObject);
+                    break;
+                }
+                else
+                {
+                    break;
+                }
+            }
+        }
+        for (var (y, x) = (pos.y - 1.75f, pos.x - 1); y >= 0 && x >= 0; y -= 1.75f, x--)
+        {
+            Collider[] intersecting = Physics.OverlapSphere(new Vector3(x, y, pos.z), 0.01f);
+            if (intersecting.Length == 0)
+            {
+                moves.Add(new Vector3(x, y, pos.z));
+            }
+            else
+            {
+                if (intersecting[0].gameObject.layer != bishop.layer)
+                {
+                    attackMoves.Add(intersecting[0].gameObject);
+                    break;
+                }
+                else
+                {
+                    break;
+                }
+            }
+        }
+        for (var (y, x) = (pos.y - 1.75f, pos.x + 1); y >= 0 && x <= 7; y -= 1.75f, x++)
+        {
+            Collider[] intersecting = Physics.OverlapSphere(new Vector3(x, y, pos.z), 0.01f);
+            if (intersecting.Length == 0)
+            {
+                moves.Add(new Vector3(x, y, pos.z));
+            }
+            else
+            {
+                if (intersecting[0].gameObject.layer != bishop.layer)
+                {
+                    attackMoves.Add(intersecting[0].gameObject);
+                    break;
+                }
+                else
+                {
+                    break;
+                }
+            }
+        }
+        for (var (y, x) = (pos.y + 1.75f, pos.x + 1); y <= 12.25 && x <= 7; y += 1.75f, x++)
+        {
+            Collider[] intersecting = Physics.OverlapSphere(new Vector3(x, y, pos.z), 0.01f);
+            if (intersecting.Length == 0)
+            {
+                moves.Add(new Vector3(x, y, pos.z));
+            }
+            else
+            {
+                if (intersecting[0].gameObject.layer != bishop.layer)
+                {
+                    attackMoves.Add(intersecting[0].gameObject);
+                    break;
+                }
+                else
+                {
+                    break;
+                }
+            }
+        }
+        for (var (y, x) = (pos.y + 1.75f, pos.x - 1); y <= 12.25 && x >= 0; y += 1.75f, x--)
+        {
+            Collider[] intersecting = Physics.OverlapSphere(new Vector3(x, y, pos.z), 0.01f);
+            if (intersecting.Length == 0)
+            {
+                moves.Add(new Vector3(x, y, pos.z));
+            }
+            else
+            {
+                if (intersecting[0].gameObject.layer != bishop.layer)
+                {
+                    attackMoves.Add(intersecting[0].gameObject);
+                    break;
+                }
+                else
+                {
+                    break;
+                }
+            }
+        }
+        for (var (y, z) = (pos.y + 1.75f, pos.z + 1); y <= 12.25 && z <= 7; y += 1.75f, z++)
+        {
+            Collider[] intersecting = Physics.OverlapSphere(new Vector3(pos.x, y, z), 0.01f);
+            if (intersecting.Length == 0)
+            {
+                moves.Add(new Vector3(pos.x, y, z));
+            }
+            else
+            {
+                if (intersecting[0].gameObject.layer != bishop.layer)
+                {
+                    attackMoves.Add(intersecting[0].gameObject);
+                    break;
+                }
+                else
+                {
+                    break;
+                }
+            }
+        }
+        for (var (y, z) = (pos.y + 1.75f, pos.z - 1); y <= 12.25 && z >= 0; y += 1.75f, z--)
+        {
+            Collider[] intersecting = Physics.OverlapSphere(new Vector3(pos.x, y, z), 0.01f);
+            if (intersecting.Length == 0)
+            {
+                moves.Add(new Vector3(pos.x, y, z));
             }
             else
             {

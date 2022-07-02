@@ -44,11 +44,11 @@ public class CameraControl : MonoBehaviour
             }
             if(Input.GetKey("space"))
             {
-                transform.position = transform.position + transform.up * Time.deltaTime * speed;
+                transform.position = transform.position + Vector3.up * Time.deltaTime * speed;
             }
             if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
             {
-                transform.position = transform.position - transform.up * Time.deltaTime * speed;
+                transform.position = transform.position - Vector3.up * Time.deltaTime * speed;
             }
             if (Input.GetMouseButton(2))
             {
@@ -56,7 +56,9 @@ public class CameraControl : MonoBehaviour
                 transform.Translate(NewPosition);
             }
             NewPosition = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * Time.deltaTime * speed;
+            float yPos = transform.position.y;
             transform.Translate(NewPosition);
+            transform.position = new Vector3(transform.position.x,yPos,transform.position.z);
         }
         else
         {

@@ -1760,7 +1760,7 @@ MonoBehaviour:
   do3D: 1
   do4D: 0
   do5D: 0
-  unitSpeed: 1
+  duration: 1
   turnNum: 1
 --- !u!4 &1483222914
 Transform:
