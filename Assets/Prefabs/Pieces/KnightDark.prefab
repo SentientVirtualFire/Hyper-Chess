@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 4071798522976028}
   - component: {fileID: 33143280845688428}
   - component: {fileID: 23939737083662754}
-  - component: {fileID: -3280357344039971938}
   - component: {fileID: 3347821637411384137}
   - component: {fileID: -4171158127633051468}
+  - component: {fileID: 1230463970777622599}
   m_Layer: 7
   m_Name: KnightDark
   m_TagString: Knight
@@ -86,19 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &-3280357344039971938
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1179637952412708}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.895717, y: 1.25607, z: 0.83156425}
-  m_Center: {x: 0, y: 0.628035, z: 0.027925223}
 --- !u!199 &3347821637411384137
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -4945,3 +4932,17 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!64 &1230463970777622599
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179637952412708}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 3d375d4a1907b3f4098bb64446492fed, type: 3}

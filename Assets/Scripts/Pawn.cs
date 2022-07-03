@@ -140,13 +140,13 @@ public class Pawn : MonoBehaviour
         {
             if (pos.z != 7)
             {
-                Collider[] intersecting1 = Physics.OverlapSphere(new Vector3(pos.x + 1, 0.5f, pos.z + 1), 0.01f);
+                Collider[] intersecting1 = Physics.OverlapSphere(new Vector3(pos.x + 1, pos.y, pos.z + 1), 0.01f);
                 if (intersecting1.Length > 0)
                 {
                     if (intersecting1[0].gameObject.layer != pawn.layer)
                         attackMoves.Add(intersecting1[0].gameObject);
                 }
-                Collider[] intersecting2 = Physics.OverlapSphere(new Vector3(pos.x - 1, 0.5f, pos.z + 1), 0.01f);
+                Collider[] intersecting2 = Physics.OverlapSphere(new Vector3(pos.x - 1, pos.y, pos.z + 1), 0.01f);
                 if (intersecting2.Length > 0)
                 {
                     if (intersecting2[0].gameObject.layer != pawn.layer)
@@ -158,13 +158,13 @@ public class Pawn : MonoBehaviour
         {
             if (pos.z != 0)
             {
-                Collider[] intersecting1 = Physics.OverlapSphere(new Vector3(pos.x + 1, 0.5f, pos.z - 1), 0.01f);
+                Collider[] intersecting1 = Physics.OverlapSphere(new Vector3(pos.x + 1, pos.y, pos.z - 1), 0.01f);
                 if (intersecting1.Length > 0)
                 {
                     if (intersecting1[0].gameObject.layer != pawn.layer)
                         attackMoves.Add(intersecting1[0].gameObject);
                 }
-                Collider[] intersecting2 = Physics.OverlapSphere(new Vector3(pos.x - 1, 0.5f, pos.z - 1), 0.01f);
+                Collider[] intersecting2 = Physics.OverlapSphere(new Vector3(pos.x - 1, pos.y, pos.z - 1), 0.01f);
                 if (intersecting2.Length > 0)
                 {
                     if (intersecting2[0].gameObject.layer != pawn.layer)

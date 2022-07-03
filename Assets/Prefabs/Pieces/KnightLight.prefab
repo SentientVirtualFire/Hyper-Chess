@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 4967576429096158}
   - component: {fileID: 33961714295525734}
   - component: {fileID: 23756955892116760}
-  - component: {fileID: 18627739586177023}
   - component: {fileID: 8009561568688177565}
   - component: {fileID: 5181795297987433832}
+  - component: {fileID: 4782127941399068224}
   m_Layer: 6
   m_Name: KnightLight
   m_TagString: Knight
@@ -86,19 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &18627739586177023
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1992623236052302}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.895717, y: 1.25607, z: 0.83156425}
-  m_Center: {x: 0, y: 0.628035, z: 0.027925223}
 --- !u!199 &8009561568688177565
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -4945,3 +4932,17 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!64 &4782127941399068224
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992623236052302}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 3d375d4a1907b3f4098bb64446492fed, type: 3}

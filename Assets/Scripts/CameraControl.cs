@@ -5,18 +5,17 @@ using UnityEngine;
 public class CameraControl : MonoBehaviour
 {
     public TurnManager turnManager;
+    [Range(0,100)]
     public float speed;
     public Transform whitePOV;
     public Transform blackPOV;
-    public float speedX;
-    public float speedY;
+    [Range(0,15)]
     public float sensitivityX = 2F;
+    [Range(0, 15)]
     public float sensitivityY = 2F;
-    public float minimumX = -360F;
-    public float maximumX = 360F;
-    public float minimumY = -90F;
-    public float maximumY = 90F;
     public int maxDist;
+    float minimumY = -90F;
+    float maximumY = 90F;
     float rotationY;
     Vector3 NewPosition;
     void Start()

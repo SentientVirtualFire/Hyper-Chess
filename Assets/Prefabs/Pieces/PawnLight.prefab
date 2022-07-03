@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2374044118775863863}
   - component: {fileID: 33106061487518736}
   - component: {fileID: 23160403841118764}
-  - component: {fileID: -6287655309928228120}
   - component: {fileID: -7111139438466046590}
   - component: {fileID: 1951456874505302976}
+  - component: {fileID: -2184007581695561711}
   m_Layer: 6
   m_Name: PawnLight
   m_TagString: Pawn
@@ -91,19 +91,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &-6287655309928228120
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006356879557798}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.75590956, y: 1.2133604, z: 0.654637}
-  m_Center: {x: 0, y: 0.6066802, z: 0}
 --- !u!198 &-7111139438466046590
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -4950,3 +4937,17 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!64 &-2184007581695561711
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006356879557798}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 1ae3b6cad3254b848942cea678f244c7, type: 3}

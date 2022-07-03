@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEditor;
 
 public class TurnManager : MonoBehaviour
 {
@@ -16,38 +17,25 @@ public class TurnManager : MonoBehaviour
     public Camera mainCamera;
     public GameObject moveTarget;
     public GameObject attackTarget;
-    public GameObject emptyTarget;
+    public GameObject emptyTargetLight;
+    public GameObject emptyTargetDark;
+    public CheckChecker check;
     public bool turnWhite = true;
     public bool do3D;
-    public bool do4D;
-    public bool do5D;
     public float duration;
     public int turnNum = 0;
-
 
     GameObject selected;
     List<GameObject> moveCubes = new List<GameObject>();
     List<GameObject> attackCubes = new List<GameObject>();
     List<GameObject> emptyCubes = new List<GameObject>();
-
+    bool inCheck;
     public List<Moves> allMoves = new List<Moves>();
     string[] allTags = new string[6] { "Pawn", "Rook", "Knight", "Bishop", "Queen", "King" };
 
     void Start()
     {
-        for (int x = 0; x <= 7; x++)
-        {
-            for (float y = 0; y <= 12.25f; y+=1.75f)
-            {
-                for (int z = 0; z <= 7; z++)
-                {
-                    if(Physics.OverlapSphere(new Vector3(x, y + 0.5f, z), 0.01f).Length == 0)
-                    { 
-                        emptyCubes.Add(Instantiate(emptyTarget, new Vector3(x, y+0.5f, z), Quaternion.identity));
-                    }
-                }
-            }
-        }
+
     }
     void Update()
     {
@@ -84,17 +72,42 @@ public class TurnManager : MonoBehaviour
                 {
                     allMoves = moveChecker(hit.transform.gameObject);
                     selected = hit.transform.gameObject;
-                    Vector3 offset = new Vector3(0,0.5f,0);
-                    foreach(var unit in allMoves)
+                    Vector3 offset = new Vector3(0, 0.5f, 0);
+                    if (check.inCheck)
+                    {
+                        allMoves = new List<Moves>();
+                        foreach (var i in check.checkMoves)
+                        {
+                            if (i.piece == selected)
+                            {
+                                allMoves.Add(i);
+                            }
+                        }
+                        foreach (var unit in check.checkMoves)
+                        {
+                            foreach (var pos in unit.positions)
+                            {
+                                GameObject cube = Instantiate(moveTarget, pos + offset, Quaternion.identity);
+                                moveCubes.Add(cube);
+                            }
+                            foreach (var piece in unit.attacks)
+                            {
+                                GameObject cube = Instantiate(attackTarget, piece.transform.position + offset, Quaternion.identity);
+                                cube.GetComponent<Target>().target = piece;
+                                attackCubes.Add(cube);
+                            }
+                        }
+                    }
+                    foreach (var unit in allMoves)
                     {
                         foreach (var pos in unit.positions)
                         {
-                            GameObject cube = Instantiate(moveTarget, pos+offset, Quaternion.identity);
+                            GameObject cube = Instantiate(moveTarget, pos + offset, Quaternion.identity);
                             moveCubes.Add(cube);
                         }
                         foreach (var piece in unit.attacks)
                         {
-                            GameObject cube = Instantiate(attackTarget, piece.transform.position+offset, Quaternion.identity);
+                            GameObject cube = Instantiate(attackTarget, piece.transform.position + offset, Quaternion.identity);
                             cube.GetComponent<Target>().target = piece;
                             attackCubes.Add(cube);
                         }
@@ -120,12 +133,12 @@ public class TurnManager : MonoBehaviour
             {
                 foreach (Transform grandChild in child.transform)
                 {
-                    moves.Concat(moveChecker(grandChild.gameObject, doKing));
+                    moves.AddRange(moveChecker(grandChild.gameObject, doKing));
                 }
             }
             else
             {
-                moves.Concat(moveChecker(child.gameObject, doKing));
+                moves.AddRange(moveChecker(child.gameObject, doKing));
             }
         }
         return moves;
@@ -193,23 +206,6 @@ public class TurnManager : MonoBehaviour
         {
             Destroy(item);
         }
-        foreach (var item in emptyCubes)
-        {
-            Destroy(item);
-        }
-        for (int x = 0; x <= 7; x++)
-        {
-            for (float y = 0; y <= 12.25f; y += 1.75f)
-            {
-                for (int z = 0; z <= 7; z++)
-                {
-                    if (Physics.OverlapSphere(new Vector3(x, y + 0.5f, z), 0.01f).Length == 0)
-                    {
-                        emptyCubes.Add(Instantiate(emptyTarget, new Vector3(x, y + 0.5f, z), Quaternion.identity));
-                    }
-                }
-            }
-        }
         if (turnWhite)
         {
             turnWhite = false;
@@ -218,11 +214,11 @@ public class TurnManager : MonoBehaviour
         {
             turnWhite = true;
         }
-        
         turnNum++;
     }
     IEnumerator MovePiece(GameObject mover, GameObject movee)
     {
+        check.enabled = false;
         float time = 0;
         Vector3 targetPos = movee.transform.position - new Vector3(0,0.5f,0);
         while (time < duration)
@@ -234,6 +230,7 @@ public class TurnManager : MonoBehaviour
             yield return null;
         }
         mover.transform.position = targetPos;
+        check.enabled = true;
     }
 }
 public class Moves
@@ -241,5 +238,4 @@ public class Moves
     public GameObject piece;
     public List<GameObject> attacks;
     public List<Vector3> positions = new List<Vector3>();
-    public int turn;
 }

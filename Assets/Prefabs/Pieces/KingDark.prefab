@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 4200693306526636}
   - component: {fileID: 33624409683771760}
   - component: {fileID: 23106028074910512}
-  - component: {fileID: -1485821723651950052}
   - component: {fileID: 2145262386223792873}
   - component: {fileID: 2856959657006790895}
+  - component: {fileID: -1169130765753850335}
   m_Layer: 7
   m_Name: KingDark
   m_TagString: King
@@ -86,19 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &-1485821723651950052
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1810274083847610}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.8763499, y: 1.7193428, z: 0.7589414}
-  m_Center: {x: 0, y: 0.8596714, z: 0}
 --- !u!199 &2145262386223792873
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -4945,3 +4932,17 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!64 &-1169130765753850335
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810274083847610}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 0d4dc18442ed9d14698239a5a964f27f, type: 3}
