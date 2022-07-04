@@ -29,7 +29,6 @@ public class TurnManager : MonoBehaviour
     List<GameObject> moveCubes = new List<GameObject>();
     List<GameObject> attackCubes = new List<GameObject>();
     List<GameObject> emptyCubes = new List<GameObject>();
-    bool inCheck;
     public List<Moves> allMoves = new List<Moves>();
     string[] allTags = new string[6] { "Pawn", "Rook", "Knight", "Bishop", "Queen", "King" };
 
@@ -81,20 +80,6 @@ public class TurnManager : MonoBehaviour
                             if (i.piece == selected)
                             {
                                 allMoves.Add(i);
-                            }
-                        }
-                        foreach (var unit in check.checkMoves)
-                        {
-                            foreach (var pos in unit.positions)
-                            {
-                                GameObject cube = Instantiate(moveTarget, pos + offset, Quaternion.identity);
-                                moveCubes.Add(cube);
-                            }
-                            foreach (var piece in unit.attacks)
-                            {
-                                GameObject cube = Instantiate(attackTarget, piece.transform.position + offset, Quaternion.identity);
-                                cube.GetComponent<Target>().target = piece;
-                                attackCubes.Add(cube);
                             }
                         }
                     }

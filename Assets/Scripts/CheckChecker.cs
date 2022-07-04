@@ -28,6 +28,10 @@ public class CheckChecker : MonoBehaviour
                     inCheck = true;
                     checkMoves = FindSolutions(blacks);
                 }
+                else
+                {
+                    inCheck = false;
+                }
             }
             else
             {
@@ -35,6 +39,10 @@ public class CheckChecker : MonoBehaviour
                 {
                     inCheck = true;
                     checkMoves = FindSolutions(whites);
+                }
+                else
+                {
+                    inCheck = false;
                 }
             }
             prevTurn = turnManager.turnWhite;
@@ -80,22 +88,26 @@ public class CheckChecker : MonoBehaviour
         {
             List<Vector3> moves = new List<Vector3>();
             List<GameObject> attackMoves = new List<GameObject>();
+            Vector3 origin = i.piece.transform.position;
             foreach (var j in i.attacks)
             {
-                defender.transform.position = j.transform.position;
+                i.piece.transform.position = j.transform.position;
+                j.SetActive(false);
                 if(!CheckCheck(offender))
                 {
                     attackMoves.Add(j);
                 }
+                j.SetActive(true);
             }
             foreach (var j in i.positions)
             {
-                defender.transform.position = j;
+                i.piece.transform.position = j;
                 if (!CheckCheck(offender))
                 {
                     moves.Add(j);
                 }
             }
+            i.piece.transform.position = origin;
             Moves unitMoves = new Moves();
             unitMoves.piece = i.piece;
             unitMoves.positions = moves;
