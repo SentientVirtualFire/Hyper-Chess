@@ -14,8 +14,8 @@ public class King : MonoBehaviour
         List<GameObject> attackMoves = new List<GameObject>();
         foreach (var i in offsets)
         {
-            Vector3 newPos= king.transform.position + new Vector3(i.Item1, i.Item2 * 1.75f, i.Item3);
-            if (newPos.x >= 0 && newPos.x <=7 && newPos.z >= 0 && newPos.z <= 7 && newPos.y >= 0 && newPos.y <= 12.25f)
+            Vector3 newPos= king.transform.position + new Vector3(i.Item1, i.Item2 * 2, i.Item3);
+            if (newPos.x >= 0 && newPos.x <=7 && newPos.z >= 0 && newPos.z <= 7 && newPos.y >= 0 && newPos.y <= 14)
             {
                 Collider[] intersecting = Physics.OverlapSphere(newPos, 0.01f);
                 if (intersecting.Length > 0)

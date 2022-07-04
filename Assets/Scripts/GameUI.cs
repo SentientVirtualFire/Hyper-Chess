@@ -8,7 +8,7 @@ public class GameUI : MonoBehaviour
 {
     public TurnManager turnManager;
     public TextMeshProUGUI turn;
-    public GameObject check;
+    public TextMeshProUGUI check;
     public RectTransform background;
     bool prevTurn = true;
     void Start()
@@ -32,15 +32,22 @@ public class GameUI : MonoBehaviour
         }
         if (turnManager.check.inCheck)
         {
-            check.SetActive(true);
-            background.anchoredPosition = new Vector2(190,80);
-            background.sizeDelta = new Vector2(400, 170);
+            check.enabled = true;
+            if(turnManager.turnWhite)
+            {
+                check.text = "IN CHECK: WHITE";
+            }
+            {
+                check.text = "IN CHECK: BLACK";
+            }/*
+            background.anchoredPosition = new Vector2(250,80);
+            background.sizeDelta = new Vector2(525, 170);*/
         }
         else
         {
-            check.SetActive(false);
-            background.anchoredPosition = new Vector2(190, 40);
-            background.sizeDelta = new Vector2(400, 85);
+            check.enabled = false;/*
+            background.anchoredPosition = new Vector2(250, 40);
+            background.sizeDelta = new Vector2(525, 85);*/
         }
     }
 }

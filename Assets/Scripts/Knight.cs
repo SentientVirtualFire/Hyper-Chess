@@ -12,8 +12,8 @@ public class Knight : MonoBehaviour
         List<GameObject> attackMoves = new List<GameObject>();
         foreach (var i in offsets)
         {
-            Vector3 newPos = pos + new Vector3(i.Item1, i.Item2 * 1.75f, i.Item3);
-            if (newPos.x <= 7 && newPos.x >= 0 && newPos.z <= 7 && newPos.z >= 0 && newPos.y <= 12.25 && newPos.y >= 0)
+            Vector3 newPos = pos + new Vector3(i.Item1, i.Item2 * 2, i.Item3);
+            if (newPos.x <= 7 && newPos.x >= 0 && newPos.z <= 7 && newPos.z >= 0 && newPos.y <= 14 && newPos.y >= 0)
             {
                 Collider[] intersecting = Physics.OverlapSphere(newPos + new Vector3(0,0.5f,0), 0.01f);
                 if (intersecting.Length > 0)

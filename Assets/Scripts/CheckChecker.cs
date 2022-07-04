@@ -83,7 +83,6 @@ public class CheckChecker : MonoBehaviour
         {
             offender = blacks;
         }
-        Vector3 kingPos = defender.transform.position;
         foreach (var i in turnManager.allMovesFinder(attacked))
         {
             List<Vector3> moves = new List<Vector3>();
@@ -114,7 +113,6 @@ public class CheckChecker : MonoBehaviour
             unitMoves.attacks = attackMoves;
             allMoves.Add(unitMoves);
         }
-        defender.transform.position = kingPos;
         return allMoves;
     }
 }

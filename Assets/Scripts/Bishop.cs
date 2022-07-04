@@ -89,7 +89,7 @@ public class Bishop : MonoBehaviour
                 }
             }
         }
-        for (var (y, z) = (pos.y - 1.75f, pos.z + 1); y >= 0 && z <= 7; y-=1.75f, z++)
+        for (var (y, z) = (pos.y - 2, pos.z + 1); y >= 0 && z <= 7; y-=2, z++)
         {
             Collider[] intersecting = Physics.OverlapSphere(new Vector3(pos.x, y, z), 0.01f);
             if (intersecting.Length == 0)
@@ -109,7 +109,7 @@ public class Bishop : MonoBehaviour
                 }
             }
         }
-        for (var (y, z) = (pos.y - 1.75f, pos.z - 1); y >= 0 && z >= 0; y-=1.75f, z--)
+        for (var (y, z) = (pos.y - 2, pos.z - 1); y >= 0 && z >= 0; y-=2, z--)
         {
             Collider[] intersecting = Physics.OverlapSphere(new Vector3(pos.x, y, z), 0.01f);
             if (intersecting.Length == 0)
@@ -129,7 +129,7 @@ public class Bishop : MonoBehaviour
                 }
             }
         }
-        for (var (y, x) = (pos.y - 1.75f, pos.x - 1); y >= 0 && x >= 0; y -= 1.75f, x--)
+        for (var (y, x) = (pos.y - 2, pos.x - 1); y >= 0 && x >= 0; y -= 2, x--)
         {
             Collider[] intersecting = Physics.OverlapSphere(new Vector3(x, y, pos.z), 0.01f);
             if (intersecting.Length == 0)
@@ -149,7 +149,7 @@ public class Bishop : MonoBehaviour
                 }
             }
         }
-        for (var (y, x) = (pos.y - 1.75f, pos.x + 1); y >= 0 && x <= 7; y -= 1.75f, x++)
+        for (var (y, x) = (pos.y - 2, pos.x + 1); y >= 0 && x <= 7; y -= 2, x++)
         {
             Collider[] intersecting = Physics.OverlapSphere(new Vector3(x, y, pos.z), 0.01f);
             if (intersecting.Length == 0)
@@ -169,7 +169,7 @@ public class Bishop : MonoBehaviour
                 }
             }
         }
-        for (var (y, x) = (pos.y + 1.75f, pos.x + 1); y <= 12.25 && x <= 7; y += 1.75f, x++)
+        for (var (y, x) = (pos.y + 2, pos.x + 1); y <= 14 && x <= 7; y += 2, x++)
         {
             Collider[] intersecting = Physics.OverlapSphere(new Vector3(x, y, pos.z), 0.01f);
             if (intersecting.Length == 0)
@@ -189,7 +189,7 @@ public class Bishop : MonoBehaviour
                 }
             }
         }
-        for (var (y, x) = (pos.y + 1.75f, pos.x - 1); y <= 12.25 && x >= 0; y += 1.75f, x--)
+        for (var (y, x) = (pos.y + 2, pos.x - 1); y <= 14 && x >= 0; y += 2, x--)
         {
             Collider[] intersecting = Physics.OverlapSphere(new Vector3(x, y, pos.z), 0.01f);
             if (intersecting.Length == 0)
@@ -209,7 +209,7 @@ public class Bishop : MonoBehaviour
                 }
             }
         }
-        for (var (y, z) = (pos.y + 1.75f, pos.z + 1); y <= 12.25 && z <= 7; y += 1.75f, z++)
+        for (var (y, z) = (pos.y + 2, pos.z + 1); y <= 14 && z <= 7; y += 2, z++)
         {
             Collider[] intersecting = Physics.OverlapSphere(new Vector3(pos.x, y, z), 0.01f);
             if (intersecting.Length == 0)
@@ -229,7 +229,7 @@ public class Bishop : MonoBehaviour
                 }
             }
         }
-        for (var (y, z) = (pos.y + 1.75f, pos.z - 1); y <= 12.25 && z >= 0; y += 1.75f, z--)
+        for (var (y, z) = (pos.y + 2, pos.z - 1); y <= 14 && z >= 0; y += 2, z--)
         {
             Collider[] intersecting = Physics.OverlapSphere(new Vector3(pos.x, y, z), 0.01f);
             if (intersecting.Length == 0)

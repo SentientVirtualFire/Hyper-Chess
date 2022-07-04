@@ -90,7 +90,7 @@ public class Rook : MonoBehaviour
                 }
             }
         }
-        for (var y = pos.y + 1.75f; y <= 12.25f; y+=1.75f)
+        for (var y = pos.y + 2; y <= 14; y+=2)
         {
             Collider[] intersecting = Physics.OverlapSphere(new Vector3(pos.x, y, pos.z), 0.01f);
             if (intersecting.Length == 0)
@@ -110,7 +110,7 @@ public class Rook : MonoBehaviour
                 }
             }
         }
-        for (var y = pos.y - 1.75f; y >= 0; y -= 1.75f)
+        for (var y = pos.y - 2; y >= 0; y -= 2)
         {
             Collider[] intersecting = Physics.OverlapSphere(new Vector3(pos.x, y, pos.z), 0.01f);
             if (intersecting.Length == 0)
