@@ -17,18 +17,14 @@ public class TurnManager : MonoBehaviour
     public Camera mainCamera;
     public GameObject moveTarget;
     public GameObject attackTarget;
-    public GameObject emptyTargetLight;
-    public GameObject emptyTargetDark;
     public CheckChecker check;
     public bool turnWhite = true;
     public bool do3D;
     public float duration;
     public int turnNum = 0;
-
     GameObject selected;
     List<GameObject> moveCubes = new List<GameObject>();
     List<GameObject> attackCubes = new List<GameObject>();
-    List<GameObject> emptyCubes = new List<GameObject>();
     public List<Moves> allMoves = new List<Moves>();
     string[] allTags = new string[6] { "Pawn", "Rook", "Knight", "Bishop", "Queen", "King" };
 
@@ -69,18 +65,29 @@ public class TurnManager : MonoBehaviour
                 }
                 else if (allTags.Contains(hit.transform.tag) && selected == null)
                 {
-                    allMoves = moveChecker(hit.transform.gameObject);
                     selected = hit.transform.gameObject;
                     Vector3 offset = new Vector3(0, 0.5f, 0);
+                    allMoves = moveChecker(selected);
                     if (check.inCheck)
                     {
-                        allMoves = new List<Moves>();
-                        foreach (var i in check.checkMoves)
+                        allMoves = check.checkMoves;
+                    }
+                    else
+                    {
+                        allMoves = moveChecker(selected);
+                    }
+                    foreach (var unit in allMoves)
+                    {
+                        foreach (var pos in unit.positions)
                         {
-                            if (i.piece == selected)
-                            {
-                                allMoves.Add(i);
-                            }
+                            GameObject cube = Instantiate(moveTarget, pos + offset, Quaternion.identity);
+                            moveCubes.Add(cube);
+                        }
+                        foreach (var piece in unit.attacks)
+                        {
+                            GameObject cube = Instantiate(attackTarget, piece.transform.position + offset, Quaternion.identity);
+                            cube.GetComponent<Target>().target = piece;
+                            attackCubes.Add(cube);
                         }
                     }
                     foreach (var unit in allMoves)

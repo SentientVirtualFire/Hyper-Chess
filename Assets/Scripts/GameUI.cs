@@ -33,21 +33,13 @@ public class GameUI : MonoBehaviour
         if (turnManager.check.inCheck)
         {
             check.enabled = true;
-            if(turnManager.turnWhite)
-            {
-                check.text = "IN CHECK: WHITE";
-            }
-            {
-                check.text = "IN CHECK: BLACK";
-            }/*
-            background.anchoredPosition = new Vector2(250,80);
-            background.sizeDelta = new Vector2(525, 170);*/
+            check.gameObject.transform.parent.gameObject.SetActive(true);
+            check.text = $"IN CHECK: {turnManager.check.checkedTeam}";
         }
         else
         {
-            check.enabled = false;/*
-            background.anchoredPosition = new Vector2(250, 40);
-            background.sizeDelta = new Vector2(525, 85);*/
+            check.enabled = false;
+            check.gameObject.transform.parent.gameObject.SetActive(false);
         }
     }
 }

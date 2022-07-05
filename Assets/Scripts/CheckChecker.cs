@@ -7,8 +7,9 @@ public class CheckChecker : MonoBehaviour
     public GameObject BlackKing;
     public GameObject WhiteKing;
     public bool inCheck;
+    public string checkedTeam;
     public TurnManager turnManager;
-    public List<Moves> checkMoves;
+    public List<Moves> checkMoves = new List<Moves>();
     GameObject blacks;
     GameObject whites;
     bool prevTurn = true;
@@ -26,6 +27,7 @@ public class CheckChecker : MonoBehaviour
                 if (CheckCheck(whites))
                 {
                     inCheck = true;
+                    checkedTeam = "BLACK";
                     checkMoves = FindSolutions(blacks);
                 }
                 else
@@ -38,12 +40,17 @@ public class CheckChecker : MonoBehaviour
                 if (CheckCheck(blacks))
                 {
                     inCheck = true;
+                    checkedTeam = "WHITE";
                     checkMoves = FindSolutions(whites);
                 }
                 else
                 {
                     inCheck = false;
                 }
+            }
+            foreach(var i in checkMoves)
+            {
+                print(i.attacks.Count+i.positions.Count);
             }
             prevTurn = turnManager.turnWhite;
         }
