@@ -50,10 +50,6 @@ public class CheckChecker : MonoBehaviour
                     inCheck = false;
                 }
             }
-            foreach(var i in checkMoves)
-            {
-                print(i.attacks.Count+i.positions.Count);
-            }
             prevTurn = turnManager.turnWhite;
         }
     }
@@ -98,17 +94,13 @@ public class CheckChecker : MonoBehaviour
             List<Vector3> moves = new List<Vector3>();
             List<GameObject> attackMoves = new List<GameObject>();
             Vector3 origin = i.piece.transform.position;
-            foreach (var j in i.attacks)
+            if(i.attacks.Contains(attacker))
             {
-                if(j == attacker)
-                {
-                    MoveCount++;
-                    attackMoves.Add(j);
-                }
+                MoveCount++;
+                attackMoves.Add(attacker);
             }
             foreach (var j in i.positions)
             {
-                GameObject.CreatePrimitive(PrimitiveType.Cube).transform.position = j;
                 i.piece.transform.position = j;
                 if (!CheckCheck(offender))
                 {

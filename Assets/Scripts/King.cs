@@ -39,28 +39,16 @@ public class King : MonoBehaviour
         {
            foreach(var i in turnManager.allMovesFinder(turnManager.blacks, false))
            {
-                foreach (var j in i.attacks)
-                {
-                    moves.RemoveAll(move => move == j.transform.position);
-                }
-                foreach (var j in i.positions)
-                {
-                    moves.RemoveAll(move => move == j);
-                }
-            }
+                moves.RemoveAll(move => i.attackMoves.Contains(move));
+                moves.RemoveAll(move => i.positions.Contains(move));
+           }
         }
         else
         {
             foreach (var i in turnManager.allMovesFinder(turnManager.whites, false))
             {
-                foreach (var j in i.attacks)
-                {
-                    moves.RemoveAll(move => move == j.transform.position);
-                }
-                foreach (var j in i.positions)
-                {
-                    moves.RemoveAll(move => move == j);
-                }
+                moves.RemoveAll(move => i.attackMoves.Contains(move));
+                moves.RemoveAll(move => i.positions.Contains(move));
             }
         }
         Moves allMoves = new Moves();
