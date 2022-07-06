@@ -90,20 +90,6 @@ public class TurnManager : MonoBehaviour
                             attackCubes.Add(cube);
                         }
                     }
-                    foreach (var unit in allMoves)
-                    {
-                        foreach (var pos in unit.positions)
-                        {
-                            GameObject cube = Instantiate(moveTarget, pos + offset, Quaternion.identity);
-                            moveCubes.Add(cube);
-                        }
-                        foreach (var piece in unit.attacks)
-                        {
-                            GameObject cube = Instantiate(attackTarget, piece.transform.position + offset, Quaternion.identity);
-                            cube.GetComponent<Target>().target = piece;
-                            attackCubes.Add(cube);
-                        }
-                    }
                 }
                 else
                 {

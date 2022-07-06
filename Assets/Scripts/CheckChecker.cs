@@ -10,6 +10,8 @@ public class CheckChecker : MonoBehaviour
     public string checkedTeam;
     public TurnManager turnManager;
     public List<Moves> checkMoves = new List<Moves>();
+    public int MoveCount;
+    public GameObject attacker;
     GameObject blacks;
     GameObject whites;
     bool prevTurn = true;
@@ -63,6 +65,7 @@ public class CheckChecker : MonoBehaviour
             {
                 if (j.tag == "King")
                 {
+                    attacker = i.piece;
                     return true;
                 }
             }
@@ -97,19 +100,19 @@ public class CheckChecker : MonoBehaviour
             Vector3 origin = i.piece.transform.position;
             foreach (var j in i.attacks)
             {
-                i.piece.transform.position = j.transform.position;
-                j.SetActive(false);
-                if(!CheckCheck(offender))
+                if(j == attacker)
                 {
+                    MoveCount++;
                     attackMoves.Add(j);
                 }
-                j.SetActive(true);
             }
             foreach (var j in i.positions)
             {
+                GameObject.CreatePrimitive(PrimitiveType.Cube).transform.position = j;
                 i.piece.transform.position = j;
                 if (!CheckCheck(offender))
                 {
+                    MoveCount++;
                     moves.Add(j);
                 }
             }
