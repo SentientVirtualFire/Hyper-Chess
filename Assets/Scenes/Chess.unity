@@ -28783,14 +28783,8 @@ GameObject:
   - component: {fileID: 1483222914}
   - component: {fileID: 1483222913}
   - component: {fileID: 1483222921}
-  - component: {fileID: 1483222915}
-  - component: {fileID: 1483222916}
-  - component: {fileID: 1483222917}
-  - component: {fileID: 1483222918}
-  - component: {fileID: 1483222919}
-  - component: {fileID: 1483222920}
   m_Layer: 0
-  m_Name: Game Manager
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28808,12 +28802,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3da7d69b0ac73864883e07078b369762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pawn: {fileID: 1483222915}
-  rook: {fileID: 1483222916}
-  knight: {fileID: 1483222917}
-  bishop: {fileID: 1483222918}
-  queen: {fileID: 1483222919}
-  king: {fileID: 1483222920}
   whites: {fileID: 334307305}
   blacks: {fileID: 2066548051}
   mainCamera: {fileID: 1974944749}
@@ -28839,81 +28827,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1483222915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1483222912}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 918b64c659f44f64aa7270bd1654d02e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1483222916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1483222912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b7af98953555a44790540bfd21c45f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1483222917
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1483222912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81b8622d0e8e21d448eaaacb46d3172e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1483222918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1483222912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8977c26b0d2d7524b98c3230a55561f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1483222919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1483222912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6adca56ed9bb95d41ae1780f445305fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rook: {fileID: 1483222916}
-  bishop: {fileID: 1483222918}
---- !u!114 &1483222920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1483222912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9652c9a518d1ec9498e4467a71a6dd75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  turnManager: {fileID: 1483222913}
 --- !u!114 &1483222921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28931,6 +28844,7 @@ MonoBehaviour:
   inCheck: 0
   checkedTeam: 
   turnManager: {fileID: 1483222913}
+  MoveCount: 0
 --- !u!1 &1489660788
 GameObject:
   m_ObjectHideFlags: 0

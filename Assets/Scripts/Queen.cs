@@ -3,16 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-public class Queen : MonoBehaviour
+public class Queen : MonoBehaviour, IPiece
 {
-    public Rook rook;
-    public Bishop bishop;
-    public Moves pathFinder(GameObject queen)
+    public Moves PathFinder()
     {
-        Moves bishopPos = bishop.pathFinder(queen);
-        Moves rookPos = rook.pathFinder(queen);
+        Moves bishopPos = GetComponent<Bishop>().PathFinder();
+        Moves rookPos = GetComponent<Rook>().PathFinder();
         Moves allMoves = new Moves();
-        allMoves.piece = queen;
+        allMoves.piece = gameObject;
         allMoves.positions = bishopPos.positions.Concat(rookPos.positions).ToList();
         allMoves.attacks = bishopPos.attacks.Concat(rookPos.attacks).ToList();
         return allMoves;

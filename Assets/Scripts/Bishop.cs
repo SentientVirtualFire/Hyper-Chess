@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bishop : MonoBehaviour
+public class Bishop : MonoBehaviour, IPiece
 {
-    public Moves pathFinder(GameObject bishop)
+    public Moves PathFinder()
     {
-        Vector3 pos = bishop.transform.position;
+        Vector3 pos = gameObject.transform.position;
         List<Vector3> moves = new List<Vector3>();
         List<GameObject> attackMoves = new List<GameObject>();
         for (var (x, z) = (pos.x + 1, pos.z + 1); x <= 7 && z <= 7; x++, z++)
@@ -18,7 +18,7 @@ public class Bishop : MonoBehaviour
             }
             else
             {
-                if (intersecting[0].gameObject.layer != bishop.layer)
+                if (intersecting[0].gameObject.layer != gameObject.layer)
                 {
                     attackMoves.Add(intersecting[0].gameObject);
                     break;
@@ -38,7 +38,7 @@ public class Bishop : MonoBehaviour
             }
             else
             {
-                if (intersecting[0].gameObject.layer != bishop.layer)
+                if (intersecting[0].gameObject.layer != gameObject.layer)
                 {
                     attackMoves.Add(intersecting[0].gameObject);
                     break;
@@ -58,7 +58,7 @@ public class Bishop : MonoBehaviour
             }
             else
             {
-                if (intersecting[0].gameObject.layer != bishop.layer)
+                if (intersecting[0].gameObject.layer != gameObject.layer)
                 {
                     attackMoves.Add(intersecting[0].gameObject);
                     break;
@@ -78,7 +78,7 @@ public class Bishop : MonoBehaviour
             }
             else
             {
-                if (intersecting[0].gameObject.layer != bishop.layer)
+                if (intersecting[0].gameObject.layer != gameObject.layer)
                 {
                     attackMoves.Add(intersecting[0].gameObject);
                     break;
@@ -98,7 +98,7 @@ public class Bishop : MonoBehaviour
             }
             else
             {
-                if (intersecting[0].gameObject.layer != bishop.layer)
+                if (intersecting[0].gameObject.layer != gameObject.layer)
                 {
                     attackMoves.Add(intersecting[0].gameObject);
                     break;
@@ -118,7 +118,7 @@ public class Bishop : MonoBehaviour
             }
             else
             {
-                if (intersecting[0].gameObject.layer != bishop.layer)
+                if (intersecting[0].gameObject.layer != gameObject.layer)
                 {
                     attackMoves.Add(intersecting[0].gameObject);
                     break;
@@ -138,7 +138,7 @@ public class Bishop : MonoBehaviour
             }
             else
             {
-                if (intersecting[0].gameObject.layer != bishop.layer)
+                if (intersecting[0].gameObject.layer != gameObject.layer)
                 {
                     attackMoves.Add(intersecting[0].gameObject);
                     break;
@@ -158,7 +158,7 @@ public class Bishop : MonoBehaviour
             }
             else
             {
-                if (intersecting[0].gameObject.layer != bishop.layer)
+                if (intersecting[0].gameObject.layer != gameObject.layer)
                 {
                     attackMoves.Add(intersecting[0].gameObject);
                     break;
@@ -178,7 +178,7 @@ public class Bishop : MonoBehaviour
             }
             else
             {
-                if (intersecting[0].gameObject.layer != bishop.layer)
+                if (intersecting[0].gameObject.layer != gameObject.layer)
                 {
                     attackMoves.Add(intersecting[0].gameObject);
                     break;
@@ -198,7 +198,7 @@ public class Bishop : MonoBehaviour
             }
             else
             {
-                if (intersecting[0].gameObject.layer != bishop.layer)
+                if (intersecting[0].gameObject.layer != gameObject.layer)
                 {
                     attackMoves.Add(intersecting[0].gameObject);
                     break;
@@ -218,7 +218,7 @@ public class Bishop : MonoBehaviour
             }
             else
             {
-                if (intersecting[0].gameObject.layer != bishop.layer)
+                if (intersecting[0].gameObject.layer != gameObject.layer)
                 {
                     attackMoves.Add(intersecting[0].gameObject);
                     break;
@@ -238,7 +238,7 @@ public class Bishop : MonoBehaviour
             }
             else
             {
-                if (intersecting[0].gameObject.layer != bishop.layer)
+                if (intersecting[0].gameObject.layer != gameObject.layer)
                 {
                     attackMoves.Add(intersecting[0].gameObject);
                     break;
@@ -250,7 +250,7 @@ public class Bishop : MonoBehaviour
             }
         }
         Moves allMoves = new Moves();
-        allMoves.piece = bishop;
+        allMoves.piece = gameObject;
         allMoves.positions = moves;
         allMoves.attacks = attackMoves;
         return allMoves;

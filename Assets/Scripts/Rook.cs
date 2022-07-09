@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-public class Rook : MonoBehaviour
+public class Rook : MonoBehaviour, IPiece
 {
-    public Moves pathFinder(GameObject rook)
+    public Moves PathFinder()
     {
-        Vector3 pos = rook.transform.position;
+        Vector3 pos = gameObject.transform.position;
         List<Vector3> moves = new List<Vector3>();
         List<GameObject> attackMoves = new List<GameObject>();
         for (var x = pos.x - 1; x >= 0; x--)
@@ -19,7 +19,7 @@ public class Rook : MonoBehaviour
             }
             else
             {
-                if (intersecting[0].gameObject.layer != rook.layer)
+                if (intersecting[0].gameObject.layer != gameObject.layer)
                 {
                     attackMoves.Add(intersecting[0].gameObject);
                     break;
@@ -39,7 +39,7 @@ public class Rook : MonoBehaviour
             }
             else
             {
-                if (intersecting[0].gameObject.layer != rook.layer)
+                if (intersecting[0].gameObject.layer != gameObject.layer)
                 {
                     attackMoves.Add(intersecting[0].gameObject);
                     break;
@@ -59,7 +59,7 @@ public class Rook : MonoBehaviour
             }
             else
             {
-                if (intersecting[0].gameObject.layer != rook.layer)
+                if (intersecting[0].gameObject.layer != gameObject.layer)
                 {
                     attackMoves.Add(intersecting[0].gameObject);
                     break;
@@ -79,7 +79,7 @@ public class Rook : MonoBehaviour
             }
             else
             {
-                if (intersecting[0].gameObject.layer != rook.layer)
+                if (intersecting[0].gameObject.layer != gameObject.layer)
                 {
                     attackMoves.Add(intersecting[0].gameObject);
                     break;
@@ -99,7 +99,7 @@ public class Rook : MonoBehaviour
             }
             else
             {
-                if (intersecting[0].gameObject.layer != rook.layer)
+                if (intersecting[0].gameObject.layer != gameObject.layer)
                 {
                     attackMoves.Add(intersecting[0].gameObject);
                     break;
@@ -119,7 +119,7 @@ public class Rook : MonoBehaviour
             }
             else
             {
-                if (intersecting[0].gameObject.layer != rook.layer)
+                if (intersecting[0].gameObject.layer != gameObject.layer)
                 {
                     attackMoves.Add(intersecting[0].gameObject);
                     break;
@@ -131,7 +131,7 @@ public class Rook : MonoBehaviour
             }
         }
         Moves allMoves = new Moves();
-        allMoves.piece = rook;
+        allMoves.piece = gameObject;
         allMoves.positions = moves;
         allMoves.attacks = attackMoves;
         return allMoves;

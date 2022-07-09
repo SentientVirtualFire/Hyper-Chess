@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class CheckChecker : MonoBehaviour
@@ -11,7 +12,9 @@ public class CheckChecker : MonoBehaviour
     public TurnManager turnManager;
     public List<Moves> checkMoves = new List<Moves>();
     public int MoveCount;
-    public GameObject attacker;
+    GameObject attacker;
+    GameObject attacked;
+    GameObject offender;
     GameObject blacks;
     GameObject whites;
     bool prevTurn = true;
@@ -30,6 +33,8 @@ public class CheckChecker : MonoBehaviour
                 {
                     inCheck = true;
                     checkedTeam = "BLACK";
+                    attacked = BlackKing;
+                    offender = whites;
                     checkMoves = FindSolutions(blacks);
                 }
                 else
@@ -43,6 +48,8 @@ public class CheckChecker : MonoBehaviour
                 {
                     inCheck = true;
                     checkedTeam = "WHITE";
+                    attacked = WhiteKing;
+                    offender = blacks;
                     checkMoves = FindSolutions(whites);
                 }
                 else
@@ -55,7 +62,7 @@ public class CheckChecker : MonoBehaviour
     }
     bool CheckCheck(GameObject team)
     {
-        foreach (var i in turnManager.allMovesFinder(team))
+        foreach (var i in TurnManager.AllMovesFinder(team))
         {
             foreach (var j in i.attacks)
             {
@@ -68,28 +75,10 @@ public class CheckChecker : MonoBehaviour
         }
         return false;
     }
-    List<Moves> FindSolutions(GameObject attacked)
+    List<Moves> FindSolutions(GameObject defender)
     {
         List<Moves> allMoves = new List<Moves>();
-        GameObject defender;
-        GameObject offender;
-        if (attacked == whites)
-        {
-            defender = WhiteKing;
-        }
-        else
-        {
-            defender = BlackKing;
-        }
-        if (attacked == blacks)
-        {
-            offender = whites;
-        }
-        else
-        {
-            offender = blacks;
-        }
-        foreach (var i in turnManager.allMovesFinder(attacked))
+        foreach (var i in TurnManager.AllMovesFinder(defender))
         {
             List<Vector3> moves = new List<Vector3>();
             List<GameObject> attackMoves = new List<GameObject>();
@@ -99,16 +88,16 @@ public class CheckChecker : MonoBehaviour
                 MoveCount++;
                 attackMoves.Add(attacker);
             }
-            foreach (var j in i.positions)
+            foreach (var j in attacker.GetComponent<IPiece>().PathFinder().positions.Intersect(i.positions))
             {
                 i.piece.transform.position = j;
-                if (!CheckCheck(offender))
+                if ((attacker.GetComponent<IPiece>().PathFinder().attacks.Contains(attacked)))
                 {
                     MoveCount++;
                     moves.Add(j);
                 }
+                i.piece.transform.position = origin;
             }
-            i.piece.transform.position = origin;
             Moves unitMoves = new Moves();
             unitMoves.piece = i.piece;
             unitMoves.positions = moves;

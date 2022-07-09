@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -7111139438466046590}
   - component: {fileID: 1951456874505302976}
   - component: {fileID: -2184007581695561711}
+  - component: {fileID: -665547066480649933}
   m_Layer: 6
   m_Name: PawnLight
   m_TagString: Pawn
@@ -4951,3 +4952,15 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 1ae3b6cad3254b848942cea678f244c7, type: 3}
+--- !u!114 &-665547066480649933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006356879557798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 918b64c659f44f64aa7270bd1654d02e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

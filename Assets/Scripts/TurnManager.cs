@@ -6,12 +6,6 @@ using UnityEditor;
 
 public class TurnManager : MonoBehaviour
 {
-    public Pawn pawn;
-    public Rook rook;
-    public Knight knight;
-    public Bishop bishop;
-    public Queen queen;
-    public King king;
     public GameObject whites;
     public GameObject blacks;
     public Camera mainCamera;
@@ -58,7 +52,7 @@ public class TurnManager : MonoBehaviour
             layerMask = ~layerMask;
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
             {
-                if ((hit.transform.tag == "MoveTarget" || hit.transform.tag == "AttackTarget") && selected != null)
+                if ((hit.transform.CompareTag("MoveTarget") || hit.transform.CompareTag("AttackTarget")) && selected != null)
                 {
                     nextTurn(selected, hit.transform.gameObject);
                     selected = null;
@@ -67,7 +61,7 @@ public class TurnManager : MonoBehaviour
                 {
                     selected = hit.transform.gameObject;
                     Vector3 offset = new Vector3(0, 0.5f, 0);
-                    allMoves = moveChecker(selected);
+                    allMoves = selected.GetComponent<IPiece>().PathFinder();
                     if (check.inCheck)
                     {
                         List<Vector3> checkPositions = new List<Vector3>();
@@ -103,72 +97,44 @@ public class TurnManager : MonoBehaviour
             }
         }
     }
-    public List<Moves> allMovesFinder(GameObject team, bool doKing = true)
+    public static List<Moves> AllMovesFinder(GameObject team, bool doKing = true)
     {
         List<Moves> moves = new List<Moves>();
+        List<GameObject> allPieces = new List<GameObject>();
         foreach (Transform child in team.transform)
         {
             if (child.transform.childCount > 0)
             {
                 foreach (Transform grandChild in child.transform)
                 {
-                    moves.Add(moveChecker(grandChild.gameObject, doKing));
+                    allPieces.Add(grandChild.gameObject);
                 }
             }
             else
             {
-                moves.Add(moveChecker(child.gameObject, doKing));
+                allPieces.Add(child.gameObject);
             }
         }
-        return moves;
-    }
-    Moves moveChecker(GameObject unit, bool doKing = true)
-    {
-        Moves moves = new Moves();
-        if (unit.transform.tag == "Pawn")
+        foreach (var i in allPieces)
         {
-            Moves pieceMoves = new Moves();
-            if (doKing)
+            if (doKing && !i.gameObject.CompareTag("Pawn") && !i.gameObject.CompareTag("King"))
             {
-                pieceMoves = pawn.pathFinder(unit, do3D);
+                moves.Add(i.gameObject.GetComponent<IPiece>().PathFinder());
             }
             else
             {
-                pieceMoves = pawn.justAttackPaths(unit, do3D);
+                if (i.gameObject.CompareTag("Pawn"))
+                {
+                    moves.Add(i.gameObject.GetComponent<Pawn>().JustAttackPaths());
+                }
             }
-            moves = pieceMoves;
-        }
-        else if (unit.transform.tag == "Rook")
-        {
-            Moves pieceMoves = rook.pathFinder(unit);
-            moves = pieceMoves;
-        }
-        else if (unit.transform.tag == "Knight")
-        {
-            Moves pieceMoves = knight.pathFinder(unit);
-            moves = pieceMoves;
-        }
-        else if (unit.transform.tag == "Bishop")
-        {
-            Moves pieceMoves = bishop.pathFinder(unit);
-            moves = pieceMoves;
-        }
-        else if (unit.transform.tag == "Queen")
-        {
-            Moves pieceMoves = queen.pathFinder(unit);
-            moves = pieceMoves;
-        }
-        else if (unit.transform.tag == "King" && doKing)
-        {
-            Moves pieceMoves = king.pathFinder(unit);
-            moves = pieceMoves;
         }
         return moves;
     }
     void nextTurn(GameObject movedPiece, GameObject target)
     {
-        StartCoroutine(MovePiece(movedPiece,target));
-        if (target.transform.tag == "AttackTarget")
+        StartCoroutine(MovePiece(movedPiece,target.transform.position));
+        if (target.transform.CompareTag("AttackTarget"))
         {
             GameObject attacked = target.transform.gameObject.GetComponent<Target>().target;
             ParticleSystemRenderer renderer = attacked.GetComponent<ParticleSystemRenderer>(); 
@@ -195,11 +161,11 @@ public class TurnManager : MonoBehaviour
         }
         turnNum++;
     }
-    IEnumerator MovePiece(GameObject mover, GameObject movee)
+    public IEnumerator MovePiece(GameObject mover, Vector3 movee)
     {
         check.enabled = false;
         float time = 0;
-        Vector3 targetPos = movee.transform.position - new Vector3(0,0.5f,0);
+        Vector3 targetPos = movee - new Vector3(0,0.5f,0);
         while (time < duration)
         {
             float t = time / duration;
@@ -225,4 +191,8 @@ public class Moves
             attackMoves.Add(i.transform.position);
         }
     }
+}
+public interface IPiece
+{
+    Moves PathFinder();
 }
