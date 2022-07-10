@@ -56,10 +56,7 @@ public class King : MonoBehaviour, IPiece
                 moves.RemoveAll(move => i.positions.Contains(move));
             }
         }
-        Moves allMoves = new Moves();
-        allMoves.piece = gameObject;
-        allMoves.positions = moves;
-        allMoves.attacks = attackMoves;
+        Moves allMoves = new Moves() { piece = gameObject, positions = moves, attacks = attackMoves };
         return allMoves;
     }
 }

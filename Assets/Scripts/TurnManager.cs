@@ -12,6 +12,7 @@ public class TurnManager : MonoBehaviour
     public GameObject moveTarget;
     public GameObject attackTarget;
     public CheckChecker check;
+    public List<Board> boards = new List<Board>();
     public bool turnWhite = true;
     public bool do3D;
     public float duration;
@@ -20,70 +21,72 @@ public class TurnManager : MonoBehaviour
     List<GameObject> moveCubes = new List<GameObject>();
     List<GameObject> attackCubes = new List<GameObject>();
     public Moves allMoves = new Moves();
+    public List<GameObject> pieceRef = new List<GameObject>();
     string[] allTags = new string[6] { "Pawn", "Rook", "Knight", "Bishop", "Queen", "King" };
+    bool moving = false;
 
     void Start()
     {
-
+        boards.Add(new Board(this));
     }
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-            int layerMask;
-            if (turnWhite)
+        if(!moving)
+        { 
+            if (Input.GetMouseButtonDown(0))
             {
-                layerMask = 1 << 7;
-            }
-            else
-            {
-                layerMask = 1 << 6;
-            }
-            foreach (var item in moveCubes)
-            {
-                Destroy(item);
-            }
-            foreach (var item in attackCubes)
-            {
-                Destroy(item);
-            }
-            layerMask = ~layerMask;
-            if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
-            {
-                if ((hit.transform.CompareTag("MoveTarget") || hit.transform.CompareTag("AttackTarget")) && selected != null)
+                Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
+                int layerMask;
+                if (turnWhite)
                 {
-                    nextTurn(selected, hit.transform.gameObject);
-                    selected = null;
+                    layerMask = 1 << 7;
                 }
-                else if (allTags.Contains(hit.transform.tag) && selected == null)
+                else
                 {
-                    selected = hit.transform.gameObject;
-                    Vector3 offset = new Vector3(0, 0.5f, 0);
-                    allMoves = selected.GetComponent<IPiece>().PathFinder();
-                    if (check.inCheck)
+                    layerMask = 1 << 6;
+                }
+                foreach (var item in moveCubes)
+                {
+                    Destroy(item);
+                }
+                foreach (var item in attackCubes)
+                {
+                    Destroy(item);
+                }
+                layerMask = ~layerMask;
+                if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
+                {
+                    if ((hit.transform.CompareTag("MoveTarget") || hit.transform.CompareTag("AttackTarget")) && selected != null)
                     {
-                        List<Vector3> checkPositions = new List<Vector3>();
-                        List<GameObject> checkAttacks = new List<GameObject>();
-                        foreach (var i in check.checkMoves)
+                        nextTurn(selected, hit.transform.gameObject);
+                        selected = null;
+                    }
+                    else if (allTags.Contains(hit.transform.tag) && selected == null)
+                    {
+                        selected = hit.transform.gameObject;
+                        Vector3 offset = new Vector3(0, 0.5f, 0);
+                        allMoves = selected.GetComponent<IPiece>().PathFinder();
+                        if (check.inCheck && boards[turnNum-1].isCheck)
                         {
-                            checkAttacks.AddRange(i.attacks);
-                            checkPositions.AddRange(i.positions);
+                            LoadBoard(boards[turnNum - 1]);
+                            turnNum -= 1;
                         }
-                        allMoves.attacks.RemoveAll(move => !checkAttacks.Contains(move));
-                        allMoves.positions.RemoveAll(move => !checkPositions.Contains(move));
+                        foreach (var pos in allMoves.positions)
+                        {
+                            GameObject cube = Instantiate(moveTarget, pos + offset, Quaternion.identity);
+                            moveCubes.Add(cube);
+                        }
+                        foreach (var piece in allMoves.attacks)
+                        {
+                            GameObject cube = Instantiate(attackTarget, piece.transform.position + offset, Quaternion.identity);
+                            cube.GetComponent<Target>().target = piece;
+                            attackCubes.Add(cube);
+                        }
                     }
-                    foreach (var pos in allMoves.positions)
+                    else
                     {
-                        GameObject cube = Instantiate(moveTarget, pos + offset, Quaternion.identity);
-                        moveCubes.Add(cube);
-                    }
-                    foreach (var piece in allMoves.attacks)
-                    {
-                        GameObject cube = Instantiate(attackTarget, piece.transform.position + offset, Quaternion.identity);
-                        cube.GetComponent<Target>().target = piece;
-                        attackCubes.Add(cube);
+                        selected = null;
                     }
                 }
                 else
@@ -91,31 +94,17 @@ public class TurnManager : MonoBehaviour
                     selected = null;
                 }
             }
-            else
+            if (Input.GetKeyDown(KeyCode.K))
             {
-                selected = null;
+                LoadBoard(boards[turnNum - 1]);
+                turnNum -= 1;
             }
         }
     }
     public static List<Moves> AllMovesFinder(GameObject team, bool doKing = true)
     {
         List<Moves> moves = new List<Moves>();
-        List<GameObject> allPieces = new List<GameObject>();
-        foreach (Transform child in team.transform)
-        {
-            if (child.transform.childCount > 0)
-            {
-                foreach (Transform grandChild in child.transform)
-                {
-                    allPieces.Add(grandChild.gameObject);
-                }
-            }
-            else
-            {
-                allPieces.Add(child.gameObject);
-            }
-        }
-        foreach (var i in allPieces)
+        foreach (var i in GetAllPieces())
         {
             if (doKing && !i.gameObject.CompareTag("Pawn") && !i.gameObject.CompareTag("King"))
             {
@@ -163,6 +152,7 @@ public class TurnManager : MonoBehaviour
     }
     public IEnumerator MovePiece(GameObject mover, Vector3 movee)
     {
+        moving = true;
         check.enabled = false;
         float time = 0;
         Vector3 targetPos = movee - new Vector3(0,0.5f,0);
@@ -176,20 +166,35 @@ public class TurnManager : MonoBehaviour
         }
         mover.transform.position = targetPos;
         check.enabled = true;
+        moving = false;
+        boards.Add(new Board(this));
     }
-}
-public class Moves
-{
-    public GameObject piece;
-    public List<GameObject> attacks = new List<GameObject>();
-    public List<Vector3> attackMoves = new List<Vector3>();
-    public List<Vector3> positions = new List<Vector3>();
-    public Moves()
+    public void LoadBoard(Board board)
     {
-        foreach(var i in attacks)
+        foreach (var i in GetAllPieces())
         {
-            attackMoves.Add(i.transform.position);
+            Destroy(i);
         }
+        foreach (var piece in board.pieces)
+        {
+            foreach (var i in pieceRef)
+            {
+                if (i.CompareTag(piece.tag) && i.layer == piece.layer)
+                {
+                    Instantiate(i, piece.position, Quaternion.identity);
+                }
+            }
+        }
+    }
+    public static List<GameObject> GetAllPieces()
+    {
+        List<GameObject> allPieces = new List<GameObject>();
+        string[] allTags = new string[6] { "Pawn", "Rook", "Knight", "Bishop", "Queen", "King" };
+        foreach (var i in allTags)
+        {
+            allPieces.AddRange(GameObject.FindGameObjectsWithTag(i));
+        }
+        return allPieces;
     }
 }
 public interface IPiece

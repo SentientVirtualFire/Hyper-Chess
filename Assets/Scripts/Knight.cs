@@ -28,10 +28,7 @@ public class Knight : MonoBehaviour, IPiece
                 }
             }
         }
-        Moves allMoves = new Moves();
-        allMoves.piece = gameObject;
-        allMoves.positions = moves;
-        allMoves.attacks = attackMoves;
+        Moves allMoves = new Moves() { piece = gameObject, positions = moves, attacks = attackMoves };
         return allMoves;
     }
 }

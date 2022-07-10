@@ -127,10 +127,7 @@ public class Pawn : MonoBehaviour, IPiece
                     attackMoves.Add(intersecting4[0].gameObject);
             }
         }
-        Moves allMoves = new Moves();
-        allMoves.piece = gameObject;
-        allMoves.positions = moves;
-        allMoves.attacks = attackMoves;
+        Moves allMoves = new Moves() { piece = gameObject, positions = moves, attacks = attackMoves };
         return allMoves;
     }
     public Moves JustAttackPaths()
@@ -201,9 +198,7 @@ public class Pawn : MonoBehaviour, IPiece
                     attackMoves.Add(intersecting4[0].gameObject);
             }
         }
-        Moves allMoves = new Moves();
-        allMoves.piece = gameObject;
-        allMoves.attacks = attackMoves;
+        Moves allMoves = new Moves() { piece = gameObject, attacks = attackMoves };
         return allMoves;
     }
 }
