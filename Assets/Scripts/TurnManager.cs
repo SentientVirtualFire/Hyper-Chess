@@ -153,7 +153,6 @@ public class TurnManager : MonoBehaviour
     public IEnumerator MovePiece(GameObject mover, Vector3 movee)
     {
         moving = true;
-        check.enabled = false;
         float time = 0;
         Vector3 targetPos = movee - new Vector3(0,0.5f,0);
         while (time < duration)
@@ -165,9 +164,9 @@ public class TurnManager : MonoBehaviour
             yield return null;
         }
         mover.transform.position = targetPos;
-        check.enabled = true;
-        moving = false;
+        check.CheckCheck();
         boards.Add(new Board(this));
+        moving = false;
     }
     public void LoadBoard(Board board)
     {
