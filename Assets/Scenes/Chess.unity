@@ -29485,7 +29485,7 @@ MonoBehaviour:
   check: {fileID: 1483222921}
   turnWhite: 1
   do3D: 1
-  duration: 1
+  pieceSpeed: 0.75
   turnNum: 0
   pieceRef:
   - {fileID: 1672242659374470, guid: f005021ceced8b240983e71a3d481180, type: 3}

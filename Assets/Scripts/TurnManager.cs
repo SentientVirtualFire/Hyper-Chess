@@ -15,13 +15,13 @@ public class TurnManager : MonoBehaviour
     public List<Board> boards = new List<Board>();
     public bool turnWhite = true;
     public bool do3D;
-    public float duration;
+    public float pieceSpeed;
     public int turnNum = 0;
+    public Moves allMoves = new Moves();
+    public List<GameObject> pieceRef = new List<GameObject>();
     GameObject selected;
     List<GameObject> moveCubes = new List<GameObject>();
     List<GameObject> attackCubes = new List<GameObject>();
-    public Moves allMoves = new Moves();
-    public List<GameObject> pieceRef = new List<GameObject>();
     string[] allTags = new string[6] { "Pawn", "Rook", "Knight", "Bishop", "Queen", "King" };
     bool moving = false;
 
@@ -32,8 +32,13 @@ public class TurnManager : MonoBehaviour
     void Update()
     {
         if(!moving)
-        { 
-            if (Input.GetMouseButtonDown(0))
+        {
+            if (check.inCheck && boards[turnNum - 1].isCheck)
+            {
+                LoadBoard(boards[turnNum - 1]);
+                boards.RemoveAt(turnNum + 1);
+            }
+            else if (Input.GetMouseButtonDown(0))
             {
                 Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
@@ -67,11 +72,6 @@ public class TurnManager : MonoBehaviour
                         selected = hit.transform.gameObject;
                         Vector3 offset = new Vector3(0, 0.5f, 0);
                         allMoves = selected.GetComponent<IPiece>().PathFinder();
-                        if (check.inCheck && boards[turnNum-1].isCheck)
-                        {
-                            LoadBoard(boards[turnNum - 1]);
-                            turnNum -= 1;
-                        }
                         foreach (var pos in allMoves.positions)
                         {
                             GameObject cube = Instantiate(moveTarget, pos + offset, Quaternion.identity);
@@ -97,7 +97,6 @@ public class TurnManager : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.K))
             {
                 LoadBoard(boards[turnNum - 1]);
-                turnNum -= 1;
             }
         }
     }
@@ -129,25 +128,17 @@ public class TurnManager : MonoBehaviour
             ParticleSystemRenderer renderer = attacked.GetComponent<ParticleSystemRenderer>(); 
             renderer.mesh = movedPiece.GetComponent<MeshFilter>().mesh;
             renderer.material = movedPiece.GetComponent<MeshRenderer>().material;
-            attacked.GetComponent<ParticleSystem>().Play();
+            ParticleSystem ps = attacked.GetComponent<ParticleSystem>();
+            var main = ps.main;
+            main.duration = pieceSpeed;
+            ps.Play();
         }
         allMoves = new Moves();
-        foreach (var item in moveCubes)
+        foreach (var item in moveCubes.Concat(attackCubes))
         {
             Destroy(item);
         }
-        foreach (var item in attackCubes)
-        {
-            Destroy(item);
-        }
-        if (turnWhite)
-        {
-            turnWhite = false;
-        }
-        else
-        {
-            turnWhite = true;
-        }
+        turnWhite = !turnWhite;
         turnNum++;
     }
     public IEnumerator MovePiece(GameObject mover, Vector3 movee)
@@ -155,9 +146,9 @@ public class TurnManager : MonoBehaviour
         moving = true;
         float time = 0;
         Vector3 targetPos = movee - new Vector3(0,0.5f,0);
-        while (time < duration)
+        while (time < pieceSpeed)
         {
-            float t = time / duration;
+            float t = time / pieceSpeed;
             t = t * t * (3f - 2f * t);
             mover.transform.position = Vector3.Lerp(mover.transform.position, targetPos, t);
             time += Time.deltaTime;
@@ -184,6 +175,8 @@ public class TurnManager : MonoBehaviour
                 }
             }
         }
+        turnNum = board.turnNum;
+        turnWhite = board.turnWhite;
     }
     public static List<GameObject> GetAllPieces()
     {

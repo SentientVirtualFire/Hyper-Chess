@@ -25,6 +25,7 @@ public class Board
     public List<Piece> pieces = new List<Piece>();
     public int turnNum;
     public bool isCheck;
+    public bool turnWhite;
     public Board(TurnManager tm)
     {
         foreach (var i in TurnManager.GetAllPieces())
@@ -33,6 +34,7 @@ public class Board
         }
         turnNum = tm.turnNum;
         isCheck = tm.check.inCheck;
+        turnWhite = tm.turnWhite;
     }
 }
 public class Piece
