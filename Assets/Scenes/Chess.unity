@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 2890525}
   - component: {fileID: 2890527}
   - component: {fileID: 2890526}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 6380188}
   - component: {fileID: 6380190}
   - component: {fileID: 6380189}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -300,7 +300,7 @@ GameObject:
   - component: {fileID: 8292848}
   - component: {fileID: 8292850}
   - component: {fileID: 8292849}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -383,7 +383,7 @@ GameObject:
   - component: {fileID: 8807893}
   - component: {fileID: 8807895}
   - component: {fileID: 8807894}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -466,7 +466,7 @@ GameObject:
   - component: {fileID: 9585587}
   - component: {fileID: 9585589}
   - component: {fileID: 9585588}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -549,7 +549,7 @@ GameObject:
   - component: {fileID: 9966211}
   - component: {fileID: 9966213}
   - component: {fileID: 9966212}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -632,7 +632,7 @@ GameObject:
   - component: {fileID: 18217193}
   - component: {fileID: 18217195}
   - component: {fileID: 18217194}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -760,7 +760,7 @@ GameObject:
   - component: {fileID: 19081198}
   - component: {fileID: 19081200}
   - component: {fileID: 19081199}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -843,7 +843,7 @@ GameObject:
   - component: {fileID: 27342100}
   - component: {fileID: 27342102}
   - component: {fileID: 27342101}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -926,7 +926,7 @@ GameObject:
   - component: {fileID: 29850468}
   - component: {fileID: 29850470}
   - component: {fileID: 29850469}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1009,7 +1009,7 @@ GameObject:
   - component: {fileID: 34388626}
   - component: {fileID: 34388628}
   - component: {fileID: 34388627}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1092,7 +1092,7 @@ GameObject:
   - component: {fileID: 35577907}
   - component: {fileID: 35577909}
   - component: {fileID: 35577908}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1219,7 +1219,7 @@ GameObject:
   - component: {fileID: 41805697}
   - component: {fileID: 41805699}
   - component: {fileID: 41805698}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1302,7 +1302,7 @@ GameObject:
   - component: {fileID: 42107049}
   - component: {fileID: 42107051}
   - component: {fileID: 42107050}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1385,7 +1385,7 @@ GameObject:
   - component: {fileID: 50166083}
   - component: {fileID: 50166085}
   - component: {fileID: 50166084}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1518,7 +1518,7 @@ GameObject:
   - component: {fileID: 59246365}
   - component: {fileID: 59246367}
   - component: {fileID: 59246366}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1601,7 +1601,7 @@ GameObject:
   - component: {fileID: 84234870}
   - component: {fileID: 84234872}
   - component: {fileID: 84234871}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1684,7 +1684,7 @@ GameObject:
   - component: {fileID: 91523556}
   - component: {fileID: 91523558}
   - component: {fileID: 91523557}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1767,7 +1767,7 @@ GameObject:
   - component: {fileID: 91545727}
   - component: {fileID: 91545729}
   - component: {fileID: 91545728}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1850,7 +1850,7 @@ GameObject:
   - component: {fileID: 93882006}
   - component: {fileID: 93882008}
   - component: {fileID: 93882007}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1933,7 +1933,7 @@ GameObject:
   - component: {fileID: 94914338}
   - component: {fileID: 94914340}
   - component: {fileID: 94914339}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2016,7 +2016,7 @@ GameObject:
   - component: {fileID: 95176411}
   - component: {fileID: 95176413}
   - component: {fileID: 95176412}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2099,7 +2099,7 @@ GameObject:
   - component: {fileID: 103493390}
   - component: {fileID: 103493392}
   - component: {fileID: 103493391}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2182,7 +2182,7 @@ GameObject:
   - component: {fileID: 109212982}
   - component: {fileID: 109212984}
   - component: {fileID: 109212983}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2265,7 +2265,7 @@ GameObject:
   - component: {fileID: 110213964}
   - component: {fileID: 110213966}
   - component: {fileID: 110213965}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2379,7 +2379,7 @@ GameObject:
   - component: {fileID: 114552590}
   - component: {fileID: 114552592}
   - component: {fileID: 114552591}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2462,7 +2462,7 @@ GameObject:
   - component: {fileID: 121997204}
   - component: {fileID: 121997206}
   - component: {fileID: 121997205}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2545,7 +2545,7 @@ GameObject:
   - component: {fileID: 131882601}
   - component: {fileID: 131882603}
   - component: {fileID: 131882602}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2628,7 +2628,7 @@ GameObject:
   - component: {fileID: 139006087}
   - component: {fileID: 139006089}
   - component: {fileID: 139006088}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2711,7 +2711,7 @@ GameObject:
   - component: {fileID: 141236566}
   - component: {fileID: 141236568}
   - component: {fileID: 141236567}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2794,7 +2794,7 @@ GameObject:
   - component: {fileID: 148487639}
   - component: {fileID: 148487641}
   - component: {fileID: 148487640}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2910,7 +2910,7 @@ GameObject:
   - component: {fileID: 163981278}
   - component: {fileID: 163981280}
   - component: {fileID: 163981279}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2993,7 +2993,7 @@ GameObject:
   - component: {fileID: 166186021}
   - component: {fileID: 166186023}
   - component: {fileID: 166186022}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3076,7 +3076,7 @@ GameObject:
   - component: {fileID: 168808477}
   - component: {fileID: 168808479}
   - component: {fileID: 168808478}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3159,7 +3159,7 @@ GameObject:
   - component: {fileID: 170155407}
   - component: {fileID: 170155409}
   - component: {fileID: 170155408}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3242,7 +3242,7 @@ GameObject:
   - component: {fileID: 171859734}
   - component: {fileID: 171859736}
   - component: {fileID: 171859735}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3325,7 +3325,7 @@ GameObject:
   - component: {fileID: 192609410}
   - component: {fileID: 192609412}
   - component: {fileID: 192609411}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3408,7 +3408,7 @@ GameObject:
   - component: {fileID: 194244606}
   - component: {fileID: 194244608}
   - component: {fileID: 194244607}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3491,7 +3491,7 @@ GameObject:
   - component: {fileID: 207826405}
   - component: {fileID: 207826407}
   - component: {fileID: 207826406}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3574,7 +3574,7 @@ GameObject:
   - component: {fileID: 210515278}
   - component: {fileID: 210515280}
   - component: {fileID: 210515279}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3657,7 +3657,7 @@ GameObject:
   - component: {fileID: 214694255}
   - component: {fileID: 214694257}
   - component: {fileID: 214694256}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3740,7 +3740,7 @@ GameObject:
   - component: {fileID: 222020641}
   - component: {fileID: 222020643}
   - component: {fileID: 222020642}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3823,7 +3823,7 @@ GameObject:
   - component: {fileID: 224917943}
   - component: {fileID: 224917945}
   - component: {fileID: 224917944}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3906,7 +3906,7 @@ GameObject:
   - component: {fileID: 229633903}
   - component: {fileID: 229633905}
   - component: {fileID: 229633904}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3989,7 +3989,7 @@ GameObject:
   - component: {fileID: 229910576}
   - component: {fileID: 229910578}
   - component: {fileID: 229910577}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4191,7 +4191,7 @@ GameObject:
   - component: {fileID: 238985537}
   - component: {fileID: 238985539}
   - component: {fileID: 238985538}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4274,7 +4274,7 @@ GameObject:
   - component: {fileID: 250267363}
   - component: {fileID: 250267365}
   - component: {fileID: 250267364}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4357,7 +4357,7 @@ GameObject:
   - component: {fileID: 253696752}
   - component: {fileID: 253696754}
   - component: {fileID: 253696753}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4440,7 +4440,7 @@ GameObject:
   - component: {fileID: 254893195}
   - component: {fileID: 254893197}
   - component: {fileID: 254893196}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4523,7 +4523,7 @@ GameObject:
   - component: {fileID: 256192948}
   - component: {fileID: 256192950}
   - component: {fileID: 256192949}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4606,7 +4606,7 @@ GameObject:
   - component: {fileID: 257496702}
   - component: {fileID: 257496704}
   - component: {fileID: 257496703}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4689,7 +4689,7 @@ GameObject:
   - component: {fileID: 259503663}
   - component: {fileID: 259503665}
   - component: {fileID: 259503664}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4772,7 +4772,7 @@ GameObject:
   - component: {fileID: 267315588}
   - component: {fileID: 267315590}
   - component: {fileID: 267315589}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4855,7 +4855,7 @@ GameObject:
   - component: {fileID: 283646726}
   - component: {fileID: 283646728}
   - component: {fileID: 283646727}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4938,7 +4938,7 @@ GameObject:
   - component: {fileID: 290893261}
   - component: {fileID: 290893263}
   - component: {fileID: 290893262}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5021,7 +5021,7 @@ GameObject:
   - component: {fileID: 299120319}
   - component: {fileID: 299120321}
   - component: {fileID: 299120320}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5104,7 +5104,7 @@ GameObject:
   - component: {fileID: 309289282}
   - component: {fileID: 309289284}
   - component: {fileID: 309289283}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5187,7 +5187,7 @@ GameObject:
   - component: {fileID: 310448939}
   - component: {fileID: 310448941}
   - component: {fileID: 310448940}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5270,7 +5270,7 @@ GameObject:
   - component: {fileID: 312253117}
   - component: {fileID: 312253119}
   - component: {fileID: 312253118}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5353,7 +5353,7 @@ GameObject:
   - component: {fileID: 315204611}
   - component: {fileID: 315204613}
   - component: {fileID: 315204612}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5436,7 +5436,7 @@ GameObject:
   - component: {fileID: 317140075}
   - component: {fileID: 317140077}
   - component: {fileID: 317140076}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5519,7 +5519,7 @@ GameObject:
   - component: {fileID: 320069472}
   - component: {fileID: 320069474}
   - component: {fileID: 320069473}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5602,7 +5602,7 @@ GameObject:
   - component: {fileID: 321571518}
   - component: {fileID: 321571520}
   - component: {fileID: 321571519}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5685,7 +5685,7 @@ GameObject:
   - component: {fileID: 325743557}
   - component: {fileID: 325743559}
   - component: {fileID: 325743558}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5768,7 +5768,7 @@ GameObject:
   - component: {fileID: 330062912}
   - component: {fileID: 330062914}
   - component: {fileID: 330062913}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5851,7 +5851,7 @@ GameObject:
   - component: {fileID: 330231164}
   - component: {fileID: 330231166}
   - component: {fileID: 330231165}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5934,7 +5934,7 @@ GameObject:
   - component: {fileID: 331274193}
   - component: {fileID: 331274195}
   - component: {fileID: 331274194}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6017,7 +6017,7 @@ GameObject:
   - component: {fileID: 331488951}
   - component: {fileID: 331488953}
   - component: {fileID: 331488952}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6137,7 +6137,7 @@ GameObject:
   - component: {fileID: 336004914}
   - component: {fileID: 336004916}
   - component: {fileID: 336004915}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6220,7 +6220,7 @@ GameObject:
   - component: {fileID: 351733253}
   - component: {fileID: 351733255}
   - component: {fileID: 351733254}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6292,112 +6292,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 351733252}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &353163223
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1483222914}
-    m_Modifications:
-    - target: {fileID: 1006356879557798, guid: 391882f14be491c40962add653844907, type: 3}
-      propertyPath: m_Name
-      value: PawnLight
-      objectReference: {fileID: 0}
-    - target: {fileID: 1006356879557798, guid: 391882f14be491c40962add653844907, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2374044118775863863, guid: 391882f14be491c40962add653844907, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2374044118775863863, guid: 391882f14be491c40962add653844907, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2374044118775863863, guid: 391882f14be491c40962add653844907, type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2374044118775863863, guid: 391882f14be491c40962add653844907, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2374044118775863863, guid: 391882f14be491c40962add653844907, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2374044118775863863, guid: 391882f14be491c40962add653844907, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2374044118775863863, guid: 391882f14be491c40962add653844907, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2374044118775863863, guid: 391882f14be491c40962add653844907, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 2374044118775863863, guid: 391882f14be491c40962add653844907, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 2374044118775863863, guid: 391882f14be491c40962add653844907, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2374044118775863863, guid: 391882f14be491c40962add653844907, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2374044118775863863, guid: 391882f14be491c40962add653844907, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -29
-      objectReference: {fileID: 0}
-    - target: {fileID: 2374044118775863863, guid: 391882f14be491c40962add653844907, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2374044118775863863, guid: 391882f14be491c40962add653844907, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000021855694
-      objectReference: {fileID: 0}
-    - target: {fileID: 2374044118775863863, guid: 391882f14be491c40962add653844907, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2374044118775863863, guid: 391882f14be491c40962add653844907, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2374044118775863863, guid: 391882f14be491c40962add653844907, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 39
-      objectReference: {fileID: 0}
-    - target: {fileID: 2374044118775863863, guid: 391882f14be491c40962add653844907, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2374044118775863863, guid: 391882f14be491c40962add653844907, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2374044118775863863, guid: 391882f14be491c40962add653844907, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2374044118775863863, guid: 391882f14be491c40962add653844907, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 391882f14be491c40962add653844907, type: 3}
---- !u!224 &353163224 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2374044118775863863, guid: 391882f14be491c40962add653844907, type: 3}
-  m_PrefabInstance: {fileID: 353163223}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &354484379
 GameObject:
   m_ObjectHideFlags: 0
@@ -6409,7 +6303,7 @@ GameObject:
   - component: {fileID: 354484380}
   - component: {fileID: 354484382}
   - component: {fileID: 354484381}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6492,7 +6386,7 @@ GameObject:
   - component: {fileID: 357123166}
   - component: {fileID: 357123168}
   - component: {fileID: 357123167}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6641,7 +6535,7 @@ GameObject:
   - component: {fileID: 374295870}
   - component: {fileID: 374295872}
   - component: {fileID: 374295871}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6724,7 +6618,7 @@ GameObject:
   - component: {fileID: 377121539}
   - component: {fileID: 377121541}
   - component: {fileID: 377121540}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6807,7 +6701,7 @@ GameObject:
   - component: {fileID: 377709468}
   - component: {fileID: 377709470}
   - component: {fileID: 377709469}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6890,7 +6784,7 @@ GameObject:
   - component: {fileID: 380282952}
   - component: {fileID: 380282954}
   - component: {fileID: 380282953}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6973,7 +6867,7 @@ GameObject:
   - component: {fileID: 380978501}
   - component: {fileID: 380978503}
   - component: {fileID: 380978502}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7056,7 +6950,7 @@ GameObject:
   - component: {fileID: 384236147}
   - component: {fileID: 384236149}
   - component: {fileID: 384236148}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7139,7 +7033,7 @@ GameObject:
   - component: {fileID: 394703634}
   - component: {fileID: 394703636}
   - component: {fileID: 394703635}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7222,7 +7116,7 @@ GameObject:
   - component: {fileID: 395770972}
   - component: {fileID: 395770974}
   - component: {fileID: 395770973}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7305,7 +7199,7 @@ GameObject:
   - component: {fileID: 398040511}
   - component: {fileID: 398040513}
   - component: {fileID: 398040512}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7388,7 +7282,7 @@ GameObject:
   - component: {fileID: 400335373}
   - component: {fileID: 400335375}
   - component: {fileID: 400335374}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7521,7 +7415,7 @@ GameObject:
   - component: {fileID: 409669085}
   - component: {fileID: 409669087}
   - component: {fileID: 409669086}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7604,7 +7498,7 @@ GameObject:
   - component: {fileID: 416677036}
   - component: {fileID: 416677038}
   - component: {fileID: 416677037}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7687,7 +7581,7 @@ GameObject:
   - component: {fileID: 418701855}
   - component: {fileID: 418701857}
   - component: {fileID: 418701856}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7770,7 +7664,7 @@ GameObject:
   - component: {fileID: 418991176}
   - component: {fileID: 418991178}
   - component: {fileID: 418991177}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7853,7 +7747,7 @@ GameObject:
   - component: {fileID: 420055834}
   - component: {fileID: 420055836}
   - component: {fileID: 420055835}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7936,7 +7830,7 @@ GameObject:
   - component: {fileID: 420149255}
   - component: {fileID: 420149257}
   - component: {fileID: 420149256}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8019,7 +7913,7 @@ GameObject:
   - component: {fileID: 421354544}
   - component: {fileID: 421354546}
   - component: {fileID: 421354545}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8102,7 +7996,7 @@ GameObject:
   - component: {fileID: 423057815}
   - component: {fileID: 423057817}
   - component: {fileID: 423057816}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8185,7 +8079,7 @@ GameObject:
   - component: {fileID: 433044653}
   - component: {fileID: 433044655}
   - component: {fileID: 433044654}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8268,7 +8162,7 @@ GameObject:
   - component: {fileID: 435546786}
   - component: {fileID: 435546788}
   - component: {fileID: 435546787}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8351,7 +8245,7 @@ GameObject:
   - component: {fileID: 440646329}
   - component: {fileID: 440646331}
   - component: {fileID: 440646330}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8434,7 +8328,7 @@ GameObject:
   - component: {fileID: 450205784}
   - component: {fileID: 450205786}
   - component: {fileID: 450205785}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8517,7 +8411,7 @@ GameObject:
   - component: {fileID: 455647433}
   - component: {fileID: 455647435}
   - component: {fileID: 455647434}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8600,7 +8494,7 @@ GameObject:
   - component: {fileID: 456640351}
   - component: {fileID: 456640353}
   - component: {fileID: 456640352}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8683,7 +8577,7 @@ GameObject:
   - component: {fileID: 457242446}
   - component: {fileID: 457242448}
   - component: {fileID: 457242447}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8766,7 +8660,7 @@ GameObject:
   - component: {fileID: 459654183}
   - component: {fileID: 459654185}
   - component: {fileID: 459654184}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8849,7 +8743,7 @@ GameObject:
   - component: {fileID: 470642318}
   - component: {fileID: 470642320}
   - component: {fileID: 470642319}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8932,7 +8826,7 @@ GameObject:
   - component: {fileID: 472171194}
   - component: {fileID: 472171196}
   - component: {fileID: 472171195}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9085,7 +8979,7 @@ GameObject:
   - component: {fileID: 473591381}
   - component: {fileID: 473591383}
   - component: {fileID: 473591382}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9168,7 +9062,7 @@ GameObject:
   - component: {fileID: 474315228}
   - component: {fileID: 474315230}
   - component: {fileID: 474315229}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9251,7 +9145,7 @@ GameObject:
   - component: {fileID: 474739937}
   - component: {fileID: 474739939}
   - component: {fileID: 474739938}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9334,7 +9228,7 @@ GameObject:
   - component: {fileID: 480396827}
   - component: {fileID: 480396829}
   - component: {fileID: 480396828}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9417,7 +9311,7 @@ GameObject:
   - component: {fileID: 480583706}
   - component: {fileID: 480583708}
   - component: {fileID: 480583707}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9500,7 +9394,7 @@ GameObject:
   - component: {fileID: 481379000}
   - component: {fileID: 481379002}
   - component: {fileID: 481379001}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9583,7 +9477,7 @@ GameObject:
   - component: {fileID: 487522353}
   - component: {fileID: 487522355}
   - component: {fileID: 487522354}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9666,7 +9560,7 @@ GameObject:
   - component: {fileID: 487633596}
   - component: {fileID: 487633598}
   - component: {fileID: 487633597}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9749,7 +9643,7 @@ GameObject:
   - component: {fileID: 497699479}
   - component: {fileID: 497699481}
   - component: {fileID: 497699480}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9832,7 +9726,7 @@ GameObject:
   - component: {fileID: 497881683}
   - component: {fileID: 497881685}
   - component: {fileID: 497881684}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9915,7 +9809,7 @@ GameObject:
   - component: {fileID: 514117988}
   - component: {fileID: 514117990}
   - component: {fileID: 514117989}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9998,7 +9892,7 @@ GameObject:
   - component: {fileID: 515285416}
   - component: {fileID: 515285418}
   - component: {fileID: 515285417}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10081,7 +9975,7 @@ GameObject:
   - component: {fileID: 523281502}
   - component: {fileID: 523281504}
   - component: {fileID: 523281503}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10164,7 +10058,7 @@ GameObject:
   - component: {fileID: 536519804}
   - component: {fileID: 536519806}
   - component: {fileID: 536519805}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10247,7 +10141,7 @@ GameObject:
   - component: {fileID: 538054220}
   - component: {fileID: 538054222}
   - component: {fileID: 538054221}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10330,7 +10224,7 @@ GameObject:
   - component: {fileID: 542614802}
   - component: {fileID: 542614804}
   - component: {fileID: 542614803}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10413,7 +10307,7 @@ GameObject:
   - component: {fileID: 551095736}
   - component: {fileID: 551095738}
   - component: {fileID: 551095737}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10496,7 +10390,7 @@ GameObject:
   - component: {fileID: 553527204}
   - component: {fileID: 553527206}
   - component: {fileID: 553527205}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10579,7 +10473,7 @@ GameObject:
   - component: {fileID: 557666150}
   - component: {fileID: 557666152}
   - component: {fileID: 557666151}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10662,7 +10556,7 @@ GameObject:
   - component: {fileID: 573073426}
   - component: {fileID: 573073428}
   - component: {fileID: 573073427}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10745,7 +10639,7 @@ GameObject:
   - component: {fileID: 578157429}
   - component: {fileID: 578157431}
   - component: {fileID: 578157430}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10828,7 +10722,7 @@ GameObject:
   - component: {fileID: 587179541}
   - component: {fileID: 587179543}
   - component: {fileID: 587179542}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10961,7 +10855,7 @@ GameObject:
   - component: {fileID: 588823643}
   - component: {fileID: 588823645}
   - component: {fileID: 588823644}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11044,7 +10938,7 @@ GameObject:
   - component: {fileID: 590970733}
   - component: {fileID: 590970735}
   - component: {fileID: 590970734}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11127,7 +11021,7 @@ GameObject:
   - component: {fileID: 600733870}
   - component: {fileID: 600733872}
   - component: {fileID: 600733871}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11310,7 +11204,7 @@ GameObject:
   - component: {fileID: 611083156}
   - component: {fileID: 611083158}
   - component: {fileID: 611083157}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11393,7 +11287,7 @@ GameObject:
   - component: {fileID: 613616843}
   - component: {fileID: 613616845}
   - component: {fileID: 613616844}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11476,7 +11370,7 @@ GameObject:
   - component: {fileID: 618061271}
   - component: {fileID: 618061273}
   - component: {fileID: 618061272}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11559,7 +11453,7 @@ GameObject:
   - component: {fileID: 621521552}
   - component: {fileID: 621521554}
   - component: {fileID: 621521553}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11642,7 +11536,7 @@ GameObject:
   - component: {fileID: 622474753}
   - component: {fileID: 622474755}
   - component: {fileID: 622474754}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11725,7 +11619,7 @@ GameObject:
   - component: {fileID: 626112127}
   - component: {fileID: 626112129}
   - component: {fileID: 626112128}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11808,7 +11702,7 @@ GameObject:
   - component: {fileID: 628955098}
   - component: {fileID: 628955100}
   - component: {fileID: 628955099}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11880,72 +11774,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 628955097}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &633844876
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1483222914}
-    m_Modifications:
-    - target: {fileID: 1672242659374470, guid: f005021ceced8b240983e71a3d481180, type: 3}
-      propertyPath: m_Name
-      value: BishopDark
-      objectReference: {fileID: 0}
-    - target: {fileID: 1672242659374470, guid: f005021ceced8b240983e71a3d481180, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4207701621693582, guid: f005021ceced8b240983e71a3d481180, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4207701621693582, guid: f005021ceced8b240983e71a3d481180, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 39
-      objectReference: {fileID: 0}
-    - target: {fileID: 4207701621693582, guid: f005021ceced8b240983e71a3d481180, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4207701621693582, guid: f005021ceced8b240983e71a3d481180, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -29
-      objectReference: {fileID: 0}
-    - target: {fileID: 4207701621693582, guid: f005021ceced8b240983e71a3d481180, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4207701621693582, guid: f005021ceced8b240983e71a3d481180, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4207701621693582, guid: f005021ceced8b240983e71a3d481180, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4207701621693582, guid: f005021ceced8b240983e71a3d481180, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4207701621693582, guid: f005021ceced8b240983e71a3d481180, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4207701621693582, guid: f005021ceced8b240983e71a3d481180, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4207701621693582, guid: f005021ceced8b240983e71a3d481180, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f005021ceced8b240983e71a3d481180, type: 3}
---- !u!4 &633844877 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4207701621693582, guid: f005021ceced8b240983e71a3d481180, type: 3}
-  m_PrefabInstance: {fileID: 633844876}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &634270900
 GameObject:
   m_ObjectHideFlags: 0
@@ -11957,7 +11785,7 @@ GameObject:
   - component: {fileID: 634270901}
   - component: {fileID: 634270903}
   - component: {fileID: 634270902}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12040,7 +11868,7 @@ GameObject:
   - component: {fileID: 648034722}
   - component: {fileID: 648034724}
   - component: {fileID: 648034723}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12123,7 +11951,7 @@ GameObject:
   - component: {fileID: 654908024}
   - component: {fileID: 654908026}
   - component: {fileID: 654908025}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12323,7 +12151,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 658754633}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12580,7 +12408,7 @@ GameObject:
   - component: {fileID: 661117076}
   - component: {fileID: 661117078}
   - component: {fileID: 661117077}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12663,7 +12491,7 @@ GameObject:
   - component: {fileID: 662269041}
   - component: {fileID: 662269043}
   - component: {fileID: 662269042}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12746,7 +12574,7 @@ GameObject:
   - component: {fileID: 666546674}
   - component: {fileID: 666546676}
   - component: {fileID: 666546675}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12829,7 +12657,7 @@ GameObject:
   - component: {fileID: 666608189}
   - component: {fileID: 666608191}
   - component: {fileID: 666608190}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12912,7 +12740,7 @@ GameObject:
   - component: {fileID: 668151753}
   - component: {fileID: 668151755}
   - component: {fileID: 668151754}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12995,7 +12823,7 @@ GameObject:
   - component: {fileID: 669532652}
   - component: {fileID: 669532654}
   - component: {fileID: 669532653}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13078,7 +12906,7 @@ GameObject:
   - component: {fileID: 671210390}
   - component: {fileID: 671210392}
   - component: {fileID: 671210391}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13161,7 +12989,7 @@ GameObject:
   - component: {fileID: 673617206}
   - component: {fileID: 673617208}
   - component: {fileID: 673617207}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13244,7 +13072,7 @@ GameObject:
   - component: {fileID: 678807536}
   - component: {fileID: 678807538}
   - component: {fileID: 678807537}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13327,7 +13155,7 @@ GameObject:
   - component: {fileID: 688770308}
   - component: {fileID: 688770310}
   - component: {fileID: 688770309}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13410,7 +13238,7 @@ GameObject:
   - component: {fileID: 690742956}
   - component: {fileID: 690742958}
   - component: {fileID: 690742957}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13567,7 +13395,7 @@ GameObject:
   - component: {fileID: 691398788}
   - component: {fileID: 691398790}
   - component: {fileID: 691398789}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13785,7 +13613,7 @@ GameObject:
   - component: {fileID: 694395259}
   - component: {fileID: 694395261}
   - component: {fileID: 694395260}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13868,7 +13696,7 @@ GameObject:
   - component: {fileID: 696011753}
   - component: {fileID: 696011755}
   - component: {fileID: 696011754}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13951,7 +13779,7 @@ GameObject:
   - component: {fileID: 696514047}
   - component: {fileID: 696514049}
   - component: {fileID: 696514048}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14034,7 +13862,7 @@ GameObject:
   - component: {fileID: 699348936}
   - component: {fileID: 699348938}
   - component: {fileID: 699348937}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14117,7 +13945,7 @@ GameObject:
   - component: {fileID: 703498356}
   - component: {fileID: 703498358}
   - component: {fileID: 703498357}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14200,7 +14028,7 @@ GameObject:
   - component: {fileID: 710567630}
   - component: {fileID: 710567632}
   - component: {fileID: 710567631}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14402,7 +14230,7 @@ GameObject:
   - component: {fileID: 736826143}
   - component: {fileID: 736826145}
   - component: {fileID: 736826144}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14485,7 +14313,7 @@ GameObject:
   - component: {fileID: 739225716}
   - component: {fileID: 739225718}
   - component: {fileID: 739225717}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14568,7 +14396,7 @@ GameObject:
   - component: {fileID: 740814120}
   - component: {fileID: 740814122}
   - component: {fileID: 740814121}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14651,7 +14479,7 @@ GameObject:
   - component: {fileID: 748910577}
   - component: {fileID: 748910579}
   - component: {fileID: 748910578}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14734,7 +14562,7 @@ GameObject:
   - component: {fileID: 759748943}
   - component: {fileID: 759748945}
   - component: {fileID: 759748944}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14817,7 +14645,7 @@ GameObject:
   - component: {fileID: 761210253}
   - component: {fileID: 761210255}
   - component: {fileID: 761210254}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14900,7 +14728,7 @@ GameObject:
   - component: {fileID: 768804595}
   - component: {fileID: 768804597}
   - component: {fileID: 768804596}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14972,72 +14800,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 768804594}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &770552883
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1483222914}
-    m_Modifications:
-    - target: {fileID: 1211746330687442, guid: a72c2cd1520039b4084a4a33dfeccf7e, type: 3}
-      propertyPath: m_Name
-      value: RookDark
-      objectReference: {fileID: 0}
-    - target: {fileID: 1211746330687442, guid: a72c2cd1520039b4084a4a33dfeccf7e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684522381995130, guid: a72c2cd1520039b4084a4a33dfeccf7e, type: 3}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684522381995130, guid: a72c2cd1520039b4084a4a33dfeccf7e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 39
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684522381995130, guid: a72c2cd1520039b4084a4a33dfeccf7e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684522381995130, guid: a72c2cd1520039b4084a4a33dfeccf7e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -29
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684522381995130, guid: a72c2cd1520039b4084a4a33dfeccf7e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684522381995130, guid: a72c2cd1520039b4084a4a33dfeccf7e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684522381995130, guid: a72c2cd1520039b4084a4a33dfeccf7e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684522381995130, guid: a72c2cd1520039b4084a4a33dfeccf7e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684522381995130, guid: a72c2cd1520039b4084a4a33dfeccf7e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684522381995130, guid: a72c2cd1520039b4084a4a33dfeccf7e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684522381995130, guid: a72c2cd1520039b4084a4a33dfeccf7e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a72c2cd1520039b4084a4a33dfeccf7e, type: 3}
---- !u!4 &770552884 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4684522381995130, guid: a72c2cd1520039b4084a4a33dfeccf7e, type: 3}
-  m_PrefabInstance: {fileID: 770552883}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &771056337
 GameObject:
   m_ObjectHideFlags: 0
@@ -15049,7 +14811,7 @@ GameObject:
   - component: {fileID: 771056338}
   - component: {fileID: 771056340}
   - component: {fileID: 771056339}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15132,7 +14894,7 @@ GameObject:
   - component: {fileID: 772497611}
   - component: {fileID: 772497613}
   - component: {fileID: 772497612}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15215,7 +14977,7 @@ GameObject:
   - component: {fileID: 774193368}
   - component: {fileID: 774193370}
   - component: {fileID: 774193369}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15298,7 +15060,7 @@ GameObject:
   - component: {fileID: 775772971}
   - component: {fileID: 775772973}
   - component: {fileID: 775772972}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15381,7 +15143,7 @@ GameObject:
   - component: {fileID: 779058821}
   - component: {fileID: 779058823}
   - component: {fileID: 779058822}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15464,7 +15226,7 @@ GameObject:
   - component: {fileID: 779605131}
   - component: {fileID: 779605133}
   - component: {fileID: 779605132}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15547,7 +15309,7 @@ GameObject:
   - component: {fileID: 795129792}
   - component: {fileID: 795129794}
   - component: {fileID: 795129793}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15630,7 +15392,7 @@ GameObject:
   - component: {fileID: 797071114}
   - component: {fileID: 797071116}
   - component: {fileID: 797071115}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15713,7 +15475,7 @@ GameObject:
   - component: {fileID: 797354808}
   - component: {fileID: 797354810}
   - component: {fileID: 797354809}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15921,7 +15683,7 @@ GameObject:
   - component: {fileID: 808718194}
   - component: {fileID: 808718196}
   - component: {fileID: 808718195}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16004,7 +15766,7 @@ GameObject:
   - component: {fileID: 816404321}
   - component: {fileID: 816404323}
   - component: {fileID: 816404322}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16087,7 +15849,7 @@ GameObject:
   - component: {fileID: 821300942}
   - component: {fileID: 821300944}
   - component: {fileID: 821300943}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16170,7 +15932,7 @@ GameObject:
   - component: {fileID: 821338261}
   - component: {fileID: 821338263}
   - component: {fileID: 821338262}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16253,7 +16015,7 @@ GameObject:
   - component: {fileID: 826648884}
   - component: {fileID: 826648886}
   - component: {fileID: 826648885}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16402,7 +16164,7 @@ GameObject:
   - component: {fileID: 832009111}
   - component: {fileID: 832009113}
   - component: {fileID: 832009112}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16485,7 +16247,7 @@ GameObject:
   - component: {fileID: 834681360}
   - component: {fileID: 834681362}
   - component: {fileID: 834681361}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16568,7 +16330,7 @@ GameObject:
   - component: {fileID: 835088812}
   - component: {fileID: 835088814}
   - component: {fileID: 835088813}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16651,7 +16413,7 @@ GameObject:
   - component: {fileID: 839454364}
   - component: {fileID: 839454366}
   - component: {fileID: 839454365}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16734,7 +16496,7 @@ GameObject:
   - component: {fileID: 854351113}
   - component: {fileID: 854351115}
   - component: {fileID: 854351114}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16817,7 +16579,7 @@ GameObject:
   - component: {fileID: 864626899}
   - component: {fileID: 864626901}
   - component: {fileID: 864626900}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16900,7 +16662,7 @@ GameObject:
   - component: {fileID: 866305250}
   - component: {fileID: 866305252}
   - component: {fileID: 866305251}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17057,7 +16819,7 @@ GameObject:
   - component: {fileID: 880201286}
   - component: {fileID: 880201288}
   - component: {fileID: 880201287}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17140,7 +16902,7 @@ GameObject:
   - component: {fileID: 882430596}
   - component: {fileID: 882430598}
   - component: {fileID: 882430597}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17223,7 +16985,7 @@ GameObject:
   - component: {fileID: 887563786}
   - component: {fileID: 887563788}
   - component: {fileID: 887563787}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17306,7 +17068,7 @@ GameObject:
   - component: {fileID: 889099428}
   - component: {fileID: 889099430}
   - component: {fileID: 889099429}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17389,7 +17151,7 @@ GameObject:
   - component: {fileID: 890988930}
   - component: {fileID: 890988932}
   - component: {fileID: 890988931}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17472,7 +17234,7 @@ GameObject:
   - component: {fileID: 891989315}
   - component: {fileID: 891989317}
   - component: {fileID: 891989316}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17555,7 +17317,7 @@ GameObject:
   - component: {fileID: 894841939}
   - component: {fileID: 894841941}
   - component: {fileID: 894841940}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17638,7 +17400,7 @@ GameObject:
   - component: {fileID: 899840947}
   - component: {fileID: 899840949}
   - component: {fileID: 899840948}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17760,7 +17522,7 @@ GameObject:
   - component: {fileID: 905304596}
   - component: {fileID: 905304598}
   - component: {fileID: 905304597}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17843,7 +17605,7 @@ GameObject:
   - component: {fileID: 906532272}
   - component: {fileID: 906532274}
   - component: {fileID: 906532273}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17992,7 +17754,7 @@ GameObject:
   - component: {fileID: 913393161}
   - component: {fileID: 913393163}
   - component: {fileID: 913393162}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18075,7 +17837,7 @@ GameObject:
   - component: {fileID: 915594624}
   - component: {fileID: 915594626}
   - component: {fileID: 915594625}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18158,7 +17920,7 @@ GameObject:
   - component: {fileID: 915762338}
   - component: {fileID: 915762340}
   - component: {fileID: 915762339}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18241,7 +18003,7 @@ GameObject:
   - component: {fileID: 920333783}
   - component: {fileID: 920333785}
   - component: {fileID: 920333784}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18324,7 +18086,7 @@ GameObject:
   - component: {fileID: 924533254}
   - component: {fileID: 924533256}
   - component: {fileID: 924533255}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18396,72 +18158,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924533253}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &928473432
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1483222914}
-    m_Modifications:
-    - target: {fileID: 1389686872840900, guid: 27d2608cb94ae2d44811af52793c3562, type: 3}
-      propertyPath: m_Name
-      value: KingLight
-      objectReference: {fileID: 0}
-    - target: {fileID: 1389686872840900, guid: 27d2608cb94ae2d44811af52793c3562, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239372230150158, guid: 27d2608cb94ae2d44811af52793c3562, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239372230150158, guid: 27d2608cb94ae2d44811af52793c3562, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239372230150158, guid: 27d2608cb94ae2d44811af52793c3562, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239372230150158, guid: 27d2608cb94ae2d44811af52793c3562, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -29
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239372230150158, guid: 27d2608cb94ae2d44811af52793c3562, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239372230150158, guid: 27d2608cb94ae2d44811af52793c3562, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239372230150158, guid: 27d2608cb94ae2d44811af52793c3562, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239372230150158, guid: 27d2608cb94ae2d44811af52793c3562, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.000000021855694
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239372230150158, guid: 27d2608cb94ae2d44811af52793c3562, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239372230150158, guid: 27d2608cb94ae2d44811af52793c3562, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239372230150158, guid: 27d2608cb94ae2d44811af52793c3562, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 27d2608cb94ae2d44811af52793c3562, type: 3}
---- !u!4 &928473433 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4239372230150158, guid: 27d2608cb94ae2d44811af52793c3562, type: 3}
-  m_PrefabInstance: {fileID: 928473432}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &930260387
 GameObject:
   m_ObjectHideFlags: 0
@@ -18473,7 +18169,7 @@ GameObject:
   - component: {fileID: 930260388}
   - component: {fileID: 930260390}
   - component: {fileID: 930260389}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18556,7 +18252,7 @@ GameObject:
   - component: {fileID: 937396589}
   - component: {fileID: 937396591}
   - component: {fileID: 937396590}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18639,7 +18335,7 @@ GameObject:
   - component: {fileID: 940409856}
   - component: {fileID: 940409858}
   - component: {fileID: 940409857}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18722,7 +18418,7 @@ GameObject:
   - component: {fileID: 943676069}
   - component: {fileID: 943676071}
   - component: {fileID: 943676070}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18805,7 +18501,7 @@ GameObject:
   - component: {fileID: 947978878}
   - component: {fileID: 947978880}
   - component: {fileID: 947978879}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18888,7 +18584,7 @@ GameObject:
   - component: {fileID: 955173725}
   - component: {fileID: 955173727}
   - component: {fileID: 955173726}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18971,7 +18667,7 @@ GameObject:
   - component: {fileID: 959231848}
   - component: {fileID: 959231850}
   - component: {fileID: 959231849}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19054,7 +18750,7 @@ GameObject:
   - component: {fileID: 971093510}
   - component: {fileID: 971093512}
   - component: {fileID: 971093511}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19137,7 +18833,7 @@ GameObject:
   - component: {fileID: 988321253}
   - component: {fileID: 988321255}
   - component: {fileID: 988321254}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19220,7 +18916,7 @@ GameObject:
   - component: {fileID: 990583921}
   - component: {fileID: 990583923}
   - component: {fileID: 990583922}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19303,7 +18999,7 @@ GameObject:
   - component: {fileID: 997977398}
   - component: {fileID: 997977400}
   - component: {fileID: 997977399}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19386,7 +19082,7 @@ GameObject:
   - component: {fileID: 1005956823}
   - component: {fileID: 1005956825}
   - component: {fileID: 1005956824}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19469,7 +19165,7 @@ GameObject:
   - component: {fileID: 1009465792}
   - component: {fileID: 1009465794}
   - component: {fileID: 1009465793}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19552,7 +19248,7 @@ GameObject:
   - component: {fileID: 1009707891}
   - component: {fileID: 1009707893}
   - component: {fileID: 1009707892}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19635,7 +19331,7 @@ GameObject:
   - component: {fileID: 1009799663}
   - component: {fileID: 1009799665}
   - component: {fileID: 1009799664}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19718,7 +19414,7 @@ GameObject:
   - component: {fileID: 1012403176}
   - component: {fileID: 1012403178}
   - component: {fileID: 1012403177}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19801,7 +19497,7 @@ GameObject:
   - component: {fileID: 1017494121}
   - component: {fileID: 1017494123}
   - component: {fileID: 1017494122}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19884,7 +19580,7 @@ GameObject:
   - component: {fileID: 1018993038}
   - component: {fileID: 1018993040}
   - component: {fileID: 1018993039}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19967,7 +19663,7 @@ GameObject:
   - component: {fileID: 1021453645}
   - component: {fileID: 1021453647}
   - component: {fileID: 1021453646}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20050,7 +19746,7 @@ GameObject:
   - component: {fileID: 1023108519}
   - component: {fileID: 1023108521}
   - component: {fileID: 1023108520}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20133,7 +19829,7 @@ GameObject:
   - component: {fileID: 1033248295}
   - component: {fileID: 1033248297}
   - component: {fileID: 1033248296}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20216,7 +19912,7 @@ GameObject:
   - component: {fileID: 1033926940}
   - component: {fileID: 1033926942}
   - component: {fileID: 1033926941}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20299,7 +19995,7 @@ GameObject:
   - component: {fileID: 1036571469}
   - component: {fileID: 1036571471}
   - component: {fileID: 1036571470}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20382,7 +20078,7 @@ GameObject:
   - component: {fileID: 1036804039}
   - component: {fileID: 1036804041}
   - component: {fileID: 1036804040}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20465,7 +20161,7 @@ GameObject:
   - component: {fileID: 1039336826}
   - component: {fileID: 1039336828}
   - component: {fileID: 1039336827}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20548,7 +20244,7 @@ GameObject:
   - component: {fileID: 1041217723}
   - component: {fileID: 1041217725}
   - component: {fileID: 1041217724}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20631,7 +20327,7 @@ GameObject:
   - component: {fileID: 1042811961}
   - component: {fileID: 1042811963}
   - component: {fileID: 1042811962}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20714,7 +20410,7 @@ GameObject:
   - component: {fileID: 1046632676}
   - component: {fileID: 1046632678}
   - component: {fileID: 1046632677}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20797,7 +20493,7 @@ GameObject:
   - component: {fileID: 1046895236}
   - component: {fileID: 1046895238}
   - component: {fileID: 1046895237}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20880,7 +20576,7 @@ GameObject:
   - component: {fileID: 1047434590}
   - component: {fileID: 1047434592}
   - component: {fileID: 1047434591}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21017,7 +20713,7 @@ GameObject:
   - component: {fileID: 1056141133}
   - component: {fileID: 1056141135}
   - component: {fileID: 1056141134}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21100,7 +20796,7 @@ GameObject:
   - component: {fileID: 1056192434}
   - component: {fileID: 1056192436}
   - component: {fileID: 1056192435}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21287,7 +20983,7 @@ GameObject:
   - component: {fileID: 1065231992}
   - component: {fileID: 1065231994}
   - component: {fileID: 1065231993}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21370,7 +21066,7 @@ GameObject:
   - component: {fileID: 1069506390}
   - component: {fileID: 1069506392}
   - component: {fileID: 1069506391}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21453,7 +21149,7 @@ GameObject:
   - component: {fileID: 1072629113}
   - component: {fileID: 1072629115}
   - component: {fileID: 1072629114}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21536,7 +21232,7 @@ GameObject:
   - component: {fileID: 1074406713}
   - component: {fileID: 1074406715}
   - component: {fileID: 1074406714}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21624,7 +21320,7 @@ GameObject:
   - component: {fileID: 1087290704}
   - component: {fileID: 1087290706}
   - component: {fileID: 1087290705}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21707,7 +21403,7 @@ GameObject:
   - component: {fileID: 1088045309}
   - component: {fileID: 1088045311}
   - component: {fileID: 1088045310}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21835,7 +21531,7 @@ GameObject:
   - component: {fileID: 1090561032}
   - component: {fileID: 1090561034}
   - component: {fileID: 1090561033}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21918,7 +21614,7 @@ GameObject:
   - component: {fileID: 1098024946}
   - component: {fileID: 1098024948}
   - component: {fileID: 1098024947}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22034,7 +21730,7 @@ GameObject:
   - component: {fileID: 1102408912}
   - component: {fileID: 1102408914}
   - component: {fileID: 1102408913}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22117,7 +21813,7 @@ GameObject:
   - component: {fileID: 1108426752}
   - component: {fileID: 1108426754}
   - component: {fileID: 1108426753}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22200,7 +21896,7 @@ GameObject:
   - component: {fileID: 1113702200}
   - component: {fileID: 1113702202}
   - component: {fileID: 1113702201}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22283,7 +21979,7 @@ GameObject:
   - component: {fileID: 1113802925}
   - component: {fileID: 1113802927}
   - component: {fileID: 1113802926}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22432,7 +22128,7 @@ GameObject:
   - component: {fileID: 1124164868}
   - component: {fileID: 1124164870}
   - component: {fileID: 1124164869}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22515,7 +22211,7 @@ GameObject:
   - component: {fileID: 1128182818}
   - component: {fileID: 1128182820}
   - component: {fileID: 1128182819}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22720,72 +22416,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1389686872840900, guid: 27d2608cb94ae2d44811af52793c3562, type: 3}
   m_PrefabInstance: {fileID: 18981601}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1142334562
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1483222914}
-    m_Modifications:
-    - target: {fileID: 1179637952412708, guid: a007978aa14da3945b0f6655f65cc278, type: 3}
-      propertyPath: m_Name
-      value: KnightDark
-      objectReference: {fileID: 0}
-    - target: {fileID: 1179637952412708, guid: a007978aa14da3945b0f6655f65cc278, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4071798522976028, guid: a007978aa14da3945b0f6655f65cc278, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4071798522976028, guid: a007978aa14da3945b0f6655f65cc278, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 39
-      objectReference: {fileID: 0}
-    - target: {fileID: 4071798522976028, guid: a007978aa14da3945b0f6655f65cc278, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4071798522976028, guid: a007978aa14da3945b0f6655f65cc278, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -29
-      objectReference: {fileID: 0}
-    - target: {fileID: 4071798522976028, guid: a007978aa14da3945b0f6655f65cc278, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4071798522976028, guid: a007978aa14da3945b0f6655f65cc278, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4071798522976028, guid: a007978aa14da3945b0f6655f65cc278, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4071798522976028, guid: a007978aa14da3945b0f6655f65cc278, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4071798522976028, guid: a007978aa14da3945b0f6655f65cc278, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4071798522976028, guid: a007978aa14da3945b0f6655f65cc278, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4071798522976028, guid: a007978aa14da3945b0f6655f65cc278, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a007978aa14da3945b0f6655f65cc278, type: 3}
---- !u!4 &1142334563 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4071798522976028, guid: a007978aa14da3945b0f6655f65cc278, type: 3}
-  m_PrefabInstance: {fileID: 1142334562}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1144404764
 GameObject:
   m_ObjectHideFlags: 0
@@ -22797,7 +22427,7 @@ GameObject:
   - component: {fileID: 1144404765}
   - component: {fileID: 1144404767}
   - component: {fileID: 1144404766}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22946,7 +22576,7 @@ GameObject:
   - component: {fileID: 1160456610}
   - component: {fileID: 1160456612}
   - component: {fileID: 1160456611}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23029,7 +22659,7 @@ GameObject:
   - component: {fileID: 1161643416}
   - component: {fileID: 1161643418}
   - component: {fileID: 1161643417}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23112,7 +22742,7 @@ GameObject:
   - component: {fileID: 1161821454}
   - component: {fileID: 1161821456}
   - component: {fileID: 1161821455}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23228,7 +22858,7 @@ GameObject:
   - component: {fileID: 1173882244}
   - component: {fileID: 1173882246}
   - component: {fileID: 1173882245}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23311,7 +22941,7 @@ GameObject:
   - component: {fileID: 1178004503}
   - component: {fileID: 1178004505}
   - component: {fileID: 1178004504}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23394,7 +23024,7 @@ GameObject:
   - component: {fileID: 1180477058}
   - component: {fileID: 1180477060}
   - component: {fileID: 1180477059}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23477,7 +23107,7 @@ GameObject:
   - component: {fileID: 1188382056}
   - component: {fileID: 1188382058}
   - component: {fileID: 1188382057}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23560,7 +23190,7 @@ GameObject:
   - component: {fileID: 1192412313}
   - component: {fileID: 1192412315}
   - component: {fileID: 1192412314}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23643,7 +23273,7 @@ GameObject:
   - component: {fileID: 1192724197}
   - component: {fileID: 1192724199}
   - component: {fileID: 1192724198}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23726,7 +23356,7 @@ GameObject:
   - component: {fileID: 1192943033}
   - component: {fileID: 1192943035}
   - component: {fileID: 1192943034}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23809,7 +23439,7 @@ GameObject:
   - component: {fileID: 1196683808}
   - component: {fileID: 1196683810}
   - component: {fileID: 1196683809}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23892,7 +23522,7 @@ GameObject:
   - component: {fileID: 1200443275}
   - component: {fileID: 1200443277}
   - component: {fileID: 1200443276}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23975,7 +23605,7 @@ GameObject:
   - component: {fileID: 1201077241}
   - component: {fileID: 1201077243}
   - component: {fileID: 1201077242}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24058,7 +23688,7 @@ GameObject:
   - component: {fileID: 1203769467}
   - component: {fileID: 1203769469}
   - component: {fileID: 1203769468}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24141,7 +23771,7 @@ GameObject:
   - component: {fileID: 1209961898}
   - component: {fileID: 1209961900}
   - component: {fileID: 1209961899}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24224,7 +23854,7 @@ GameObject:
   - component: {fileID: 1224288970}
   - component: {fileID: 1224288972}
   - component: {fileID: 1224288971}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24307,7 +23937,7 @@ GameObject:
   - component: {fileID: 1225702531}
   - component: {fileID: 1225702533}
   - component: {fileID: 1225702532}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24390,7 +24020,7 @@ GameObject:
   - component: {fileID: 1228581084}
   - component: {fileID: 1228581086}
   - component: {fileID: 1228581085}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24473,7 +24103,7 @@ GameObject:
   - component: {fileID: 1231508676}
   - component: {fileID: 1231508678}
   - component: {fileID: 1231508677}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24556,7 +24186,7 @@ GameObject:
   - component: {fileID: 1240238846}
   - component: {fileID: 1240238848}
   - component: {fileID: 1240238847}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24639,7 +24269,7 @@ GameObject:
   - component: {fileID: 1245916001}
   - component: {fileID: 1245916003}
   - component: {fileID: 1245916002}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24722,7 +24352,7 @@ GameObject:
   - component: {fileID: 1246812388}
   - component: {fileID: 1246812390}
   - component: {fileID: 1246812389}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24805,7 +24435,7 @@ GameObject:
   - component: {fileID: 1253237132}
   - component: {fileID: 1253237134}
   - component: {fileID: 1253237133}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24888,7 +24518,7 @@ GameObject:
   - component: {fileID: 1254939029}
   - component: {fileID: 1254939031}
   - component: {fileID: 1254939030}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24971,7 +24601,7 @@ GameObject:
   - component: {fileID: 1258396641}
   - component: {fileID: 1258396643}
   - component: {fileID: 1258396642}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25128,7 +24758,7 @@ GameObject:
   - component: {fileID: 1270753043}
   - component: {fileID: 1270753045}
   - component: {fileID: 1270753044}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25211,7 +24841,7 @@ GameObject:
   - component: {fileID: 1275586155}
   - component: {fileID: 1275586157}
   - component: {fileID: 1275586156}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25340,7 +24970,7 @@ GameObject:
   - component: {fileID: 1303105710}
   - component: {fileID: 1303105712}
   - component: {fileID: 1303105711}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25412,72 +25042,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1303105709}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &1304249928
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1483222914}
-    m_Modifications:
-    - target: {fileID: 1945632463053948, guid: be3573ba2ba53ea4f8979e64874c493d, type: 3}
-      propertyPath: m_Name
-      value: QueenLight
-      objectReference: {fileID: 0}
-    - target: {fileID: 1945632463053948, guid: be3573ba2ba53ea4f8979e64874c493d, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4607164402640316, guid: be3573ba2ba53ea4f8979e64874c493d, type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4607164402640316, guid: be3573ba2ba53ea4f8979e64874c493d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 39
-      objectReference: {fileID: 0}
-    - target: {fileID: 4607164402640316, guid: be3573ba2ba53ea4f8979e64874c493d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4607164402640316, guid: be3573ba2ba53ea4f8979e64874c493d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -29
-      objectReference: {fileID: 0}
-    - target: {fileID: 4607164402640316, guid: be3573ba2ba53ea4f8979e64874c493d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4607164402640316, guid: be3573ba2ba53ea4f8979e64874c493d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4607164402640316, guid: be3573ba2ba53ea4f8979e64874c493d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4607164402640316, guid: be3573ba2ba53ea4f8979e64874c493d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4607164402640316, guid: be3573ba2ba53ea4f8979e64874c493d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4607164402640316, guid: be3573ba2ba53ea4f8979e64874c493d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4607164402640316, guid: be3573ba2ba53ea4f8979e64874c493d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: be3573ba2ba53ea4f8979e64874c493d, type: 3}
---- !u!4 &1304249929 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4607164402640316, guid: be3573ba2ba53ea4f8979e64874c493d, type: 3}
-  m_PrefabInstance: {fileID: 1304249928}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1311578489
 GameObject:
   m_ObjectHideFlags: 0
@@ -25489,7 +25053,7 @@ GameObject:
   - component: {fileID: 1311578490}
   - component: {fileID: 1311578492}
   - component: {fileID: 1311578491}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25572,7 +25136,7 @@ GameObject:
   - component: {fileID: 1324931502}
   - component: {fileID: 1324931504}
   - component: {fileID: 1324931503}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25655,7 +25219,7 @@ GameObject:
   - component: {fileID: 1325240072}
   - component: {fileID: 1325240074}
   - component: {fileID: 1325240073}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25738,7 +25302,7 @@ GameObject:
   - component: {fileID: 1326451549}
   - component: {fileID: 1326451551}
   - component: {fileID: 1326451550}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25821,7 +25385,7 @@ GameObject:
   - component: {fileID: 1329746517}
   - component: {fileID: 1329746519}
   - component: {fileID: 1329746518}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25904,7 +25468,7 @@ GameObject:
   - component: {fileID: 1330453514}
   - component: {fileID: 1330453516}
   - component: {fileID: 1330453515}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25987,7 +25551,7 @@ GameObject:
   - component: {fileID: 1331254521}
   - component: {fileID: 1331254523}
   - component: {fileID: 1331254522}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26070,7 +25634,7 @@ GameObject:
   - component: {fileID: 1336072497}
   - component: {fileID: 1336072499}
   - component: {fileID: 1336072498}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26153,7 +25717,7 @@ GameObject:
   - component: {fileID: 1341852871}
   - component: {fileID: 1341852873}
   - component: {fileID: 1341852872}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26310,7 +25874,7 @@ GameObject:
   - component: {fileID: 1359178308}
   - component: {fileID: 1359178310}
   - component: {fileID: 1359178309}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26393,7 +25957,7 @@ GameObject:
   - component: {fileID: 1359541529}
   - component: {fileID: 1359541531}
   - component: {fileID: 1359541530}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26476,7 +26040,7 @@ GameObject:
   - component: {fileID: 1360196319}
   - component: {fileID: 1360196321}
   - component: {fileID: 1360196320}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26559,7 +26123,7 @@ GameObject:
   - component: {fileID: 1360863739}
   - component: {fileID: 1360863741}
   - component: {fileID: 1360863740}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26642,7 +26206,7 @@ GameObject:
   - component: {fileID: 1368512474}
   - component: {fileID: 1368512476}
   - component: {fileID: 1368512475}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26725,7 +26289,7 @@ GameObject:
   - component: {fileID: 1374731090}
   - component: {fileID: 1374731092}
   - component: {fileID: 1374731091}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26808,7 +26372,7 @@ GameObject:
   - component: {fileID: 1377472566}
   - component: {fileID: 1377472568}
   - component: {fileID: 1377472567}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26891,7 +26455,7 @@ GameObject:
   - component: {fileID: 1380289446}
   - component: {fileID: 1380289448}
   - component: {fileID: 1380289447}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26974,7 +26538,7 @@ GameObject:
   - component: {fileID: 1382608241}
   - component: {fileID: 1382608243}
   - component: {fileID: 1382608242}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27046,72 +26610,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1382608240}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &1385402241
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1483222914}
-    m_Modifications:
-    - target: {fileID: 1971375302472462, guid: f1fc282519e5c4a4daaa864f9c3d446f, type: 3}
-      propertyPath: m_Name
-      value: RookLight
-      objectReference: {fileID: 0}
-    - target: {fileID: 1971375302472462, guid: f1fc282519e5c4a4daaa864f9c3d446f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4656301317612888, guid: f1fc282519e5c4a4daaa864f9c3d446f, type: 3}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 4656301317612888, guid: f1fc282519e5c4a4daaa864f9c3d446f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 39
-      objectReference: {fileID: 0}
-    - target: {fileID: 4656301317612888, guid: f1fc282519e5c4a4daaa864f9c3d446f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4656301317612888, guid: f1fc282519e5c4a4daaa864f9c3d446f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -29
-      objectReference: {fileID: 0}
-    - target: {fileID: 4656301317612888, guid: f1fc282519e5c4a4daaa864f9c3d446f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4656301317612888, guid: f1fc282519e5c4a4daaa864f9c3d446f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4656301317612888, guid: f1fc282519e5c4a4daaa864f9c3d446f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4656301317612888, guid: f1fc282519e5c4a4daaa864f9c3d446f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4656301317612888, guid: f1fc282519e5c4a4daaa864f9c3d446f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4656301317612888, guid: f1fc282519e5c4a4daaa864f9c3d446f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4656301317612888, guid: f1fc282519e5c4a4daaa864f9c3d446f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f1fc282519e5c4a4daaa864f9c3d446f, type: 3}
---- !u!4 &1385402242 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4656301317612888, guid: f1fc282519e5c4a4daaa864f9c3d446f, type: 3}
-  m_PrefabInstance: {fileID: 1385402241}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1390598841
 GameObject:
   m_ObjectHideFlags: 0
@@ -27123,7 +26621,7 @@ GameObject:
   - component: {fileID: 1390598842}
   - component: {fileID: 1390598844}
   - component: {fileID: 1390598843}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27206,7 +26704,7 @@ GameObject:
   - component: {fileID: 1392156376}
   - component: {fileID: 1392156378}
   - component: {fileID: 1392156377}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27289,7 +26787,7 @@ GameObject:
   - component: {fileID: 1396103100}
   - component: {fileID: 1396103102}
   - component: {fileID: 1396103101}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27372,7 +26870,7 @@ GameObject:
   - component: {fileID: 1397299622}
   - component: {fileID: 1397299624}
   - component: {fileID: 1397299623}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27488,7 +26986,7 @@ GameObject:
   - component: {fileID: 1406712143}
   - component: {fileID: 1406712145}
   - component: {fileID: 1406712144}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27571,7 +27069,7 @@ GameObject:
   - component: {fileID: 1407552358}
   - component: {fileID: 1407552360}
   - component: {fileID: 1407552359}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27654,7 +27152,7 @@ GameObject:
   - component: {fileID: 1410592447}
   - component: {fileID: 1410592449}
   - component: {fileID: 1410592448}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27737,7 +27235,7 @@ GameObject:
   - component: {fileID: 1413718798}
   - component: {fileID: 1413718800}
   - component: {fileID: 1413718799}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27820,7 +27318,7 @@ GameObject:
   - component: {fileID: 1414377239}
   - component: {fileID: 1414377241}
   - component: {fileID: 1414377240}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28040,7 +27538,7 @@ GameObject:
   - component: {fileID: 1416703685}
   - component: {fileID: 1416703687}
   - component: {fileID: 1416703686}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28123,7 +27621,7 @@ GameObject:
   - component: {fileID: 1417147088}
   - component: {fileID: 1417147090}
   - component: {fileID: 1417147089}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28195,72 +27693,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1417147087}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &1417883594
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1483222914}
-    m_Modifications:
-    - target: {fileID: 1028868664329696, guid: 1c0f2faf14460a5478057fd4e0575576, type: 3}
-      propertyPath: m_Name
-      value: BishopLight
-      objectReference: {fileID: 0}
-    - target: {fileID: 1028868664329696, guid: 1c0f2faf14460a5478057fd4e0575576, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4626390214331530, guid: 1c0f2faf14460a5478057fd4e0575576, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4626390214331530, guid: 1c0f2faf14460a5478057fd4e0575576, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 39
-      objectReference: {fileID: 0}
-    - target: {fileID: 4626390214331530, guid: 1c0f2faf14460a5478057fd4e0575576, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4626390214331530, guid: 1c0f2faf14460a5478057fd4e0575576, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -29
-      objectReference: {fileID: 0}
-    - target: {fileID: 4626390214331530, guid: 1c0f2faf14460a5478057fd4e0575576, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4626390214331530, guid: 1c0f2faf14460a5478057fd4e0575576, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4626390214331530, guid: 1c0f2faf14460a5478057fd4e0575576, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4626390214331530, guid: 1c0f2faf14460a5478057fd4e0575576, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4626390214331530, guid: 1c0f2faf14460a5478057fd4e0575576, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4626390214331530, guid: 1c0f2faf14460a5478057fd4e0575576, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4626390214331530, guid: 1c0f2faf14460a5478057fd4e0575576, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1c0f2faf14460a5478057fd4e0575576, type: 3}
---- !u!4 &1417883595 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4626390214331530, guid: 1c0f2faf14460a5478057fd4e0575576, type: 3}
-  m_PrefabInstance: {fileID: 1417883594}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1418639506
 GameObject:
   m_ObjectHideFlags: 0
@@ -28272,7 +27704,7 @@ GameObject:
   - component: {fileID: 1418639507}
   - component: {fileID: 1418639509}
   - component: {fileID: 1418639508}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28355,7 +27787,7 @@ GameObject:
   - component: {fileID: 1425467813}
   - component: {fileID: 1425467815}
   - component: {fileID: 1425467814}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28438,7 +27870,7 @@ GameObject:
   - component: {fileID: 1428754551}
   - component: {fileID: 1428754553}
   - component: {fileID: 1428754552}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28521,7 +27953,7 @@ GameObject:
   - component: {fileID: 1432538379}
   - component: {fileID: 1432538381}
   - component: {fileID: 1432538380}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28593,112 +28025,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1432538378}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &1434494313
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1483222914}
-    m_Modifications:
-    - target: {fileID: 1867195236767680, guid: b1d95c04dd54e434aa65855a0f77d30f, type: 3}
-      propertyPath: m_Name
-      value: PawnDark
-      objectReference: {fileID: 0}
-    - target: {fileID: 1867195236767680, guid: b1d95c04dd54e434aa65855a0f77d30f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2388638223403397927, guid: b1d95c04dd54e434aa65855a0f77d30f, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2388638223403397927, guid: b1d95c04dd54e434aa65855a0f77d30f, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2388638223403397927, guid: b1d95c04dd54e434aa65855a0f77d30f, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2388638223403397927, guid: b1d95c04dd54e434aa65855a0f77d30f, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2388638223403397927, guid: b1d95c04dd54e434aa65855a0f77d30f, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2388638223403397927, guid: b1d95c04dd54e434aa65855a0f77d30f, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2388638223403397927, guid: b1d95c04dd54e434aa65855a0f77d30f, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2388638223403397927, guid: b1d95c04dd54e434aa65855a0f77d30f, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 2388638223403397927, guid: b1d95c04dd54e434aa65855a0f77d30f, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 2388638223403397927, guid: b1d95c04dd54e434aa65855a0f77d30f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2388638223403397927, guid: b1d95c04dd54e434aa65855a0f77d30f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2388638223403397927, guid: b1d95c04dd54e434aa65855a0f77d30f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -29
-      objectReference: {fileID: 0}
-    - target: {fileID: 2388638223403397927, guid: b1d95c04dd54e434aa65855a0f77d30f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2388638223403397927, guid: b1d95c04dd54e434aa65855a0f77d30f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000021855694
-      objectReference: {fileID: 0}
-    - target: {fileID: 2388638223403397927, guid: b1d95c04dd54e434aa65855a0f77d30f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2388638223403397927, guid: b1d95c04dd54e434aa65855a0f77d30f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2388638223403397927, guid: b1d95c04dd54e434aa65855a0f77d30f, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 39
-      objectReference: {fileID: 0}
-    - target: {fileID: 2388638223403397927, guid: b1d95c04dd54e434aa65855a0f77d30f, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2388638223403397927, guid: b1d95c04dd54e434aa65855a0f77d30f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2388638223403397927, guid: b1d95c04dd54e434aa65855a0f77d30f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2388638223403397927, guid: b1d95c04dd54e434aa65855a0f77d30f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b1d95c04dd54e434aa65855a0f77d30f, type: 3}
---- !u!224 &1434494314 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2388638223403397927, guid: b1d95c04dd54e434aa65855a0f77d30f, type: 3}
-  m_PrefabInstance: {fileID: 1434494313}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1435424462
 GameObject:
   m_ObjectHideFlags: 0
@@ -28710,7 +28036,7 @@ GameObject:
   - component: {fileID: 1435424463}
   - component: {fileID: 1435424465}
   - component: {fileID: 1435424464}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28793,7 +28119,7 @@ GameObject:
   - component: {fileID: 1443891120}
   - component: {fileID: 1443891122}
   - component: {fileID: 1443891121}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28876,7 +28202,7 @@ GameObject:
   - component: {fileID: 1447759760}
   - component: {fileID: 1447759762}
   - component: {fileID: 1447759761}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28959,7 +28285,7 @@ GameObject:
   - component: {fileID: 1461277699}
   - component: {fileID: 1461277701}
   - component: {fileID: 1461277700}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29042,7 +28368,7 @@ GameObject:
   - component: {fileID: 1463576915}
   - component: {fileID: 1463576917}
   - component: {fileID: 1463576916}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29125,7 +28451,7 @@ GameObject:
   - component: {fileID: 1469906596}
   - component: {fileID: 1469906598}
   - component: {fileID: 1469906597}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29208,7 +28534,7 @@ GameObject:
   - component: {fileID: 1474770737}
   - component: {fileID: 1474770739}
   - component: {fileID: 1474770738}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29291,7 +28617,7 @@ GameObject:
   - component: {fileID: 1476407074}
   - component: {fileID: 1476407076}
   - component: {fileID: 1476407075}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29374,7 +28700,7 @@ GameObject:
   - component: {fileID: 1480530262}
   - component: {fileID: 1480530264}
   - component: {fileID: 1480530263}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29477,29 +28803,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3da7d69b0ac73864883e07078b369762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  opaqueAlpha: 0
+  transpAlpha: 0
+  pieceSpeed: 0.75
+  turnWhite: 1
+  turnNum: 0
   whites: {fileID: 334307305}
   blacks: {fileID: 2066548051}
   mainCamera: {fileID: 1974944749}
   moveTarget: {fileID: 3708691902215264869, guid: 18d5852119558614ab622d99232068f9, type: 3}
   attackTarget: {fileID: 4805548384104164259, guid: 3575a45d3cd0e7141b5791e0dcda218f, type: 3}
+  higherBoards: {fileID: 2143922602}
   check: {fileID: 1483222921}
-  turnWhite: 1
-  do3D: 1
-  pieceSpeed: 0.75
-  turnNum: 0
-  pieceRef:
-  - {fileID: 1672242659374470, guid: f005021ceced8b240983e71a3d481180, type: 3}
-  - {fileID: 1028868664329696, guid: 1c0f2faf14460a5478057fd4e0575576, type: 3}
-  - {fileID: 1810274083847610, guid: 309659d4eb727d74d91c4875a85edc00, type: 3}
-  - {fileID: 1389686872840900, guid: 27d2608cb94ae2d44811af52793c3562, type: 3}
-  - {fileID: 1179637952412708, guid: a007978aa14da3945b0f6655f65cc278, type: 3}
-  - {fileID: 1992623236052302, guid: 85ad2c556fdbd5747ac7f5f67f10e59b, type: 3}
-  - {fileID: 1867195236767680, guid: b1d95c04dd54e434aa65855a0f77d30f, type: 3}
-  - {fileID: 1006356879557798, guid: 391882f14be491c40962add653844907, type: 3}
-  - {fileID: 1471985601831630, guid: 664a4dc6e997f5f47a9233db911328ac, type: 3}
-  - {fileID: 1945632463053948, guid: be3573ba2ba53ea4f8979e64874c493d, type: 3}
-  - {fileID: 1211746330687442, guid: a72c2cd1520039b4084a4a33dfeccf7e, type: 3}
-  - {fileID: 1971375302472462, guid: f1fc282519e5c4a4daaa864f9c3d446f, type: 3}
 --- !u!4 &1483222914
 Transform:
   m_ObjectHideFlags: 0
@@ -29511,19 +28826,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 633844877}
-  - {fileID: 1417883595}
-  - {fileID: 1739333943}
-  - {fileID: 928473433}
-  - {fileID: 1142334563}
-  - {fileID: 1923622552}
-  - {fileID: 1434494314}
-  - {fileID: 353163224}
-  - {fileID: 1529722037}
-  - {fileID: 1304249929}
-  - {fileID: 770552884}
-  - {fileID: 1385402242}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -29567,7 +28870,7 @@ GameObject:
   - component: {fileID: 1489660789}
   - component: {fileID: 1489660791}
   - component: {fileID: 1489660790}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29650,7 +28953,7 @@ GameObject:
   - component: {fileID: 1498549270}
   - component: {fileID: 1498549272}
   - component: {fileID: 1498549271}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29733,7 +29036,7 @@ GameObject:
   - component: {fileID: 1517115824}
   - component: {fileID: 1517115826}
   - component: {fileID: 1517115825}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29805,72 +29108,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517115823}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &1529722036
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1483222914}
-    m_Modifications:
-    - target: {fileID: 1471985601831630, guid: 664a4dc6e997f5f47a9233db911328ac, type: 3}
-      propertyPath: m_Name
-      value: QueenDark
-      objectReference: {fileID: 0}
-    - target: {fileID: 1471985601831630, guid: 664a4dc6e997f5f47a9233db911328ac, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4213819079365966, guid: 664a4dc6e997f5f47a9233db911328ac, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4213819079365966, guid: 664a4dc6e997f5f47a9233db911328ac, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 39
-      objectReference: {fileID: 0}
-    - target: {fileID: 4213819079365966, guid: 664a4dc6e997f5f47a9233db911328ac, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4213819079365966, guid: 664a4dc6e997f5f47a9233db911328ac, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -29
-      objectReference: {fileID: 0}
-    - target: {fileID: 4213819079365966, guid: 664a4dc6e997f5f47a9233db911328ac, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4213819079365966, guid: 664a4dc6e997f5f47a9233db911328ac, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4213819079365966, guid: 664a4dc6e997f5f47a9233db911328ac, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4213819079365966, guid: 664a4dc6e997f5f47a9233db911328ac, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4213819079365966, guid: 664a4dc6e997f5f47a9233db911328ac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4213819079365966, guid: 664a4dc6e997f5f47a9233db911328ac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4213819079365966, guid: 664a4dc6e997f5f47a9233db911328ac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 664a4dc6e997f5f47a9233db911328ac, type: 3}
---- !u!4 &1529722037 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4213819079365966, guid: 664a4dc6e997f5f47a9233db911328ac, type: 3}
-  m_PrefabInstance: {fileID: 1529722036}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1532322643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29932,7 +29169,7 @@ GameObject:
   - component: {fileID: 1545724403}
   - component: {fileID: 1545724405}
   - component: {fileID: 1545724404}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30015,7 +29252,7 @@ GameObject:
   - component: {fileID: 1545879080}
   - component: {fileID: 1545879082}
   - component: {fileID: 1545879081}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30098,7 +29335,7 @@ GameObject:
   - component: {fileID: 1563343310}
   - component: {fileID: 1563343312}
   - component: {fileID: 1563343311}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30181,7 +29418,7 @@ GameObject:
   - component: {fileID: 1565939985}
   - component: {fileID: 1565939987}
   - component: {fileID: 1565939986}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30264,7 +29501,7 @@ GameObject:
   - component: {fileID: 1566580877}
   - component: {fileID: 1566580879}
   - component: {fileID: 1566580878}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30347,7 +29584,7 @@ GameObject:
   - component: {fileID: 1570286169}
   - component: {fileID: 1570286171}
   - component: {fileID: 1570286170}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30430,7 +29667,7 @@ GameObject:
   - component: {fileID: 1571233029}
   - component: {fileID: 1571233031}
   - component: {fileID: 1571233030}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30513,7 +29750,7 @@ GameObject:
   - component: {fileID: 1577333290}
   - component: {fileID: 1577333292}
   - component: {fileID: 1577333291}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30596,7 +29833,7 @@ GameObject:
   - component: {fileID: 1579213041}
   - component: {fileID: 1579213043}
   - component: {fileID: 1579213042}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30679,7 +29916,7 @@ GameObject:
   - component: {fileID: 1582374432}
   - component: {fileID: 1582374434}
   - component: {fileID: 1582374433}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30762,7 +29999,7 @@ GameObject:
   - component: {fileID: 1583640761}
   - component: {fileID: 1583640763}
   - component: {fileID: 1583640762}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30845,7 +30082,7 @@ GameObject:
   - component: {fileID: 1597401374}
   - component: {fileID: 1597401376}
   - component: {fileID: 1597401375}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30928,7 +30165,7 @@ GameObject:
   - component: {fileID: 1602797143}
   - component: {fileID: 1602797145}
   - component: {fileID: 1602797144}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31011,7 +30248,7 @@ GameObject:
   - component: {fileID: 1603400078}
   - component: {fileID: 1603400080}
   - component: {fileID: 1603400079}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31094,7 +30331,7 @@ GameObject:
   - component: {fileID: 1603946160}
   - component: {fileID: 1603946162}
   - component: {fileID: 1603946161}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31177,7 +30414,7 @@ GameObject:
   - component: {fileID: 1612943522}
   - component: {fileID: 1612943524}
   - component: {fileID: 1612943523}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31260,7 +30497,7 @@ GameObject:
   - component: {fileID: 1614696713}
   - component: {fileID: 1614696715}
   - component: {fileID: 1614696714}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31343,7 +30580,7 @@ GameObject:
   - component: {fileID: 1622700601}
   - component: {fileID: 1622700603}
   - component: {fileID: 1622700602}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31426,7 +30663,7 @@ GameObject:
   - component: {fileID: 1626739347}
   - component: {fileID: 1626739349}
   - component: {fileID: 1626739348}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31509,7 +30746,7 @@ GameObject:
   - component: {fileID: 1628995256}
   - component: {fileID: 1628995258}
   - component: {fileID: 1628995257}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31592,7 +30829,7 @@ GameObject:
   - component: {fileID: 1640274726}
   - component: {fileID: 1640274728}
   - component: {fileID: 1640274727}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31675,7 +30912,7 @@ GameObject:
   - component: {fileID: 1642525776}
   - component: {fileID: 1642525778}
   - component: {fileID: 1642525777}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31758,7 +30995,7 @@ GameObject:
   - component: {fileID: 1646634042}
   - component: {fileID: 1646634044}
   - component: {fileID: 1646634043}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31841,7 +31078,7 @@ GameObject:
   - component: {fileID: 1652318878}
   - component: {fileID: 1652318880}
   - component: {fileID: 1652318879}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31924,7 +31161,7 @@ GameObject:
   - component: {fileID: 1654920757}
   - component: {fileID: 1654920759}
   - component: {fileID: 1654920758}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32007,7 +31244,7 @@ GameObject:
   - component: {fileID: 1657730610}
   - component: {fileID: 1657730612}
   - component: {fileID: 1657730611}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32090,7 +31327,7 @@ GameObject:
   - component: {fileID: 1659391340}
   - component: {fileID: 1659391342}
   - component: {fileID: 1659391341}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32173,7 +31410,7 @@ GameObject:
   - component: {fileID: 1659894264}
   - component: {fileID: 1659894266}
   - component: {fileID: 1659894265}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32256,7 +31493,7 @@ GameObject:
   - component: {fileID: 1670092006}
   - component: {fileID: 1670092008}
   - component: {fileID: 1670092007}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32339,7 +31576,7 @@ GameObject:
   - component: {fileID: 1673299958}
   - component: {fileID: 1673299960}
   - component: {fileID: 1673299959}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32422,7 +31659,7 @@ GameObject:
   - component: {fileID: 1675633488}
   - component: {fileID: 1675633490}
   - component: {fileID: 1675633489}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32505,7 +31742,7 @@ GameObject:
   - component: {fileID: 1681119287}
   - component: {fileID: 1681119289}
   - component: {fileID: 1681119288}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32588,7 +31825,7 @@ GameObject:
   - component: {fileID: 1681945298}
   - component: {fileID: 1681945300}
   - component: {fileID: 1681945299}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32671,7 +31908,7 @@ GameObject:
   - component: {fileID: 1682656964}
   - component: {fileID: 1682656966}
   - component: {fileID: 1682656965}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32754,7 +31991,7 @@ GameObject:
   - component: {fileID: 1684748459}
   - component: {fileID: 1684748461}
   - component: {fileID: 1684748460}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32837,7 +32074,7 @@ GameObject:
   - component: {fileID: 1687712792}
   - component: {fileID: 1687712794}
   - component: {fileID: 1687712793}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32918,7 +32155,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1694713680}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Darks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33249,7 +32486,7 @@ GameObject:
   - component: {fileID: 1701195812}
   - component: {fileID: 1701195814}
   - component: {fileID: 1701195813}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33332,7 +32569,7 @@ GameObject:
   - component: {fileID: 1702218990}
   - component: {fileID: 1702218992}
   - component: {fileID: 1702218991}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33465,7 +32702,7 @@ GameObject:
   - component: {fileID: 1707651461}
   - component: {fileID: 1707651463}
   - component: {fileID: 1707651462}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33548,7 +32785,7 @@ GameObject:
   - component: {fileID: 1711005416}
   - component: {fileID: 1711005418}
   - component: {fileID: 1711005417}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33631,7 +32868,7 @@ GameObject:
   - component: {fileID: 1711029673}
   - component: {fileID: 1711029675}
   - component: {fileID: 1711029674}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33714,7 +32951,7 @@ GameObject:
   - component: {fileID: 1716440116}
   - component: {fileID: 1716440118}
   - component: {fileID: 1716440117}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33797,7 +33034,7 @@ GameObject:
   - component: {fileID: 1722154692}
   - component: {fileID: 1722154694}
   - component: {fileID: 1722154693}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33880,7 +33117,7 @@ GameObject:
   - component: {fileID: 1731827731}
   - component: {fileID: 1731827733}
   - component: {fileID: 1731827732}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33963,7 +33200,7 @@ GameObject:
   - component: {fileID: 1732187696}
   - component: {fileID: 1732187698}
   - component: {fileID: 1732187697}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34035,72 +33272,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1732187695}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &1739333942
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1483222914}
-    m_Modifications:
-    - target: {fileID: 1810274083847610, guid: 309659d4eb727d74d91c4875a85edc00, type: 3}
-      propertyPath: m_Name
-      value: KingDark
-      objectReference: {fileID: 0}
-    - target: {fileID: 1810274083847610, guid: 309659d4eb727d74d91c4875a85edc00, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4200693306526636, guid: 309659d4eb727d74d91c4875a85edc00, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4200693306526636, guid: 309659d4eb727d74d91c4875a85edc00, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 36
-      objectReference: {fileID: 0}
-    - target: {fileID: 4200693306526636, guid: 309659d4eb727d74d91c4875a85edc00, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4200693306526636, guid: 309659d4eb727d74d91c4875a85edc00, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -31
-      objectReference: {fileID: 0}
-    - target: {fileID: 4200693306526636, guid: 309659d4eb727d74d91c4875a85edc00, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4200693306526636, guid: 309659d4eb727d74d91c4875a85edc00, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4200693306526636, guid: 309659d4eb727d74d91c4875a85edc00, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4200693306526636, guid: 309659d4eb727d74d91c4875a85edc00, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4200693306526636, guid: 309659d4eb727d74d91c4875a85edc00, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4200693306526636, guid: 309659d4eb727d74d91c4875a85edc00, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 4200693306526636, guid: 309659d4eb727d74d91c4875a85edc00, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 309659d4eb727d74d91c4875a85edc00, type: 3}
---- !u!4 &1739333943 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4200693306526636, guid: 309659d4eb727d74d91c4875a85edc00, type: 3}
-  m_PrefabInstance: {fileID: 1739333942}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1739766959
 GameObject:
   m_ObjectHideFlags: 0
@@ -34112,7 +33283,7 @@ GameObject:
   - component: {fileID: 1739766960}
   - component: {fileID: 1739766962}
   - component: {fileID: 1739766961}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34195,7 +33366,7 @@ GameObject:
   - component: {fileID: 1742626958}
   - component: {fileID: 1742626960}
   - component: {fileID: 1742626959}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34278,7 +33449,7 @@ GameObject:
   - component: {fileID: 1743045993}
   - component: {fileID: 1743045995}
   - component: {fileID: 1743045994}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34361,7 +33532,7 @@ GameObject:
   - component: {fileID: 1745632051}
   - component: {fileID: 1745632053}
   - component: {fileID: 1745632052}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34444,7 +33615,7 @@ GameObject:
   - component: {fileID: 1750521876}
   - component: {fileID: 1750521878}
   - component: {fileID: 1750521877}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34605,7 +33776,7 @@ GameObject:
   - component: {fileID: 1767316325}
   - component: {fileID: 1767316327}
   - component: {fileID: 1767316326}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34721,7 +33892,7 @@ GameObject:
   - component: {fileID: 1770710887}
   - component: {fileID: 1770710889}
   - component: {fileID: 1770710888}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34804,7 +33975,7 @@ GameObject:
   - component: {fileID: 1772841386}
   - component: {fileID: 1772841388}
   - component: {fileID: 1772841387}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34887,7 +34058,7 @@ GameObject:
   - component: {fileID: 1774528260}
   - component: {fileID: 1774528262}
   - component: {fileID: 1774528261}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34970,7 +34141,7 @@ GameObject:
   - component: {fileID: 1777569023}
   - component: {fileID: 1777569025}
   - component: {fileID: 1777569024}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35053,7 +34224,7 @@ GameObject:
   - component: {fileID: 1788512425}
   - component: {fileID: 1788512427}
   - component: {fileID: 1788512426}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35136,7 +34307,7 @@ GameObject:
   - component: {fileID: 1788948550}
   - component: {fileID: 1788948552}
   - component: {fileID: 1788948551}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35219,7 +34390,7 @@ GameObject:
   - component: {fileID: 1792491110}
   - component: {fileID: 1792491112}
   - component: {fileID: 1792491111}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35414,7 +34585,7 @@ GameObject:
   - component: {fileID: 1802176552}
   - component: {fileID: 1802176554}
   - component: {fileID: 1802176553}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35497,7 +34668,7 @@ GameObject:
   - component: {fileID: 1811849672}
   - component: {fileID: 1811849674}
   - component: {fileID: 1811849673}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35580,7 +34751,7 @@ GameObject:
   - component: {fileID: 1823841329}
   - component: {fileID: 1823841331}
   - component: {fileID: 1823841330}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35663,7 +34834,7 @@ GameObject:
   - component: {fileID: 1828908626}
   - component: {fileID: 1828908628}
   - component: {fileID: 1828908627}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35746,7 +34917,7 @@ GameObject:
   - component: {fileID: 1829977768}
   - component: {fileID: 1829977770}
   - component: {fileID: 1829977769}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35829,7 +35000,7 @@ GameObject:
   - component: {fileID: 1830353056}
   - component: {fileID: 1830353058}
   - component: {fileID: 1830353057}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35912,7 +35083,7 @@ GameObject:
   - component: {fileID: 1839281560}
   - component: {fileID: 1839281562}
   - component: {fileID: 1839281561}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35995,7 +35166,7 @@ GameObject:
   - component: {fileID: 1839718427}
   - component: {fileID: 1839718429}
   - component: {fileID: 1839718428}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36078,7 +35249,7 @@ GameObject:
   - component: {fileID: 1842155221}
   - component: {fileID: 1842155223}
   - component: {fileID: 1842155222}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36161,7 +35332,7 @@ GameObject:
   - component: {fileID: 1853625843}
   - component: {fileID: 1853625845}
   - component: {fileID: 1853625844}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36244,7 +35415,7 @@ GameObject:
   - component: {fileID: 1857207815}
   - component: {fileID: 1857207817}
   - component: {fileID: 1857207816}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36327,7 +35498,7 @@ GameObject:
   - component: {fileID: 1861168061}
   - component: {fileID: 1861168063}
   - component: {fileID: 1861168062}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36514,7 +35685,7 @@ GameObject:
   - component: {fileID: 1864998416}
   - component: {fileID: 1864998418}
   - component: {fileID: 1864998417}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36597,7 +35768,7 @@ GameObject:
   - component: {fileID: 1867580901}
   - component: {fileID: 1867580903}
   - component: {fileID: 1867580902}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36685,7 +35856,7 @@ GameObject:
   - component: {fileID: 1873381169}
   - component: {fileID: 1873381171}
   - component: {fileID: 1873381170}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36768,7 +35939,7 @@ GameObject:
   - component: {fileID: 1877494505}
   - component: {fileID: 1877494507}
   - component: {fileID: 1877494506}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36851,7 +36022,7 @@ GameObject:
   - component: {fileID: 1878649450}
   - component: {fileID: 1878649452}
   - component: {fileID: 1878649451}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36934,7 +36105,7 @@ GameObject:
   - component: {fileID: 1886290277}
   - component: {fileID: 1886290279}
   - component: {fileID: 1886290278}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37017,7 +36188,7 @@ GameObject:
   - component: {fileID: 1886789880}
   - component: {fileID: 1886789882}
   - component: {fileID: 1886789881}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37100,7 +36271,7 @@ GameObject:
   - component: {fileID: 1886985101}
   - component: {fileID: 1886985103}
   - component: {fileID: 1886985102}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37183,7 +36354,7 @@ GameObject:
   - component: {fileID: 1889156776}
   - component: {fileID: 1889156778}
   - component: {fileID: 1889156777}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37266,7 +36437,7 @@ GameObject:
   - component: {fileID: 1892930834}
   - component: {fileID: 1892930836}
   - component: {fileID: 1892930835}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37349,7 +36520,7 @@ GameObject:
   - component: {fileID: 1908699393}
   - component: {fileID: 1908699395}
   - component: {fileID: 1908699394}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37432,7 +36603,7 @@ GameObject:
   - component: {fileID: 1912856212}
   - component: {fileID: 1912856214}
   - component: {fileID: 1912856213}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37515,7 +36686,7 @@ GameObject:
   - component: {fileID: 1914943013}
   - component: {fileID: 1914943015}
   - component: {fileID: 1914943014}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37587,72 +36758,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1914943012}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &1923622551
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1483222914}
-    m_Modifications:
-    - target: {fileID: 1992623236052302, guid: 85ad2c556fdbd5747ac7f5f67f10e59b, type: 3}
-      propertyPath: m_Name
-      value: KnightLight
-      objectReference: {fileID: 0}
-    - target: {fileID: 1992623236052302, guid: 85ad2c556fdbd5747ac7f5f67f10e59b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4967576429096158, guid: 85ad2c556fdbd5747ac7f5f67f10e59b, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4967576429096158, guid: 85ad2c556fdbd5747ac7f5f67f10e59b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 39
-      objectReference: {fileID: 0}
-    - target: {fileID: 4967576429096158, guid: 85ad2c556fdbd5747ac7f5f67f10e59b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4967576429096158, guid: 85ad2c556fdbd5747ac7f5f67f10e59b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -29
-      objectReference: {fileID: 0}
-    - target: {fileID: 4967576429096158, guid: 85ad2c556fdbd5747ac7f5f67f10e59b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4967576429096158, guid: 85ad2c556fdbd5747ac7f5f67f10e59b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4967576429096158, guid: 85ad2c556fdbd5747ac7f5f67f10e59b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4967576429096158, guid: 85ad2c556fdbd5747ac7f5f67f10e59b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4967576429096158, guid: 85ad2c556fdbd5747ac7f5f67f10e59b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4967576429096158, guid: 85ad2c556fdbd5747ac7f5f67f10e59b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4967576429096158, guid: 85ad2c556fdbd5747ac7f5f67f10e59b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 85ad2c556fdbd5747ac7f5f67f10e59b, type: 3}
---- !u!4 &1923622552 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4967576429096158, guid: 85ad2c556fdbd5747ac7f5f67f10e59b, type: 3}
-  m_PrefabInstance: {fileID: 1923622551}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1929220051
 GameObject:
   m_ObjectHideFlags: 0
@@ -37664,7 +36769,7 @@ GameObject:
   - component: {fileID: 1929220052}
   - component: {fileID: 1929220054}
   - component: {fileID: 1929220053}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37747,7 +36852,7 @@ GameObject:
   - component: {fileID: 1929902352}
   - component: {fileID: 1929902354}
   - component: {fileID: 1929902353}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37830,7 +36935,7 @@ GameObject:
   - component: {fileID: 1931206339}
   - component: {fileID: 1931206341}
   - component: {fileID: 1931206340}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37913,7 +37018,7 @@ GameObject:
   - component: {fileID: 1933884038}
   - component: {fileID: 1933884040}
   - component: {fileID: 1933884039}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37996,7 +37101,7 @@ GameObject:
   - component: {fileID: 1939438656}
   - component: {fileID: 1939438658}
   - component: {fileID: 1939438657}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38079,7 +37184,7 @@ GameObject:
   - component: {fileID: 1942571538}
   - component: {fileID: 1942571540}
   - component: {fileID: 1942571539}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38162,7 +37267,7 @@ GameObject:
   - component: {fileID: 1958121545}
   - component: {fileID: 1958121547}
   - component: {fileID: 1958121546}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38245,7 +37350,7 @@ GameObject:
   - component: {fileID: 1961050669}
   - component: {fileID: 1961050671}
   - component: {fileID: 1961050670}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38328,7 +37433,7 @@ GameObject:
   - component: {fileID: 1968223636}
   - component: {fileID: 1968223638}
   - component: {fileID: 1968223637}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38411,7 +37516,7 @@ GameObject:
   - component: {fileID: 1974070136}
   - component: {fileID: 1974070138}
   - component: {fileID: 1974070137}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38544,7 +37649,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.39215687, g: 0.27383912, b: 0.17007832, a: 1}
+  m_BackGroundColor: {r: 0.15614986, g: 0.18881673, b: 0.2735849, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -38607,7 +37712,7 @@ GameObject:
   - component: {fileID: 1975446490}
   - component: {fileID: 1975446492}
   - component: {fileID: 1975446491}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38690,7 +37795,7 @@ GameObject:
   - component: {fileID: 1980280699}
   - component: {fileID: 1980280701}
   - component: {fileID: 1980280700}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38773,7 +37878,7 @@ GameObject:
   - component: {fileID: 1988695170}
   - component: {fileID: 1988695172}
   - component: {fileID: 1988695171}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38856,7 +37961,7 @@ GameObject:
   - component: {fileID: 1989312396}
   - component: {fileID: 1989312398}
   - component: {fileID: 1989312397}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38989,7 +38094,7 @@ GameObject:
   - component: {fileID: 1993693906}
   - component: {fileID: 1993693908}
   - component: {fileID: 1993693907}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39072,7 +38177,7 @@ GameObject:
   - component: {fileID: 1997424738}
   - component: {fileID: 1997424740}
   - component: {fileID: 1997424739}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39155,7 +38260,7 @@ GameObject:
   - component: {fileID: 2007356708}
   - component: {fileID: 2007356710}
   - component: {fileID: 2007356709}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39238,7 +38343,7 @@ GameObject:
   - component: {fileID: 2010284071}
   - component: {fileID: 2010284073}
   - component: {fileID: 2010284072}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39321,7 +38426,7 @@ GameObject:
   - component: {fileID: 2013768649}
   - component: {fileID: 2013768651}
   - component: {fileID: 2013768650}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39404,7 +38509,7 @@ GameObject:
   - component: {fileID: 2019334571}
   - component: {fileID: 2019334573}
   - component: {fileID: 2019334572}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39627,7 +38732,7 @@ GameObject:
   - component: {fileID: 2024314031}
   - component: {fileID: 2024314033}
   - component: {fileID: 2024314032}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39710,7 +38815,7 @@ GameObject:
   - component: {fileID: 2027545026}
   - component: {fileID: 2027545028}
   - component: {fileID: 2027545027}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39793,7 +38898,7 @@ GameObject:
   - component: {fileID: 2030790479}
   - component: {fileID: 2030790481}
   - component: {fileID: 2030790480}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39876,7 +38981,7 @@ GameObject:
   - component: {fileID: 2030885301}
   - component: {fileID: 2030885303}
   - component: {fileID: 2030885302}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39959,7 +39064,7 @@ GameObject:
   - component: {fileID: 2031147973}
   - component: {fileID: 2031147975}
   - component: {fileID: 2031147974}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40042,7 +39147,7 @@ GameObject:
   - component: {fileID: 2033631787}
   - component: {fileID: 2033631789}
   - component: {fileID: 2033631788}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40125,7 +39230,7 @@ GameObject:
   - component: {fileID: 2041490515}
   - component: {fileID: 2041490517}
   - component: {fileID: 2041490516}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40208,7 +39313,7 @@ GameObject:
   - component: {fileID: 2044222661}
   - component: {fileID: 2044222663}
   - component: {fileID: 2044222662}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40291,7 +39396,7 @@ GameObject:
   - component: {fileID: 2045864309}
   - component: {fileID: 2045864311}
   - component: {fileID: 2045864310}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40374,7 +39479,7 @@ GameObject:
   - component: {fileID: 2047434477}
   - component: {fileID: 2047434479}
   - component: {fileID: 2047434478}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40457,7 +39562,7 @@ GameObject:
   - component: {fileID: 2049478005}
   - component: {fileID: 2049478007}
   - component: {fileID: 2049478006}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40540,7 +39645,7 @@ GameObject:
   - component: {fileID: 2050622578}
   - component: {fileID: 2050622580}
   - component: {fileID: 2050622579}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40623,7 +39728,7 @@ GameObject:
   - component: {fileID: 2057529331}
   - component: {fileID: 2057529333}
   - component: {fileID: 2057529332}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40760,7 +39865,7 @@ GameObject:
   - component: {fileID: 2066142308}
   - component: {fileID: 2066142310}
   - component: {fileID: 2066142309}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40880,7 +39985,7 @@ GameObject:
   - component: {fileID: 2078040249}
   - component: {fileID: 2078040251}
   - component: {fileID: 2078040250}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40963,7 +40068,7 @@ GameObject:
   - component: {fileID: 2090051853}
   - component: {fileID: 2090051855}
   - component: {fileID: 2090051854}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41046,7 +40151,7 @@ GameObject:
   - component: {fileID: 2093276085}
   - component: {fileID: 2093276087}
   - component: {fileID: 2093276086}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41129,7 +40234,7 @@ GameObject:
   - component: {fileID: 2095114678}
   - component: {fileID: 2095114680}
   - component: {fileID: 2095114679}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41212,7 +40317,7 @@ GameObject:
   - component: {fileID: 2098381289}
   - component: {fileID: 2098381291}
   - component: {fileID: 2098381290}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41295,7 +40400,7 @@ GameObject:
   - component: {fileID: 2100286130}
   - component: {fileID: 2100286132}
   - component: {fileID: 2100286131}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41448,7 +40553,7 @@ GameObject:
   - component: {fileID: 2100867336}
   - component: {fileID: 2100867338}
   - component: {fileID: 2100867337}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41531,7 +40636,7 @@ GameObject:
   - component: {fileID: 2108192887}
   - component: {fileID: 2108192889}
   - component: {fileID: 2108192888}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41614,7 +40719,7 @@ GameObject:
   - component: {fileID: 2108776858}
   - component: {fileID: 2108776860}
   - component: {fileID: 2108776859}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41697,7 +40802,7 @@ GameObject:
   - component: {fileID: 2120794136}
   - component: {fileID: 2120794138}
   - component: {fileID: 2120794137}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41780,7 +40885,7 @@ GameObject:
   - component: {fileID: 2126737742}
   - component: {fileID: 2126737744}
   - component: {fileID: 2126737743}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41863,7 +40968,7 @@ GameObject:
   - component: {fileID: 2127844856}
   - component: {fileID: 2127844858}
   - component: {fileID: 2127844857}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41946,7 +41051,7 @@ GameObject:
   - component: {fileID: 2128828431}
   - component: {fileID: 2128828433}
   - component: {fileID: 2128828432}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42029,7 +41134,7 @@ GameObject:
   - component: {fileID: 2141176842}
   - component: {fileID: 2141176844}
   - component: {fileID: 2141176843}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Empty Target Dark(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42145,7 +41250,7 @@ GameObject:
   - component: {fileID: 2144006060}
   - component: {fileID: 2144006062}
   - component: {fileID: 2144006061}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty Target Light(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

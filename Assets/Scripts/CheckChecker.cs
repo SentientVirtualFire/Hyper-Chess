@@ -15,44 +15,40 @@ public class CheckChecker : MonoBehaviour
     bool prevTurn = true;
     void Start()
     {
-        blacks = turnManager.blacks;
-        whites = turnManager.whites;
     }
     void Update()
     {
         if(turnManager.turnWhite != prevTurn)
         {
-            CheckCheck();
+            List<Board> boards = turnManager.boards;
+            int turnNum = turnManager.turnNum;
+            if (CheckCheck() && boards[turnNum - 1].isCheck)
+            {
+                TurnManager.LoadBoard(boards[turnNum - 1], turnManager);
+                boards.RemoveAt(turnNum + 1);
+            }
             prevTurn = turnManager.turnWhite;
         }
     }
     public bool CheckCheck()
     {
-        foreach (var i in TurnManager.AllMovesFinder(whites))
+        foreach (var i in TurnManager.AllMovesFinder(false))
         {
             foreach (var j in i.attacks)
             {
                 if (j.CompareTag("King"))
                 {
-                    checkedTeam = "BLACK";
-                    inCheck = true;
+                    if (i.piece.layer == 6)
+                    {
+                        checkedTeam = "BLACK";
+                    }
+                    else
+                    {
+                        checkedTeam = "WHITE";
+                    }
+                    return true;
                 }
             }
-        }
-        foreach (var i in TurnManager.AllMovesFinder(blacks))
-        {
-            foreach (var j in i.attacks)
-            {
-                if (j.CompareTag("King"))
-                {
-                    checkedTeam = "WHITE";
-                    inCheck = true;
-                }
-            }
-        }
-        if(inCheck)
-        {
-            return true;
         }
         return false;
     }

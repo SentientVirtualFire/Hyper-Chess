@@ -10,6 +10,8 @@ public class Bishop : MonoBehaviour, IPiece
     public Moves PathFinder()
     {
         pos = gameObject.transform.position;
+        moves = new List<Vector3>();
+        attackMoves = new List<GameObject>();
         for (var (x, z) = (pos.x + 1, pos.z + 1); x <= 7 && z <= 7; x++, z++)
         {
             if (LoopContent(new Vector3(x, pos.y, z)))

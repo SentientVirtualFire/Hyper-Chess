@@ -41,11 +41,13 @@ public class Piece
 {
     public string tag;
     public int layer;
+    public GameObject gObject;
     public Vector3 position;
     public Piece(GameObject obj)
     {
         tag = obj.tag;
         layer = obj.layer;
+        gObject = obj;
         position = obj.transform.position;
     }
 }

@@ -42,7 +42,7 @@ public class King : MonoBehaviour, IPiece
         }
         if(gameObject.layer == 6)
         {
-           foreach(var i in TurnManager.AllMovesFinder(blacks, false))
+           foreach(var i in TurnManager.AllMovesFinder(false))
            {
                 moves.RemoveAll(move => i.attackMoves.Contains(move));
                 moves.RemoveAll(move => i.positions.Contains(move));
@@ -50,7 +50,7 @@ public class King : MonoBehaviour, IPiece
         }
         else
         {
-            foreach (var i in TurnManager.AllMovesFinder(whites, false))
+            foreach (var i in TurnManager.AllMovesFinder(false))
             {
                 moves.RemoveAll(move => i.attackMoves.Contains(move));
                 moves.RemoveAll(move => i.positions.Contains(move));

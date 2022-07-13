@@ -11,6 +11,8 @@ public class Rook : MonoBehaviour, IPiece
     public Moves PathFinder()
     {
         pos = gameObject.transform.position;
+        moves = new List<Vector3>();
+        attackMoves = new List<GameObject>();
         for (var x = pos.x - 1; x >= 0; x--)
         {
             if (LoopContent(new Vector3(x, pos.y, pos.z)))
