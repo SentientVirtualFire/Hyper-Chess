@@ -35,7 +35,7 @@ public class Board
             pieces.Add(new Piece(i));
         }
         turnNum = tm.turnNum;
-        isCheck = tm.check.isCheck;
+        isCheck = tm.isCheck;
         turnWhite = tm.turnWhite;
     }
 }

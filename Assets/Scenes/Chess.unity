@@ -28777,7 +28777,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1483222914}
   - component: {fileID: 1483222913}
-  - component: {fileID: 1483222921}
   - component: {fileID: 1483222922}
   m_Layer: 0
   m_Name: GameManager
@@ -28802,7 +28801,9 @@ MonoBehaviour:
   transpAlpha: 0.1
   pieceSpeed: 0.75
   turnWhite: 1
+  isCheck: 0
   turnNum: 0
+  checkedTeam: 
   boards: []
   whites: {fileID: 334307305}
   blacks: {fileID: 2066548051}
@@ -28810,7 +28811,6 @@ MonoBehaviour:
   moveTarget: {fileID: 3708691902215264869, guid: 18d5852119558614ab622d99232068f9, type: 3}
   attackTarget: {fileID: 4805548384104164259, guid: 3575a45d3cd0e7141b5791e0dcda218f, type: 3}
   higherBoards: {fileID: 2143922602}
-  check: {fileID: 1483222921}
 --- !u!4 &1483222914
 Transform:
   m_ObjectHideFlags: 0
@@ -28819,28 +28819,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483222912}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 3.5, y: 0, z: 3.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1483222921
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1483222912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fed1d9022363a44284b5965b114a18e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isCheck: 0
-  checkedTeam: 
-  turnManager: {fileID: 1483222913}
 --- !u!114 &1483222922
 MonoBehaviour:
   m_ObjectHideFlags: 0

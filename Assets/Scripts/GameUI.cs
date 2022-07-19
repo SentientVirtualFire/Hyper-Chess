@@ -30,11 +30,11 @@ public class GameUI : MonoBehaviour
             }
             prevTurn = turnManager.turnWhite;
         }
-        if (turnManager.check.isCheck)
+        if (turnManager.isCheck)
         {
             check.enabled = true;
             check.gameObject.transform.parent.gameObject.SetActive(true);
-            check.text = $"IN CHECK: {turnManager.check.checkedTeam}";
+            check.text = $"IN CHECK: {turnManager.checkedTeam}";
         }
         else
         {
