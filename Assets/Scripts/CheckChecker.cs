@@ -5,39 +5,43 @@ using UnityEngine;
 
 public class CheckChecker : MonoBehaviour
 {
-    public GameObject BlackKing;
-    public GameObject WhiteKing;
-    public bool inCheck;
+    public bool isCheck;
     public string checkedTeam;
     public TurnManager turnManager;
-    GameObject blacks;
-    GameObject whites;
-    bool prevTurn = true;
+    //bool prevTurn = true;
     void Start()
     {
     }
     void Update()
     {
-        if(turnManager.turnWhite != prevTurn)
+        /*if(turnManager.turnWhite != prevTurn)
         {
             List<Board> boards = turnManager.boards;
             int turnNum = turnManager.turnNum;
-            if (CheckCheck() && boards[turnNum - 1].isCheck)
+            if (CheckCheck())
             {
-                TurnManager.LoadBoard(boards[turnNum - 1], turnManager);
-                boards.RemoveAt(turnNum + 1);
+                isCheck = true;
+                if (boards[turnNum - 1].isCheck)
+                { 
+                    TurnManager.LoadBoard(boards[turnNum - 1], turnManager);
+                    boards.RemoveAt(turnNum);
+                }
+            }
+            else
+            {
+                isCheck = false;
             }
             prevTurn = turnManager.turnWhite;
-        }
+        }*/
     }
     public bool CheckCheck()
     {
-        foreach (var i in TurnManager.AllMovesFinder(false))
+        foreach (var i in TurnManager.AllMovesFinder())
         {
             foreach (var j in i.attacks)
             {
-                if (j.CompareTag("King"))
-                {
+                if(j.CompareTag("King"))
+                { 
                     if (i.piece.layer == 6)
                     {
                         checkedTeam = "BLACK";

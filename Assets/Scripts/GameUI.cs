@@ -30,7 +30,7 @@ public class GameUI : MonoBehaviour
             }
             prevTurn = turnManager.turnWhite;
         }
-        if (turnManager.check.inCheck)
+        if (turnManager.check.isCheck)
         {
             check.enabled = true;
             check.gameObject.transform.parent.gameObject.SetActive(true);

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,6 +21,7 @@ public class Moves
         }
     }
 }
+[Serializable]
 public class Board
 {
     public List<Piece> pieces = new List<Piece>();
@@ -33,7 +35,7 @@ public class Board
             pieces.Add(new Piece(i));
         }
         turnNum = tm.turnNum;
-        isCheck = tm.check.inCheck;
+        isCheck = tm.check.isCheck;
         turnWhite = tm.turnWhite;
     }
 }

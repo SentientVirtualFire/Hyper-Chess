@@ -5,8 +5,8 @@ using UnityEngine;
 public class King : MonoBehaviour, IPiece
 {
     (int, float, int)[] offsets = { (1, 0, 0), (1, 0, -1), (0, 0, -1), (-1, 0, -1), (-1, 0, 0), (-1, 0, 1), (0, 0, 1), (1, 0, 1), (1, 1, 0), (-1, 1, 0), (0, 1, 1), (0, 1, -1), (0, 1, 0), (1, -1, 0), (-1, -1, 0), (0, -1, 1), (0, -1, -1), (0, -1, 0) };  
-    public GameObject whites;
-    public GameObject blacks;
+    GameObject whites;
+    GameObject blacks;
     void Start()
     {
         whites = GameObject.Find("Whites");

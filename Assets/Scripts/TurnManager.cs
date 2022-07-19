@@ -14,6 +14,10 @@ public class TurnManager : MonoBehaviour
     public float pieceSpeed;
     public bool turnWhite = true;
     public int turnNum = 0;
+    [SerializeField]
+    public List<Board> boards = new List<Board>();
+    public static Vector3 boardBound1 = new Vector3(0, 0, 0);
+    public static Vector3 boardBound2 = new Vector3(7,14,7);
     public GameObject whites;
     public GameObject blacks;
     public Camera mainCamera;
@@ -21,7 +25,6 @@ public class TurnManager : MonoBehaviour
     public GameObject attackTarget;
     public Transform higherBoards;
     public CheckChecker check;
-    public List<Board> boards = new List<Board>();
     public Moves allMoves = new Moves();
     public static List<GameObject> pieceRef = new List<GameObject>();
     public static string[] allTags = new string[6] { "Pawn", "Rook", "Knight", "Bishop", "Queen", "King" };
@@ -102,7 +105,7 @@ public class TurnManager : MonoBehaviour
     }
     void NextTurn(GameObject mover, GameObject target)
     {
-        StartCoroutine(MovePiece(mover,target.transform.position));
+        StartCoroutine(MovePiece(mover,target.transform.position - new Vector3(0, 0.5f, 0)));
         if (target.transform.CompareTag("AttackTarget"))
         {
             GameObject attacked = target.transform.gameObject.GetComponent<Target>().target;
@@ -119,14 +122,12 @@ public class TurnManager : MonoBehaviour
         {
             Destroy(item);
         }
-        turnWhite = !turnWhite;
-        turnNum++;
     }
-    public IEnumerator MovePiece(GameObject mover, Vector3 movee)
+    IEnumerator MovePiece(GameObject mover, Vector3 movee, bool justMove = false)
     {
         moving = true;
         float time = 0;
-        Vector3 targetPos = movee - new Vector3(0,0.5f,0);
+        Vector3 targetPos = movee;
         while (time < pieceSpeed)
         {
             float t = time / pieceSpeed;
@@ -136,9 +137,25 @@ public class TurnManager : MonoBehaviour
             yield return null;
         }
         mover.transform.position = targetPos;
+        if(!justMove)
+        {
+            turnWhite = !turnWhite;
+            turnNum++;
+            if (check.CheckCheck())
+            {
+                check.isCheck = true;
+                if (boards[turnNum - 1].isCheck)
+                {
+                    TurnManager.LoadBoard(boards[turnNum - 1], this);
+                }
+            }
+            else
+            {
+                check.isCheck = false;
+            }
+            boards.Add(new Board(this));
+        }
         ShowHideHigherTiles();
-        check.CheckCheck();
-        boards.Add(new Board(this));
         moving = false;
     }
     void ShowHideHigherTiles()
@@ -190,13 +207,15 @@ public class TurnManager : MonoBehaviour
     public static void LoadBoard(Board board, TurnManager tm)
     {
         List<GameObject> pieceList = TurnManager.GetAllPieces();
+        List<GameObject> pieces = board.pieces.Select(piece => piece.gObject).ToList();
         foreach (var i in pieceList)
         {
             foreach (var piece in board.pieces)
             {
-                if (i.CompareTag(piece.tag) && i.layer == piece.layer)
+                if (i == piece.gObject)
                 {
-                    i.transform.position = piece.position;
+                    tm.StartCoroutine(tm.MovePiece(i, piece.position, true));
+                    pieces.Remove(i);
                 }
             }
         }
