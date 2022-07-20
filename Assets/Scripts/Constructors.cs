@@ -27,7 +27,10 @@ public class Board
     public List<Piece> pieces = new List<Piece>();
     public int turnNum;
     public bool isCheck;
+    public bool? checkedIsWhite;
     public bool turnWhite;
+    public GameObject killed;
+    public Vector3 killedPos;
     public Board(TurnManager tm)
     {
         foreach (var i in TurnManager.GetAllPieces())
@@ -36,7 +39,19 @@ public class Board
         }
         turnNum = tm.turnNum;
         isCheck = tm.isCheck;
+        checkedIsWhite = tm.checkedIsWhite;
         turnWhite = tm.turnWhite;
+        if(tm.killed != null)
+        { 
+            killedPos = tm.killed.transform.position;
+            foreach (var i in tm.pieceRef)
+            {
+                if (i.tag == tm.killed.tag && i.layer == tm.killed.layer)
+                {
+                    killed = i;
+                }
+            }
+        }
     }
 }
 public class Piece

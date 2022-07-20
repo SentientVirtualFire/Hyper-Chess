@@ -16,6 +16,8 @@ public class TurnManager : MonoBehaviour
     public bool isCheck;
     public int turnNum = 0;
     public string checkedTeam;
+    public bool? checkedIsWhite;
+    public GameObject killed;
     [SerializeField]
     public List<Board> boards = new List<Board>();
     public static Vector3 boardBound1 = new Vector3(0, 0, 0);
@@ -27,15 +29,13 @@ public class TurnManager : MonoBehaviour
     public GameObject attackTarget;
     public Transform higherBoards;
     public Moves allMoves = new Moves();
-    public static List<GameObject> pieceRef = new List<GameObject>();
+    public List<GameObject> pieceRef = new List<GameObject>();
     public static string[] allTags = new string[6] { "Pawn", "Rook", "Knight", "Bishop", "Queen", "King" };
     GameObject selected;
-    GameObject mayRessurect;
     List<GameObject> moveCubes = new List<GameObject>();
     List<GameObject> attackCubes = new List<GameObject>();
     List<Transform> tiles = new List<Transform>();
     bool moving = false;
-
     void Start()
     {
         boards.Add(new Board(this));
@@ -110,13 +110,7 @@ public class TurnManager : MonoBehaviour
         if (target.transform.CompareTag("AttackTarget"))
         {
             GameObject attacked = target.transform.gameObject.GetComponent<Target>().target;
-            foreach (var i in pieceRef)
-            {
-                if (i.tag == mayRessurect.tag && i.layer == mayRessurect.layer)
-                {
-                    mayRessurect = i;
-                }
-            }
+            killed = attacked;
             ParticleSystemRenderer renderer = attacked.GetComponent<ParticleSystemRenderer>(); 
             renderer.mesh = mover.GetComponent<MeshFilter>().mesh;
             renderer.material = mover.GetComponent<MeshRenderer>().material;
@@ -127,7 +121,7 @@ public class TurnManager : MonoBehaviour
         }
         else
         {
-            mayRessurect = null;
+            killed = null;
 
         }
         StartCoroutine(MovePiece(mover, target.transform.position - new Vector3(0, 0.5f, 0)));
@@ -157,10 +151,19 @@ public class TurnManager : MonoBehaviour
             turnNum++;
             if (CheckCheck())
             {
-                isCheck = true;
-                if (boards[turnNum - 1].isCheck)
+                if (checkedIsWhite == turnWhite)
+                {
+                    isCheck = true;
+                    if (boards[turnNum - 1].isCheck)
+                    {
+                        LoadBoard(boards[turnNum - 1], this);
+                        boards.RemoveRange(turnNum + 1, boards.Count - turnNum);
+                    }
+                }
+                else if (checkedIsWhite == !turnWhite)
                 {
                     LoadBoard(boards[turnNum - 1], this);
+                    boards.RemoveRange(turnNum + 1, boards.Count - 1 - turnNum);
                 }
             }
             else
@@ -200,16 +203,41 @@ public class TurnManager : MonoBehaviour
                     if (i.piece.layer == 6)
                     {
                         checkedTeam = "BLACK";
+                        checkedIsWhite = false;
                     }
                     else
                     {
                         checkedTeam = "WHITE";
+                        checkedIsWhite = true;
                     }
                     return true;
+                }
+                else
+                {
+                    checkedIsWhite = null;
                 }
             }
         }
         return false;
+    }
+    public static void LoadBoard(Board board, TurnManager tm)
+    {
+        List<GameObject> pieceList = TurnManager.GetAllPieces();
+        List<GameObject> pieces = board.pieces.Select(piece => piece.gObject).ToList();
+        foreach (var i in board.pieces)
+        {
+            if (pieceList.Contains(i.gObject))
+            {
+                tm.StartCoroutine(tm.MovePiece(i.gObject, i.position, true));
+            }
+        }
+        if (tm.killed != null)
+        {
+            GameObject.Instantiate(tm.killed, tm.killed.transform.position, Quaternion.identity);
+        }
+        GameObject p = pieces.Find(piece => !pieceList.Contains(piece));
+        tm.turnNum = board.turnNum;
+        tm.turnWhite = board.turnWhite;
     }
     public static List<Moves> AllMovesFinder(bool doKing = true)
     {
@@ -239,35 +267,6 @@ public class TurnManager : MonoBehaviour
             allPieces.AddRange(GameObject.FindGameObjectsWithTag(i));
         }
         return allPieces;
-    }
-    public static void LoadBoard(Board board, TurnManager tm)
-    {
-        List<GameObject> pieceList = TurnManager.GetAllPieces();
-        List<GameObject> pieces = board.pieces.Select(piece => piece.gObject).ToList();
-        foreach (var i in pieceList)
-        {
-            foreach (var piece in board.pieces)
-            {
-                if (i == piece.gObject)
-                {
-                    tm.StartCoroutine(tm.MovePiece(i, piece.position, true));
-                    pieces.Remove(i);
-                }
-            }
-        }
-        List<Piece> iHateMeToo = board.pieces.Where(curPiece => pieceList.All(pastPiece => pastPiece != curPiece.gObject)).ToList();
-        if (tm.mayRessurect != null)
-        { 
-            foreach (var i in pieceRef)
-            {
-                if (i.tag == tm.mayRessurect.tag && i.layer == tm.mayRessurect.layer)
-                {
-                    GameObject.Instantiate(i, tm.mayRessurect.transform.position, Quaternion.identity);
-                }
-            }
-        }
-        tm.turnNum = board.turnNum;
-        tm.turnWhite = board.turnWhite;
     }
 }
 public interface IPiece
