@@ -157,13 +157,11 @@ public class TurnManager : MonoBehaviour
                     if (boards[turnNum - 1].isCheck)
                     {
                         LoadBoard(boards[turnNum - 1], this);
-                        boards.RemoveRange(turnNum + 1, boards.Count - turnNum);
                     }
                 }
                 else if (checkedIsWhite == !turnWhite)
                 {
                     LoadBoard(boards[turnNum - 1], this);
-                    boards.RemoveRange(turnNum + 1, boards.Count - 1 - turnNum);
                 }
             }
             else
@@ -171,6 +169,10 @@ public class TurnManager : MonoBehaviour
                 isCheck = false;
             }
             boards.Add(new Board(this));
+            if(boards.Count - 1 > turnNum)
+            {
+                boards.RemoveRange(turnNum + 1, boards.Count - 1 - turnNum);
+            }
         }
         ShowHideHigherTiles();
         moving = false;
