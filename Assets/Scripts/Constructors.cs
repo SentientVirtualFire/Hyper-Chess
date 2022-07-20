@@ -46,7 +46,7 @@ public class Board
             killedPos = tm.killed.transform.position;
             foreach (var i in tm.pieceRef)
             {
-                if (i.tag == tm.killed.tag && i.layer == tm.killed.layer)
+                if (i.CompareTag(tm.killed.tag) && i.layer == tm.killed.layer)
                 {
                     killed = i;
                 }

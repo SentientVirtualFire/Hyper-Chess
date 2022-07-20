@@ -25,6 +25,7 @@ public class TurnManager : MonoBehaviour
     public GameObject whites;
     public GameObject blacks;
     public Camera mainCamera;
+    public GameUI ui;
     public GameObject moveTarget;
     public GameObject attackTarget;
     public Transform higherBoards;
@@ -38,6 +39,7 @@ public class TurnManager : MonoBehaviour
     bool moving = false;
     void Start()
     {
+        ui.gameObject.SetActive(true);
         boards.Add(new Board(this));
         foreach (Transform light in higherBoards.GetChild(0)) tiles.Add(light);
         foreach (Transform dark in higherBoards.GetChild(1)) tiles.Add(dark);
@@ -175,6 +177,10 @@ public class TurnManager : MonoBehaviour
             }
         }
         ShowHideHigherTiles();
+        if(mover.CompareTag("Pawn") && (mover.transform.position.z == 0 || mover.transform.position.z == 7))
+        {
+            ui.SetUpPromotion(mover);
+        }
         moving = false;
     }
     void ShowHideHigherTiles()

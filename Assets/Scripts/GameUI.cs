@@ -9,7 +9,8 @@ public class GameUI : MonoBehaviour
     public TurnManager turnManager;
     public TextMeshProUGUI turn;
     public TextMeshProUGUI check;
-    public RectTransform background;
+    public RectTransform promotions;
+
     bool prevTurn = true;
     void Start()
     {
@@ -41,5 +42,21 @@ public class GameUI : MonoBehaviour
             check.enabled = false;
             check.gameObject.transform.parent.gameObject.SetActive(false);
         }
+    }
+    public void SetUpPromotion(GameObject promotee)
+    {
+        promotions.gameObject.SetActive(true);
+        Button queen = promotions.GetChild(1).GetComponent<Button>();
+        Button rook = promotions.GetChild(2).GetComponent<Button>();
+        Button bishop = promotions.GetChild(3).GetComponent<Button>();
+        Button knight = promotions.GetChild(4).GetComponent<Button>();
+        queen.onClick.AddListener(delegate { promotee.GetComponent<Pawn>().PromoteSelf("Queen",queen); });
+        rook.onClick.AddListener(delegate { promotee.GetComponent<Pawn>().PromoteSelf("Rook",rook); });
+        bishop.onClick.AddListener(delegate { promotee.GetComponent<Pawn>().PromoteSelf("Bishop",bishop); });
+        knight.onClick.AddListener(delegate { promotee.GetComponent<Pawn>().PromoteSelf("Knight",rook); });
+    }
+    public void Deactivate(GameObject obj)
+    {
+        obj.SetActive(false);
     }
 }
