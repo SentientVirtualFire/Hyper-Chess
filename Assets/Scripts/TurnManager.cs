@@ -47,7 +47,7 @@ public class TurnManager : MonoBehaviour
     }
     void Update()
     {
-        if(!moving)
+        if(!moving && ui.isPlaying)
         {
             if (Input.GetMouseButtonDown(0))
             {
