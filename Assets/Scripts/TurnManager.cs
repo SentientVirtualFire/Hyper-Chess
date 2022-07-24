@@ -144,16 +144,20 @@ public class TurnManager : MonoBehaviour
             yield return null;
         }
         mover.transform.position = targetPos;
-        if(!justMove)
+        ShowHideHigherTiles();
+        if (!justMove)
         {
             turnWhite = !turnWhite;
             turnNum++;
             if (CheckCheck())
             {
-                print(checkedIsWhite);
                 if (CheckCheckMate())
                 {
                     print("check mate");
+                }
+                else
+                {
+                    print("not check mate");
                 }
                 if (checkedIsWhite == turnWhite)
                 {
@@ -178,16 +182,15 @@ public class TurnManager : MonoBehaviour
                 boards.RemoveRange(turnNum + 1, boards.Count - 1 - turnNum);
             }
         }
-        ShowHideHigherTiles();
         if(mover.CompareTag("Pawn") && (mover.transform.position.z == 0 || mover.transform.position.z == 7))
         {
             ui.SetUpPromotion(mover);
         }
         moving = false;
     }
-    public bool CheckCheck(bool justCheck = false)
+    public bool CheckCheck(bool justCheck = false, int? teamLayer = null)
     {
-        foreach (var i in AllMovesFinder())
+        foreach (var i in AllMovesFinder(teamLayer:teamLayer))
         {
             foreach (var j in i.attacks)
             {
@@ -218,31 +221,35 @@ public class TurnManager : MonoBehaviour
     }
     public bool CheckCheckMate()
     {
+        int n = 0;
         foreach (var i in AllMovesFinder(teamLayer:checkedIsWhite.Value ? 6 : 7))
         {
             Vector3 origin = i.piece.transform.position;
             foreach (var j in i.positions)
             {
                 i.piece.transform.position = j - new Vector3(0, 0.5f, 0);
-                if (!CheckCheck(true))
+                n++;
+                if (!CheckCheck(true, checkedIsWhite.Value ? 7 : 6))
                 {
                     i.piece.transform.position = origin;
                     return false;
                 }
+                i.piece.transform.position = origin;
             }
             foreach (var j in i.attacks)
             {
                 i.piece.transform.position = j.transform.position - new Vector3(0, 0.5f, 0);
+                n++;
                 j.SetActive(false);
-                if (!CheckCheck(true))
+                if (!CheckCheck(true, checkedIsWhite.Value ? 7 : 6))
                 {
                     i.piece.transform.position = origin;
                     j.SetActive(true);
                     return false;
                 }
+                i.piece.transform.position = origin;
                 j.SetActive(true);
             }
-            i.piece.transform.position = origin;
         }
         return true;
     }
