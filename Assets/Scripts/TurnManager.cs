@@ -75,7 +75,11 @@ public class TurnManager : MonoBehaviour
                 {
                     if ((hit.transform.CompareTag("MoveTarget") || hit.transform.CompareTag("AttackTarget")) && selected != null)
                     {
-                        NextTurn(selected, hit.transform.gameObject);
+                        StartCoroutine(MovePiece(selected, hit.transform.position - new Vector3(0, 0.5f, 0), hit.transform.gameObject));
+                        foreach (var item in moveCubes.Concat(attackCubes))
+                        {
+                            Destroy(item);
+                        }
                         selected = null;
                     }
                     else if (allTags.Contains(hit.transform.tag) && selected == null)
@@ -107,37 +111,30 @@ public class TurnManager : MonoBehaviour
             }
         }
     }
-    void NextTurn(GameObject mover, GameObject target)
-    {
-        if (target.transform.CompareTag("AttackTarget"))
-        {
-            GameObject attacked = target.transform.gameObject.GetComponent<Target>().target;
-            killed = attacked;
-            ParticleSystemRenderer renderer = attacked.GetComponent<ParticleSystemRenderer>(); 
-            renderer.mesh = mover.GetComponent<MeshFilter>().mesh;
-            renderer.material = mover.GetComponent<MeshRenderer>().material;
-            ParticleSystem ps = attacked.GetComponent<ParticleSystem>();
-            var main = ps.main;
-            main.duration = pieceSpeed;
-            ps.Play();
-        }
-        else
-        {
-            killed = null;
-
-        }
-        StartCoroutine(MovePiece(mover, target.transform.position - new Vector3(0, 0.5f, 0)));
-        allMoves = new Moves();
-        foreach (var item in moveCubes.Concat(attackCubes))
-        {
-            Destroy(item);
-        }
-    }
-    IEnumerator MovePiece(GameObject mover, Vector3 movee, bool justMove = false)
+    IEnumerator MovePiece(GameObject mover, Vector3 target, GameObject movee = null, bool justMove = false)
     {
         moving = true;
+        if (!justMove && movee != null)
+        {
+            if (movee.transform.CompareTag("AttackTarget"))
+            {
+                GameObject attacked = movee.transform.gameObject.GetComponent<Target>().target;
+                killed = attacked;
+                ParticleSystemRenderer renderer = attacked.GetComponent<ParticleSystemRenderer>();
+                renderer.mesh = mover.GetComponent<MeshFilter>().mesh;
+                renderer.material = mover.GetComponent<MeshRenderer>().material;
+                ParticleSystem ps = attacked.GetComponent<ParticleSystem>();
+                var main = ps.main;
+                main.duration = pieceSpeed;
+                ps.Play();
+            }
+            else
+            {
+                killed = null;
+            }
+        }
         float time = 0;
-        Vector3 targetPos = movee;
+        Vector3 targetPos = target;
         while (time < pieceSpeed)
         {
             float t = time / pieceSpeed;
@@ -153,6 +150,11 @@ public class TurnManager : MonoBehaviour
             turnNum++;
             if (CheckCheck())
             {
+                print(checkedIsWhite);
+                if (CheckCheckMate())
+                {
+                    print("check mate");
+                }
                 if (checkedIsWhite == turnWhite)
                 {
                     isCheck = true;
@@ -183,6 +185,67 @@ public class TurnManager : MonoBehaviour
         }
         moving = false;
     }
+    public bool CheckCheck(bool justCheck = false)
+    {
+        foreach (var i in AllMovesFinder())
+        {
+            foreach (var j in i.attacks)
+            {
+                if (j.CompareTag("King"))
+                {
+                    if(!justCheck)
+                    { 
+                        if (i.piece.layer == 6)
+                        {
+                            checkedTeam = "BLACK";
+                            checkedIsWhite = false;
+                        }
+                        else
+                        {
+                            checkedTeam = "WHITE";
+                            checkedIsWhite = true;
+                        }
+                    }
+                    return true;
+                }
+                else if(!justCheck)
+                {
+                    checkedIsWhite = null;
+                }
+            }
+        }
+        return false;
+    }
+    public bool CheckCheckMate()
+    {
+        foreach (var i in AllMovesFinder(teamLayer:checkedIsWhite.Value ? 6 : 7))
+        {
+            Vector3 origin = i.piece.transform.position;
+            foreach (var j in i.positions)
+            {
+                i.piece.transform.position = j - new Vector3(0, 0.5f, 0);
+                if (!CheckCheck(true))
+                {
+                    i.piece.transform.position = origin;
+                    return false;
+                }
+            }
+            foreach (var j in i.attacks)
+            {
+                i.piece.transform.position = j.transform.position - new Vector3(0, 0.5f, 0);
+                j.SetActive(false);
+                if (!CheckCheck(true))
+                {
+                    i.piece.transform.position = origin;
+                    j.SetActive(true);
+                    return false;
+                }
+                j.SetActive(true);
+            }
+            i.piece.transform.position = origin;
+        }
+        return true;
+    }
     void ShowHideHigherTiles()
     {
         List<Vector3> allPieces = GetAllPieces().Select(piece => piece.transform.position).ToList();
@@ -200,34 +263,6 @@ public class TurnManager : MonoBehaviour
             tile.gameObject.GetComponent<MeshRenderer>().material.color = newColour;
         }
     }
-    public bool CheckCheck()
-    {
-        foreach (var i in AllMovesFinder())
-        {
-            foreach (var j in i.attacks)
-            {
-                if (j.CompareTag("King"))
-                {
-                    if (i.piece.layer == 6)
-                    {
-                        checkedTeam = "BLACK";
-                        checkedIsWhite = false;
-                    }
-                    else
-                    {
-                        checkedTeam = "WHITE";
-                        checkedIsWhite = true;
-                    }
-                    return true;
-                }
-                else
-                {
-                    checkedIsWhite = null;
-                }
-            }
-        }
-        return false;
-    }
     public static void LoadBoard(Board board, TurnManager tm)
     {
         List<GameObject> pieceList = TurnManager.GetAllPieces();
@@ -236,7 +271,7 @@ public class TurnManager : MonoBehaviour
         {
             if (pieceList.Contains(i.gObject))
             {
-                tm.StartCoroutine(tm.MovePiece(i.gObject, i.position, true));
+                tm.StartCoroutine(tm.MovePiece(i.gObject, i.position, justMove:true));
             }
         }
         if (tm.killed != null)
@@ -247,20 +282,28 @@ public class TurnManager : MonoBehaviour
         tm.turnNum = board.turnNum;
         tm.turnWhite = board.turnWhite;
     }
-    public static List<Moves> AllMovesFinder(bool doKing = true)
+    public static List<Moves> AllMovesFinder(bool doKing = true, int? teamLayer = null)
     {
         List<Moves> moves = new List<Moves>();
+        bool layerCheck = false;
+        if(teamLayer.HasValue)
+        {
+            layerCheck = true;
+        }
         foreach (var i in GetAllPieces())
         {
-            if (doKing && !i.gameObject.CompareTag("Pawn") && !i.gameObject.CompareTag("King"))
+            if (i.layer == teamLayer || !layerCheck)
             {
-                moves.Add(i.gameObject.GetComponent<IPiece>().PathFinder());
-            }
-            else
-            {
-                if (i.gameObject.CompareTag("Pawn"))
+                if (doKing && !i.gameObject.CompareTag("Pawn") && !i.gameObject.CompareTag("King"))
                 {
-                    moves.Add(i.gameObject.GetComponent<Pawn>().JustAttackPaths());
+                    moves.Add(i.gameObject.GetComponent<IPiece>().PathFinder());
+                }
+                else
+                {
+                    if (i.gameObject.CompareTag("Pawn"))
+                    {
+                        moves.Add(i.gameObject.GetComponent<Pawn>().JustAttackPaths());
+                    }
                 }
             }
         }
