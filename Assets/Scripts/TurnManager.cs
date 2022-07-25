@@ -13,7 +13,8 @@ public class TurnManager : MonoBehaviour
     [Range(0.01f, 5)]
     public float pieceSpeed;
     public bool turnWhite = true;
-    public bool isCheck;
+    public bool isCheck = false;
+    public bool isCheckMate = false;
     public int turnNum = 0;
     public string checkedTeam;
     public bool? checkedIsWhite;
@@ -34,8 +35,6 @@ public class TurnManager : MonoBehaviour
     GameObject selected;
     GameObject attacker;
     Moves allMoves = new Moves();
-    public List<Moves> lightMoves = new List<Moves>();
-    public List<Moves> darkMoves = new List<Moves>();
     List<GameObject> moveCubes = new List<GameObject>();
     List<GameObject> attackCubes = new List<GameObject>();
     List<Transform> tiles = new List<Transform>();
@@ -54,8 +53,6 @@ public class TurnManager : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                lightMoves = AllMovesFinder(teamLayer:6);
-                darkMoves = AllMovesFinder(teamLayer:7);
                 Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
                 int layerMask;
@@ -163,7 +160,12 @@ public class TurnManager : MonoBehaviour
                     {
                         if (CheckCheckMate())
                         {
-                            UI.CheckMate(checkedIsWhite.Value);
+                            isCheckMate = true;
+                            UI.CheckMate();
+                        }
+                        else
+                        {
+                            isCheckMate = false;
                         }
                     }
                 }
@@ -226,8 +228,7 @@ public class TurnManager : MonoBehaviour
         {
             foreach (var j in i.positions)
             {
-                Moves moves = attacker.GetComponent<IPiece>().PathFinder();
-                if (moves.kingPath.Contains(j) && !i.piece.CompareTag("King"))
+                if (attacker.GetComponent<IPiece>().PathFinder().kingPath.Contains(j) && !i.piece.CompareTag("King"))
                 {
                     return false;
                 }

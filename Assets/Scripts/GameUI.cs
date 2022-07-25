@@ -2,16 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class GameUI : MonoBehaviour
 {
-    public TurnManager turnManager;
+    public TurnManager tm;
     public TextMeshProUGUI turn;
     public TextMeshProUGUI check;
     public RectTransform promotions;
     public RectTransform play;
     public RectTransform info;
+    public RectTransform finish;
     public bool isPlaying = false;
 
     bool prevTurn = true;
@@ -19,16 +21,12 @@ public class GameUI : MonoBehaviour
     {
         Time.timeScale = 0;
     }
-    void Start()
-    {
-
-    }
 
     void Update()
     {
-        if (turnManager.turnWhite != prevTurn)
+        if (tm.turnWhite != prevTurn)
         {
-            if (turnManager.turnWhite)
+            if (tm.turnWhite)
             {
                 turn.text = "TURN: WHITE";
             }
@@ -36,13 +34,13 @@ public class GameUI : MonoBehaviour
             {
                 turn.text = "TURN: BLACK";
             }
-            prevTurn = turnManager.turnWhite;
+            prevTurn = tm.turnWhite;
         }
-        if (turnManager.isCheck)
+        if (tm.isCheck)
         {
             check.enabled = true;
             check.gameObject.transform.parent.gameObject.SetActive(true);
-            check.text = $"IN CHECK: {turnManager.checkedTeam}";
+            check.text = $"IN CHECK: {tm.checkedTeam}";
         }
         else
         {
@@ -66,6 +64,10 @@ public class GameUI : MonoBehaviour
         info.gameObject.SetActive(false);
         play.gameObject.SetActive(true);
     }
+    public void ResetScene()
+    {
+        SceneManager.LoadSceneAsync(0);
+    }
     public void SetUpPromotion(GameObject promotee)
     {
         promotions.gameObject.SetActive(true);
@@ -77,5 +79,20 @@ public class GameUI : MonoBehaviour
         rook.onClick.AddListener(delegate { promotee.GetComponent<Pawn>().PromoteSelf("Rook",rook); });
         bishop.onClick.AddListener(delegate { promotee.GetComponent<Pawn>().PromoteSelf("Bishop",bishop); });
         knight.onClick.AddListener(delegate { promotee.GetComponent<Pawn>().PromoteSelf("Knight",rook); });
+    }
+    public void CheckMate()
+    {
+        isPlaying = false;
+        Time.timeScale = 0;
+        if (tm.checkedIsWhite.Value)
+        {
+            finish.GetChild(0).GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = "BLACK WINS";
+        }
+        else
+        {
+            finish.GetChild(0).GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = "WHITE WINS";
+        }
+        finish.GetChild(1).GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = $"moves: {tm.turnNum}";
+        finish.gameObject.SetActive(true);
     }
 }

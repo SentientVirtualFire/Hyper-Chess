@@ -29,6 +29,7 @@ public class Board
     public List<Piece> pieces = new List<Piece>();
     public int turnNum;
     public bool isCheck;
+    public bool isCheckMate;
     public bool? checkedIsWhite;
     public bool turnWhite;
     public GameObject killed;
@@ -41,6 +42,7 @@ public class Board
         }
         turnNum = tm.turnNum;
         isCheck = tm.isCheck;
+        isCheckMate = tm.isCheckMate;
         checkedIsWhite = tm.checkedIsWhite;
         turnWhite = tm.turnWhite;
         if(tm.killed != null)

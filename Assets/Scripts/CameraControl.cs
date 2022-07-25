@@ -5,11 +5,11 @@ using UnityEngine;
 public class CameraControl : MonoBehaviour
 {
     public TurnManager turnManager;
-    [Range(0,100)]
+    [Range(0, 100)]
     public float speed;
     public Transform whitePOV;
     public Transform blackPOV;
-    [Range(0,15)]
+    [Range(0, 15)]
     public float sensitivityX = 2F;
     [Range(0, 15)]
     public float sensitivityY = 2F;
@@ -18,12 +18,26 @@ public class CameraControl : MonoBehaviour
     float maximumY = 90F;
     float rotationY;
     Vector3 NewPosition;
+    bool prevTurn = true;
     void Start()
     {
         rotationY = -transform.localEulerAngles.x;
     }
     void Update()
     {
+        if (turnManager.turnWhite != prevTurn)
+        {
+            StopAllCoroutines();
+            if (turnManager.turnWhite)
+            {
+                StartCoroutine(MoveCam(whitePOV));
+            }
+            else
+            {
+                StartCoroutine(MoveCam(blackPOV));
+            }
+            prevTurn = turnManager.turnWhite;
+        }
         if (Input.GetMouseButton(1))
         {
             float rotationX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * sensitivityX;
@@ -41,7 +55,7 @@ public class CameraControl : MonoBehaviour
             {
                 transform.position = transform.position + transform.forward * Time.deltaTime * speed;
             }
-            if(Input.GetKey("space"))
+            if (Input.GetKey("space"))
             {
                 transform.position = transform.position + Vector3.up * Time.deltaTime * speed;
             }
@@ -57,7 +71,7 @@ public class CameraControl : MonoBehaviour
             NewPosition = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * Time.deltaTime * speed;
             float yPos = transform.position.y;
             transform.Translate(NewPosition);
-            transform.position = new Vector3(transform.position.x,yPos,transform.position.z);
+            transform.position = new Vector3(transform.position.x, yPos, transform.position.z);
         }
         else
         {
@@ -71,5 +85,19 @@ public class CameraControl : MonoBehaviour
             }
             transform.LookAt(new Vector3(3.5f, 0, 3.5f));
         }
+    }
+    IEnumerator MoveCam(Transform targetPOV)
+    {
+        float time = 0;
+        Transform origin = transform;
+        while (time < speed)
+        {
+            transform.position = Vector3.Lerp(origin.position, targetPOV.position, time / speed);
+            transform.rotation = Quaternion.Lerp(origin.rotation, targetPOV.rotation, time / speed);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        transform.position = targetPOV.position;
+        transform.rotation = targetPOV.rotation;
     }
 }
