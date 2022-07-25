@@ -25,25 +25,24 @@ public class TurnManager : MonoBehaviour
     public GameObject whites;
     public GameObject blacks;
     public Camera mainCamera;
-    public GameUI ui;
+    public GameUI UI;
     public GameObject moveTarget;
     public GameObject attackTarget;
     public Transform higherBoards;
     public List<GameObject> pieceRef = new List<GameObject>();
     public static string[] allTags = new string[6] { "Pawn", "Rook", "Knight", "Bishop", "Queen", "King" };
     GameObject selected;
+    GameObject attacker;
     Moves allMoves = new Moves();
+    public List<Moves> lightMoves = new List<Moves>();
+    public List<Moves> darkMoves = new List<Moves>();
     List<GameObject> moveCubes = new List<GameObject>();
     List<GameObject> attackCubes = new List<GameObject>();
     List<Transform> tiles = new List<Transform>();
     bool moving = false;
-    (List<Moves>, List<Moves>, List<Moves>) owo = (new List<Moves>(), new List<Moves>(), new List<Moves>());
-    public List<Moves> owo1;
-    public List<Moves> owo2;
-    public List<Moves> owo3;
     void Start()
     {
-        ui.gameObject.SetActive(true);
+        UI.gameObject.SetActive(true);
         boards.Add(new Board(this));
         foreach (Transform light in higherBoards.GetChild(0)) tiles.Add(light);
         foreach (Transform dark in higherBoards.GetChild(1)) tiles.Add(dark);
@@ -51,13 +50,12 @@ public class TurnManager : MonoBehaviour
     }
     void Update()
     {
-        owo1 = owo.Item1;
-        owo2 = owo.Item2;
-        owo3 = owo.Item3;
-        if (!moving && ui.isPlaying)
+        if (!moving && UI.isPlaying)
         {
             if (Input.GetMouseButtonDown(0))
             {
+                lightMoves = AllMovesFinder(teamLayer:6);
+                darkMoves = AllMovesFinder(teamLayer:7);
                 Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
                 int layerMask;
@@ -152,23 +150,21 @@ public class TurnManager : MonoBehaviour
         {
             turnWhite = !turnWhite;
             turnNum++;
-            owo.Item1 = AllMovesFinder();
             if (CheckCheck())
             {
-                if (CheckCheckMate())
-                {
-                    print("check mate");
-                }
-                else
-                {
-                    print("not check mate");
-                }
                 if (checkedIsWhite == turnWhite)
                 {
                     isCheck = true;
                     if (boards[turnNum - 1].isCheck)
                     {
                         LoadBoard(boards[turnNum - 1], this);
+                    }
+                    else
+                    {
+                        if (CheckCheckMate())
+                        {
+                            UI.CheckMate(checkedIsWhite.Value);
+                        }
                     }
                 }
                 else if (checkedIsWhite == !turnWhite)
@@ -188,7 +184,7 @@ public class TurnManager : MonoBehaviour
         }
         if(mover.CompareTag("Pawn") && (mover.transform.position.z == 0 || mover.transform.position.z == 7))
         {
-            ui.SetUpPromotion(mover);
+            UI.SetUpPromotion(mover);
         }
         moving = false;
     }
@@ -212,6 +208,7 @@ public class TurnManager : MonoBehaviour
                             checkedTeam = "WHITE";
                             checkedIsWhite = true;
                         }
+                        attacker = i.piece;
                     }
                     return true;
                 }
@@ -225,34 +222,25 @@ public class TurnManager : MonoBehaviour
     }
     public bool CheckCheckMate()
     {
-        int n = 0;
         foreach (var i in AllMovesFinder(teamLayer:checkedIsWhite.Value ? 6 : 7))
         {
-            Vector3 origin = i.piece.transform.position;
             foreach (var j in i.positions)
             {
-                i.piece.transform.position = j;
-                n++;
-                owo.Item2 = AllMovesFinder(teamLayer: checkedIsWhite.Value ? 7 : 6);
-                if (!CheckCheck(checkedIsWhite.Value ? 7 : 6))
+                Moves moves = attacker.GetComponent<IPiece>().PathFinder();
+                if (moves.kingPath.Contains(j) && !i.piece.CompareTag("King"))
                 {
-                    i.piece.transform.position = origin;
-                    print(n);
                     return false;
                 }
-                i.piece.transform.position = origin;
             }
+            Vector3 origin = i.piece.transform.position;
             foreach (var j in i.attacks)
             {
                 i.piece.transform.position = j.transform.position;
-                n++;
                 j.SetActive(false);
-                owo.Item3 = AllMovesFinder(teamLayer: checkedIsWhite.Value ? 7 : 6);
                 if (!CheckCheck(checkedIsWhite.Value ? 7 : 6))
                 {
                     i.piece.transform.position = origin;
                     j.SetActive(true);
-                    print(n);
                     return false;
                 }
                 i.piece.transform.position = origin;
@@ -260,7 +248,6 @@ public class TurnManager : MonoBehaviour
             }
 
         }
-        print(n);
         return true;
     }
     void ShowHideHigherTiles()

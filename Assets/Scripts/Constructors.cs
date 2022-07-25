@@ -14,6 +14,7 @@ public class Moves
     public List<GameObject> attacks = new List<GameObject>();
     public List<Vector3> attackMoves = new List<Vector3>();
     public List<Vector3> positions = new List<Vector3>();
+    public List<Vector3> kingPath = new List<Vector3>();
     public Moves()
     {
         foreach (var i in attacks)
