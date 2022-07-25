@@ -62,15 +62,11 @@ public class TurnManager : MonoBehaviour
                 {
                     layerMask = 1 << 6;
                 }
-                foreach (var item in moveCubes)
-                {
-                    Destroy(item);
-                }
-                foreach (var item in attackCubes)
-                {
-                    Destroy(item);
-                }
                 layerMask = ~layerMask;
+                foreach (var item in moveCubes.Concat(attackCubes))
+                {
+                    Destroy(item);
+                }
                 if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
                 {
                     if ((hit.transform.CompareTag("MoveTarget") || hit.transform.CompareTag("AttackTarget")) && selected != null)
@@ -188,7 +184,7 @@ public class TurnManager : MonoBehaviour
         }
         moving = false;
     }
-    public bool CheckCheck(bool justCheck = false, int? teamLayer = null)
+    public bool CheckCheck(int? teamLayer = null)
     {
         foreach (var i in AllMovesFinder(teamLayer:teamLayer))
         {
@@ -196,7 +192,7 @@ public class TurnManager : MonoBehaviour
             {
                 if (j.CompareTag("King"))
                 {
-                    if(!justCheck)
+                    if(teamLayer == null)
                     { 
                         if (i.piece.layer == 6)
                         {
@@ -211,7 +207,7 @@ public class TurnManager : MonoBehaviour
                     }
                     return true;
                 }
-                else if(!justCheck)
+                else if(teamLayer == null)
                 {
                     checkedIsWhite = null;
                 }
@@ -227,30 +223,36 @@ public class TurnManager : MonoBehaviour
             Vector3 origin = i.piece.transform.position;
             foreach (var j in i.positions)
             {
-                i.piece.transform.position = j - new Vector3(0, 0.5f, 0);
+                i.piece.transform.position = j;
+                GameObject.CreatePrimitive(PrimitiveType.Cube).transform.position = j;
                 n++;
-                if (!CheckCheck(true, checkedIsWhite.Value ? 7 : 6))
+                if (!CheckCheck(checkedIsWhite.Value ? 7 : 6))
                 {
                     i.piece.transform.position = origin;
+                    print(n);
                     return false;
                 }
                 i.piece.transform.position = origin;
             }
             foreach (var j in i.attacks)
             {
-                i.piece.transform.position = j.transform.position - new Vector3(0, 0.5f, 0);
+                i.piece.transform.position = j.transform.position;
+                GameObject.CreatePrimitive(PrimitiveType.Cube).transform.position = j.transform.position;
                 n++;
                 j.SetActive(false);
-                if (!CheckCheck(true, checkedIsWhite.Value ? 7 : 6))
+                if (!CheckCheck(checkedIsWhite.Value ? 7 : 6))
                 {
                     i.piece.transform.position = origin;
                     j.SetActive(true);
+                    print(n);
                     return false;
                 }
                 i.piece.transform.position = origin;
                 j.SetActive(true);
             }
+
         }
+        print(n);
         return true;
     }
     void ShowHideHigherTiles()

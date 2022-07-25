@@ -40,21 +40,10 @@ public class King : MonoBehaviour, IPiece
                 }
             }
         }
-        if(gameObject.layer == 6)
+        foreach(var i in TurnManager.AllMovesFinder(false))
         {
-           foreach(var i in TurnManager.AllMovesFinder(false))
-           {
-                moves.RemoveAll(move => i.attackMoves.Contains(move));
-                moves.RemoveAll(move => i.positions.Contains(move));
-           }
-        }
-        else
-        {
-            foreach (var i in TurnManager.AllMovesFinder(false))
-            {
-                moves.RemoveAll(move => i.attackMoves.Contains(move));
-                moves.RemoveAll(move => i.positions.Contains(move));
-            }
+            moves.RemoveAll(move => i.attackMoves.Contains(move));
+            moves.RemoveAll(move => i.positions.Contains(move));
         }
         Moves allMoves = new Moves() { piece = gameObject, positions = moves, attacks = attackMoves };
         return allMoves;
