@@ -41,7 +41,6 @@ public class TurnManager : MonoBehaviour
     bool moving = false;
     void Start()
     {
-        UI.gameObject.SetActive(true);
         boards.Add(new Board(this));
         foreach (Transform light in higherBoards.GetChild(0)) tiles.Add(light);
         foreach (Transform dark in higherBoards.GetChild(1)) tiles.Add(dark);

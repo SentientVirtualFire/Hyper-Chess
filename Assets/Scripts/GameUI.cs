@@ -12,8 +12,10 @@ public class GameUI : MonoBehaviour
     public TextMeshProUGUI check;
     public RectTransform promotions;
     public RectTransform play;
+    public RectTransform game;
     public RectTransform info;
     public RectTransform finish;
+    public GameObject bg;
     public bool isPlaying = false;
 
     bool prevTurn = true;
@@ -52,7 +54,9 @@ public class GameUI : MonoBehaviour
     {
         isPlaying = true;
         Time.timeScale = 1;
+        bg.SetActive(false);
         play.gameObject.SetActive(false);
+        game.gameObject.SetActive(true);
     }
     public void OpenInfo()
     {
@@ -93,6 +97,8 @@ public class GameUI : MonoBehaviour
             finish.GetChild(0).GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = "WHITE WINS";
         }
         finish.GetChild(1).GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = $"moves: {tm.turnNum}";
+        game.gameObject.SetActive(false);
+        bg.SetActive(true);
         finish.gameObject.SetActive(true);
     }
 }

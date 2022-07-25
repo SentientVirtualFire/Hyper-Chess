@@ -96,6 +96,10 @@ public class CameraControl : MonoBehaviour
             transform.rotation = Quaternion.Lerp(origin.rotation, targetPOV.rotation, time / speed);
             time += Time.deltaTime;
             yield return null;
+            if(Input.anyKey)
+            {
+                yield break;
+            }
         }
         transform.position = targetPOV.position;
         transform.rotation = targetPOV.rotation;

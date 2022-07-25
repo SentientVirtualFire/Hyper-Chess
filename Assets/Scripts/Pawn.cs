@@ -13,10 +13,6 @@ public class Pawn : MonoBehaviour, IPiece
         tm = GameObject.Find("GameManager").GetComponent<TurnManager>();
         ui = GameObject.Find("UI").GetComponent<GameUI>();
     }
-    void Update()
-    {
-       
-    }
     public Moves PathFinder()
     {
         Vector3 pos = gameObject.transform.position;
