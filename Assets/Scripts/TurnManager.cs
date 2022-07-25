@@ -29,14 +29,18 @@ public class TurnManager : MonoBehaviour
     public GameObject moveTarget;
     public GameObject attackTarget;
     public Transform higherBoards;
-    public Moves allMoves = new Moves();
     public List<GameObject> pieceRef = new List<GameObject>();
     public static string[] allTags = new string[6] { "Pawn", "Rook", "Knight", "Bishop", "Queen", "King" };
     GameObject selected;
+    Moves allMoves = new Moves();
     List<GameObject> moveCubes = new List<GameObject>();
     List<GameObject> attackCubes = new List<GameObject>();
     List<Transform> tiles = new List<Transform>();
     bool moving = false;
+    (List<Moves>, List<Moves>, List<Moves>) owo = (new List<Moves>(), new List<Moves>(), new List<Moves>());
+    public List<Moves> owo1;
+    public List<Moves> owo2;
+    public List<Moves> owo3;
     void Start()
     {
         ui.gameObject.SetActive(true);
@@ -47,7 +51,10 @@ public class TurnManager : MonoBehaviour
     }
     void Update()
     {
-        if(!moving && ui.isPlaying)
+        owo1 = owo.Item1;
+        owo2 = owo.Item2;
+        owo3 = owo.Item3;
+        if (!moving && ui.isPlaying)
         {
             if (Input.GetMouseButtonDown(0))
             {
@@ -145,6 +152,7 @@ public class TurnManager : MonoBehaviour
         {
             turnWhite = !turnWhite;
             turnNum++;
+            owo.Item1 = AllMovesFinder();
             if (CheckCheck())
             {
                 if (CheckCheckMate())
@@ -224,8 +232,8 @@ public class TurnManager : MonoBehaviour
             foreach (var j in i.positions)
             {
                 i.piece.transform.position = j;
-                GameObject.CreatePrimitive(PrimitiveType.Cube).transform.position = j;
                 n++;
+                owo.Item2 = AllMovesFinder(teamLayer: checkedIsWhite.Value ? 7 : 6);
                 if (!CheckCheck(checkedIsWhite.Value ? 7 : 6))
                 {
                     i.piece.transform.position = origin;
@@ -237,9 +245,9 @@ public class TurnManager : MonoBehaviour
             foreach (var j in i.attacks)
             {
                 i.piece.transform.position = j.transform.position;
-                GameObject.CreatePrimitive(PrimitiveType.Cube).transform.position = j.transform.position;
                 n++;
                 j.SetActive(false);
+                owo.Item3 = AllMovesFinder(teamLayer: checkedIsWhite.Value ? 7 : 6);
                 if (!CheckCheck(checkedIsWhite.Value ? 7 : 6))
                 {
                     i.piece.transform.position = origin;

@@ -7,6 +7,7 @@ public class Constructors : MonoBehaviour
 {
 
 }
+[Serializable]
 public class Moves
 {
     public GameObject piece;
