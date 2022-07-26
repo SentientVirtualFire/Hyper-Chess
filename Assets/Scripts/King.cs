@@ -5,12 +5,10 @@ using UnityEngine;
 public class King : MonoBehaviour, IPiece
 {
     (int, float, int)[] offsets = { (1, 0, 0), (1, 0, -1), (0, 0, -1), (-1, 0, -1), (-1, 0, 0), (-1, 0, 1), (0, 0, 1), (1, 0, 1), (1, 1, 0), (-1, 1, 0), (0, 1, 1), (0, 1, -1), (0, 1, 0), (1, -1, 0), (-1, -1, 0), (0, -1, 1), (0, -1, -1), (0, -1, 0) };  
-    GameObject whites;
-    GameObject blacks;
+    TurnManager tm;
     void Start()
     {
-        whites = GameObject.Find("Whites");
-        blacks = GameObject.Find("Blacks");
+        tm = GameObject.Find("GameManager").GetComponent<TurnManager>();
     }
     public Moves PathFinder()
     {
@@ -40,7 +38,7 @@ public class King : MonoBehaviour, IPiece
                 }
             }
         }
-        foreach(var i in TurnManager.AllMovesFinder(false))
+        foreach(var i in TurnManager.AllMovesFinder(false,teamLayer:gameObject.layer == 6 ? 7:6))
         {
             moves.RemoveAll(move => i.attackMoves.Contains(move));
             moves.RemoveAll(move => i.positions.Contains(move));

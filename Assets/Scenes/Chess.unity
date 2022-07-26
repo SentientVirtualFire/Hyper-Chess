@@ -1772,6 +1772,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.000000021855694
       objectReference: {fileID: 0}
+    - target: {fileID: 5181795297987433832, guid: 85ad2c556fdbd5747ac7f5f67f10e59b, type: 3}
+      propertyPath: emitterVelocityMode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85ad2c556fdbd5747ac7f5f67f10e59b, type: 3}
 --- !u!4 &58922678 stripped
@@ -31989,6 +31993,8 @@ MonoBehaviour:
   checkedTeam: 
   killed: {fileID: 0}
   boards: []
+  lightMoves: []
+  darkMoves: []
   whites: {fileID: 334307305}
   blacks: {fileID: 2066548051}
   mainCamera: {fileID: 1974944749}

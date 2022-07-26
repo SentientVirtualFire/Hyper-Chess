@@ -21,6 +21,8 @@ public class TurnManager : MonoBehaviour
     public GameObject killed;
     [SerializeField]
     public List<Board> boards = new List<Board>();
+    public List<Moves> lightMoves;
+    public List<Moves> darkMoves;
     public static Vector3 boardBound1 = new Vector3(0, 0, 0);
     public static Vector3 boardBound2 = new Vector3(7,14,7);
     public GameObject whites;
@@ -106,6 +108,11 @@ public class TurnManager : MonoBehaviour
                     selected = null;
                 }
             }
+            if(Input.GetKey(KeyCode.K))
+            {
+                lightMoves = AllMovesFinder(teamLayer:6);
+                darkMoves = AllMovesFinder(false,teamLayer:7);
+            }
         }
     }
     IEnumerator MovePiece(GameObject mover, Vector3 target, GameObject movee = null, bool justMove = false)
@@ -159,6 +166,8 @@ public class TurnManager : MonoBehaviour
                     {
                         if (CheckCheckMate())
                         {
+                            lightMoves = AllMovesFinder(teamLayer: 6);
+                            darkMoves = AllMovesFinder(teamLayer: 7);
                             isCheckMate = true;
                             UI.CheckMate();
                         }
@@ -225,11 +234,25 @@ public class TurnManager : MonoBehaviour
     {
         foreach (var i in AllMovesFinder(teamLayer:checkedIsWhite.Value ? 6 : 7))
         {
-            foreach (var j in i.positions)
+            List<Vector3> kingPath = attacker.GetComponent<IPiece>().PathFinder().kingPath;
+            if (!i.piece.CompareTag("King"))
             {
-                if (attacker.GetComponent<IPiece>().PathFinder().kingPath.Contains(j) && !i.piece.CompareTag("King"))
+                foreach (var j in i.positions)
                 {
-                    return false;
+                    if (kingPath.Contains(j))
+                    {
+                        return false;
+                    }
+                }
+            }
+            else
+            {
+                foreach (var j in i.positions)
+                {
+                    if (!kingPath.Contains(j))
+                    {
+                        return false;
+                    }
                 }
             }
             Vector3 origin = i.piece.transform.position;
@@ -298,15 +321,19 @@ public class TurnManager : MonoBehaviour
         {
             if (i.layer == teamLayer || !layerCheck)
             {
-                if (doKing && !i.gameObject.CompareTag("Pawn") && !i.gameObject.CompareTag("King"))
+                if (doKing)
                 {
                     moves.Add(i.gameObject.GetComponent<IPiece>().PathFinder());
                 }
-                else
+                else if (!doKing)
                 {
                     if (i.gameObject.CompareTag("Pawn"))
                     {
                         moves.Add(i.gameObject.GetComponent<Pawn>().JustAttackPaths());
+                    }
+                    else if (!i.gameObject.CompareTag("King"))
+                    {
+                        moves.Add(i.gameObject.GetComponent<IPiece>().PathFinder());
                     }
                 }
             }
